@@ -1,0 +1,865 @@
+{
+  "updated_at": "2026-06-20T19:10:15+0800",
+  "run_id": "v22_guarded_shadow_20260620_1915",
+  "version": "V22_guarded_v21_retail_overlay_val41_shadow",
+  "selected_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V22_guarded_v21_retail_overlay_val41_shadow-v22_guarded_shadow_20260620_1915",
+  "oracle_best_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V22_guarded_v21_retail_overlay_val41_shadow_oracle_bestof_diagnostic-v22_guarded_shadow_20260620_1915",
+  "candidate_jsonl": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v22_candidate_programs_val41.jsonl",
+  "guard_trace_jsonl": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v22_guarded_selection_trace.jsonl",
+  "summary": {
+    "V14_baseline": {
+      "valid": 41,
+      "joint": 0.14634146341463414,
+      "result": 0.21951219512195122,
+      "tool": 0.17073170731707318,
+      "micro": 0.36538461538461536,
+      "matched_tools": 57,
+      "gt_tools": 156,
+      "interaction_calls": 795
+    },
+    "V21_retail_candidate_where_applicable": {
+      "valid": 16,
+      "joint": 0.1875,
+      "result": 0.1875,
+      "tool": 0.1875,
+      "micro": 0.2028985507246377,
+      "matched_tools": 14,
+      "gt_tools": 69,
+      "interaction_calls": 186
+    },
+    "V22_nonoracle_selected": {
+      "valid": 41,
+      "joint": 0.21951219512195122,
+      "result": 0.2926829268292683,
+      "tool": 0.24390243902439024,
+      "micro": 0.42948717948717946,
+      "matched_tools": 67,
+      "gt_tools": 156,
+      "interaction_calls": 801
+    },
+    "V22_oracle_best_of_candidates_diagnostic": {
+      "valid": 41,
+      "joint": 0.21951219512195122,
+      "result": 0.2926829268292683,
+      "tool": 0.24390243902439024,
+      "micro": 0.42948717948717946,
+      "matched_tools": 67,
+      "gt_tools": 156,
+      "interaction_calls": 741
+    },
+    "V22_nonoracle_selected_task_eval": {
+      "valid": 41,
+      "joint": 0.21951219512195122,
+      "result": 0.2926829268292683,
+      "tool": 0.24390243902439024,
+      "micro": 0.42948717948717946,
+      "matched_tools": 67,
+      "gt_tools": 156,
+      "interaction_calls": 801
+    },
+    "V22_oracle_task_eval": {
+      "valid": 41,
+      "joint": 0.21951219512195122,
+      "result": 0.2926829268292683,
+      "tool": 0.24390243902439024,
+      "micro": 0.42948717948717946,
+      "matched_tools": 67,
+      "gt_tools": 156,
+      "interaction_calls": 741
+    }
+  },
+  "chosen_counts": {
+    "V14": 37,
+    "V21_retail": 4
+  },
+  "v21_selected_count": 4,
+  "v21_fallback_count": 12,
+  "v21_added_joint_count": 3,
+  "v21_regressed_joint_count": 0,
+  "per_scenario": {
+    "kitchen1": {
+      "V14": {
+        "valid": 3,
+        "joint": 0.0,
+        "result": 0.3333333333333333,
+        "tool": 0.0,
+        "micro": 0.3333333333333333,
+        "matched_tools": 3,
+        "gt_tools": 9,
+        "interaction_calls": 57
+      },
+      "V22_selected": {
+        "valid": 3,
+        "joint": 0.0,
+        "result": 0.3333333333333333,
+        "tool": 0.0,
+        "micro": 0.3333333333333333,
+        "matched_tools": 3,
+        "gt_tools": 9,
+        "interaction_calls": 57
+      },
+      "oracle_best": {
+        "valid": 3,
+        "joint": 0.0,
+        "result": 0.3333333333333333,
+        "tool": 0.0,
+        "micro": 0.3333333333333333,
+        "matched_tools": 3,
+        "gt_tools": 9,
+        "interaction_calls": 57
+      }
+    },
+    "kitchen2": {
+      "V14": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 5,
+        "gt_tools": 5,
+        "interaction_calls": 21
+      },
+      "V22_selected": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 5,
+        "gt_tools": 5,
+        "interaction_calls": 21
+      },
+      "oracle_best": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 5,
+        "gt_tools": 5,
+        "interaction_calls": 21
+      }
+    },
+    "kitchen3": {
+      "V14": {
+        "valid": 4,
+        "joint": 0.25,
+        "result": 0.25,
+        "tool": 0.25,
+        "micro": 0.5,
+        "matched_tools": 9,
+        "gt_tools": 18,
+        "interaction_calls": 132
+      },
+      "V22_selected": {
+        "valid": 4,
+        "joint": 0.25,
+        "result": 0.25,
+        "tool": 0.25,
+        "micro": 0.5,
+        "matched_tools": 9,
+        "gt_tools": 18,
+        "interaction_calls": 132
+      },
+      "oracle_best": {
+        "valid": 4,
+        "joint": 0.25,
+        "result": 0.25,
+        "tool": 0.25,
+        "micro": 0.5,
+        "matched_tools": 9,
+        "gt_tools": 18,
+        "interaction_calls": 132
+      }
+    },
+    "order1": {
+      "V14": {
+        "valid": 8,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.16666666666666666,
+        "matched_tools": 4,
+        "gt_tools": 24,
+        "interaction_calls": 128
+      },
+      "V22_selected": {
+        "valid": 8,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.16666666666666666,
+        "matched_tools": 4,
+        "gt_tools": 24,
+        "interaction_calls": 128
+      },
+      "oracle_best": {
+        "valid": 8,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.16666666666666666,
+        "matched_tools": 4,
+        "gt_tools": 24,
+        "interaction_calls": 128
+      }
+    },
+    "restaurant1": {
+      "V14": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 1.0,
+        "tool": 0.0,
+        "micro": 0.7777777777777778,
+        "matched_tools": 7,
+        "gt_tools": 9,
+        "interaction_calls": 45
+      },
+      "V22_selected": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 1.0,
+        "tool": 0.0,
+        "micro": 0.7777777777777778,
+        "matched_tools": 7,
+        "gt_tools": 9,
+        "interaction_calls": 45
+      },
+      "oracle_best": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 1.0,
+        "tool": 0.0,
+        "micro": 0.7777777777777778,
+        "matched_tools": 7,
+        "gt_tools": 9,
+        "interaction_calls": 45
+      }
+    },
+    "restaurant2": {
+      "V14": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.6,
+        "matched_tools": 3,
+        "gt_tools": 5,
+        "interaction_calls": 23
+      },
+      "V22_selected": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.6,
+        "matched_tools": 3,
+        "gt_tools": 5,
+        "interaction_calls": 23
+      },
+      "oracle_best": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.6,
+        "matched_tools": 3,
+        "gt_tools": 5,
+        "interaction_calls": 23
+      }
+    },
+    "restaurant3": {
+      "V14": {
+        "valid": 4,
+        "joint": 0.0,
+        "result": 0.25,
+        "tool": 0.0,
+        "micro": 0.4,
+        "matched_tools": 4,
+        "gt_tools": 10,
+        "interaction_calls": 55
+      },
+      "V22_selected": {
+        "valid": 4,
+        "joint": 0.0,
+        "result": 0.25,
+        "tool": 0.0,
+        "micro": 0.4,
+        "matched_tools": 4,
+        "gt_tools": 10,
+        "interaction_calls": 55
+      },
+      "oracle_best": {
+        "valid": 4,
+        "joint": 0.0,
+        "result": 0.25,
+        "tool": 0.0,
+        "micro": 0.4,
+        "matched_tools": 4,
+        "gt_tools": 10,
+        "interaction_calls": 55
+      }
+    },
+    "restaurant4": {
+      "V14": {
+        "valid": 3,
+        "joint": 0.3333333333333333,
+        "result": 0.3333333333333333,
+        "tool": 0.3333333333333333,
+        "micro": 0.5714285714285714,
+        "matched_tools": 4,
+        "gt_tools": 7,
+        "interaction_calls": 31
+      },
+      "V22_selected": {
+        "valid": 3,
+        "joint": 0.3333333333333333,
+        "result": 0.3333333333333333,
+        "tool": 0.3333333333333333,
+        "micro": 0.5714285714285714,
+        "matched_tools": 4,
+        "gt_tools": 7,
+        "interaction_calls": 31
+      },
+      "oracle_best": {
+        "valid": 3,
+        "joint": 0.3333333333333333,
+        "result": 0.3333333333333333,
+        "tool": 0.3333333333333333,
+        "micro": 0.5714285714285714,
+        "matched_tools": 4,
+        "gt_tools": 7,
+        "interaction_calls": 31
+      }
+    },
+    "retail1": {
+      "V14": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 4,
+        "interaction_calls": 1
+      },
+      "V22_selected": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 4,
+        "gt_tools": 4,
+        "interaction_calls": 4
+      },
+      "oracle_best": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 4,
+        "gt_tools": 4,
+        "interaction_calls": 4
+      }
+    },
+    "retail2": {
+      "V14": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 4,
+        "interaction_calls": 27
+      },
+      "V22_selected": {
+        "valid": 2,
+        "joint": 0.5,
+        "result": 0.5,
+        "tool": 0.5,
+        "micro": 0.5,
+        "matched_tools": 2,
+        "gt_tools": 4,
+        "interaction_calls": 18
+      },
+      "oracle_best": {
+        "valid": 2,
+        "joint": 0.5,
+        "result": 0.5,
+        "tool": 0.5,
+        "micro": 0.5,
+        "matched_tools": 2,
+        "gt_tools": 4,
+        "interaction_calls": 12
+      }
+    },
+    "retail3": {
+      "V14": {
+        "valid": 4,
+        "joint": 0.5,
+        "result": 0.5,
+        "tool": 0.5,
+        "micro": 0.32142857142857145,
+        "matched_tools": 9,
+        "gt_tools": 28,
+        "interaction_calls": 70
+      },
+      "V22_selected": {
+        "valid": 4,
+        "joint": 0.5,
+        "result": 0.5,
+        "tool": 0.5,
+        "micro": 0.32142857142857145,
+        "matched_tools": 9,
+        "gt_tools": 28,
+        "interaction_calls": 79
+      },
+      "oracle_best": {
+        "valid": 4,
+        "joint": 0.5,
+        "result": 0.5,
+        "tool": 0.5,
+        "micro": 0.32142857142857145,
+        "matched_tools": 9,
+        "gt_tools": 28,
+        "interaction_calls": 70
+      }
+    },
+    "retail4": {
+      "V14": {
+        "valid": 5,
+        "joint": 0.2,
+        "result": 0.2,
+        "tool": 0.4,
+        "micro": 0.5294117647058824,
+        "matched_tools": 9,
+        "gt_tools": 17,
+        "interaction_calls": 125
+      },
+      "V22_selected": {
+        "valid": 5,
+        "joint": 0.4,
+        "result": 0.4,
+        "tool": 0.6,
+        "micro": 0.7647058823529411,
+        "matched_tools": 13,
+        "gt_tools": 17,
+        "interaction_calls": 128
+      },
+      "oracle_best": {
+        "valid": 5,
+        "joint": 0.4,
+        "result": 0.4,
+        "tool": 0.6,
+        "micro": 0.7647058823529411,
+        "matched_tools": 13,
+        "gt_tools": 17,
+        "interaction_calls": 128
+      }
+    },
+    "retail7": {
+      "V14": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 10,
+        "interaction_calls": 52
+      },
+      "V22_selected": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 10,
+        "interaction_calls": 52
+      },
+      "oracle_best": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 10,
+        "interaction_calls": 18
+      }
+    },
+    "retail8": {
+      "V14": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 6,
+        "interaction_calls": 28
+      },
+      "V22_selected": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 6,
+        "interaction_calls": 28
+      },
+      "oracle_best": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 6,
+        "interaction_calls": 17
+      }
+    }
+  },
+  "win_loss_vs_v14": [
+    {
+      "spec": "kitchen1",
+      "index": 16,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "kitchen1",
+      "index": 27,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "kitchen1",
+      "index": 31,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "kitchen2",
+      "index": 33,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "kitchen3",
+      "index": 12,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "kitchen3",
+      "index": 15,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "kitchen3",
+      "index": 21,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "kitchen3",
+      "index": 35,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "order1",
+      "index": 3,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "order1",
+      "index": 15,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "order1",
+      "index": 17,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "order1",
+      "index": 44,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "order1",
+      "index": 47,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "order1",
+      "index": 53,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "order1",
+      "index": 63,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "order1",
+      "index": 87,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "restaurant1",
+      "index": 6,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "restaurant2",
+      "index": 13,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "restaurant3",
+      "index": 16,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "restaurant3",
+      "index": 24,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "restaurant3",
+      "index": 33,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "restaurant3",
+      "index": 54,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "restaurant4",
+      "index": 5,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "restaurant4",
+      "index": 6,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "restaurant4",
+      "index": 10,
+      "chosen_candidate": "V14",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "retail1",
+      "index": 24,
+      "chosen_candidate": "V21_retail",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "win"
+    },
+    {
+      "spec": "retail2",
+      "index": 2,
+      "chosen_candidate": "V21_retail",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "win"
+    },
+    {
+      "spec": "retail2",
+      "index": 5,
+      "chosen_candidate": "V14",
+      "fallback_reason": "branch_fallback_primary_product",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "retail3",
+      "index": 8,
+      "chosen_candidate": "V14",
+      "fallback_reason": "branch_fallback_primary_product",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "retail3",
+      "index": 16,
+      "chosen_candidate": "V14",
+      "fallback_reason": "branch_fallback_primary_product",
+      "confidence": 0.98,
+      "delta": "same"
+    },
+    {
+      "spec": "retail3",
+      "index": 23,
+      "chosen_candidate": "V21_retail",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "retail3",
+      "index": 24,
+      "chosen_candidate": "V14",
+      "fallback_reason": "branch_fallback_primary_product",
+      "confidence": 0.98,
+      "delta": "same"
+    },
+    {
+      "spec": "retail4",
+      "index": 13,
+      "chosen_candidate": "V14",
+      "fallback_reason": "branch_fallback_primary_product",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "retail4",
+      "index": 14,
+      "chosen_candidate": "V21_retail",
+      "fallback_reason": "",
+      "confidence": 1.0,
+      "delta": "win"
+    },
+    {
+      "spec": "retail4",
+      "index": 17,
+      "chosen_candidate": "V14",
+      "fallback_reason": "discount_branch_selected_without_discount_condition",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "retail4",
+      "index": 36,
+      "chosen_candidate": "V14",
+      "fallback_reason": "branch_fallback_primary_product",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "retail4",
+      "index": 46,
+      "chosen_candidate": "V14",
+      "fallback_reason": "missing_required_closure",
+      "confidence": 0.98,
+      "delta": "same"
+    },
+    {
+      "spec": "retail7",
+      "index": 7,
+      "chosen_candidate": "V14",
+      "fallback_reason": "branch_fallback_primary_product",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "retail7",
+      "index": 26,
+      "chosen_candidate": "V14",
+      "fallback_reason": "branch_fallback_primary_product",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "retail8",
+      "index": 13,
+      "chosen_candidate": "V14",
+      "fallback_reason": "branch_fallback_primary_product",
+      "confidence": 1.0,
+      "delta": "same"
+    },
+    {
+      "spec": "retail8",
+      "index": 25,
+      "chosen_candidate": "V14",
+      "fallback_reason": "branch_fallback_primary_product",
+      "confidence": 1.0,
+      "delta": "same"
+    }
+  ],
+  "final_run": false,
+  "full_val41_shadow": true,
+  "v10_zip_overwritten": false,
+  "uses_final_hidden_metadata": false,
+  "uses_gt_for_selection": false,
+  "uses_gt_for_oracle_best_diagnostic": true
+}

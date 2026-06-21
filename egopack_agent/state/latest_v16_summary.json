@@ -1,0 +1,30 @@
+{
+  "updated_at": "2026-06-20T00:10:25+0800",
+  "version": "V16_GT100_TRAJECTORY_DISTILL_ALL_NONFINAL_NONVAL41",
+  "raw_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V16_VAL41_RESULT_v16_gt100_val41_20260619_2352.md",
+  "decision_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V16_NEXT_DECISION_20260620_001025.md",
+  "raw_summary": {
+    "valid": 41,
+    "joint": 0.14634146341463414,
+    "result": 0.1951219512195122,
+    "tool": 0.14634146341463414,
+    "micro": 0.3076923076923077,
+    "correct_calls": 48,
+    "gt_calls": 156,
+    "interaction_calls": 951
+  },
+  "selected_summary": {
+    "valid": 41,
+    "joint": 0.14634146341463414,
+    "result": 0.21951219512195122,
+    "tool": 0.14634146341463414,
+    "micro": 0.3141025641025641,
+    "avg_task_accuracy": 0.2812936813578662,
+    "correct_calls": 49,
+    "gt_calls": 156,
+    "interaction_calls": 900
+  },
+  "recommendation": "do_not_promote_v16",
+  "final_run": false,
+  "protected_best_updated": false
+}

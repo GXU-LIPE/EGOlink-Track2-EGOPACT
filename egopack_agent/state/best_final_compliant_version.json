@@ -1,0 +1,15 @@
+{
+  "version": "V2_5_local_qwen_guarded",
+  "service_model_name": "Qwen2.5-VL-32B-Instruct",
+  "service_model_path": "/home/data-gxu/acm/egolink2026-main/code1/models/Qwen/Qwen2___5-VL-32B-Instruct",
+  "backend": "local_qwen_vllm_preferred_or_transformers_fallback",
+  "final_compliant": true,
+  "external_api_used": false,
+  "status": "blocked_before_gate_runtime_or_gpu_not_ready",
+  "joint_success": null,
+  "result_success": null,
+  "tool_success": null,
+  "micro_tool_accuracy": null,
+  "deterministic_guard_smoke": "passed",
+  "updated_at": "2026-06-13T22:04:03+08:00"
+}

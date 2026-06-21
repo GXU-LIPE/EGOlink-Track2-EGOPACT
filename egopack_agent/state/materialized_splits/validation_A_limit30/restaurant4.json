@@ -1,0 +1,167 @@
+[
+  {
+    "Instruction": "You are a nutritionist (User ID: customer_002). There are three dishes in front of you. Focus on the Panini dish. You need to ask the AI service agent to check its protein content. Ask the AI service agent to determine: if the protein content is less than 25 grams, ask the AI service agent to find an item in the \"Handmade Bread\" category that is [Nut-free] and has the [Highest Protein], and add it to the order. If there are multiple items tied for the highest protein content among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI service agent to find an item in the \"Appetizers and Snacks\" category that is [High Fiber] and has the [Lowest Sodium Content], and add it to the order. If there are multiple items tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. Next, ask the AI service agent to determine: if the total tax on the order is greater than 15 yuan, then remove the lowest-priced non-set meal item from the order. Finally, ask the AI service agent to calculate the total calories of your order.",
+    "analysis": "1. Check the protein content of the Panini.\n\n2. If the Panini's protein content is less than 25 grams, select the nut-free item with the highest protein content from the \"Artisan Bread\" category and add it to the order. If there are multiple items tied for the highest protein content among those that meet the conditions, add all of them to the order.\n\n3. If the Panini's protein content is not less than 25 grams, select the high-fiber item with the lowest sodium content from the \"Appetizers & Snacks\" category and add it to the order. If there are multiple items tied for the lowest sodium content among those that meet the conditions, add all of them to the order.\n\n4. Determine whether the total tax on the order is greater than 15 yuan; if it is greater than 15 yuan, remove the cheapest dish from the order.\n\n5. Calculate the total calories of the order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "ustomer_002",
+          "dish_name": "Sweet potato fries",
+          "quantity": 1,
+          "category": "Antipasti & Snacks",
+          "price": 28,
+          "tax_rate": 0.14,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "remove_dish_from_order",
+        "parameters": {
+          "user_id": "customer_002",
+          "dish_name": "Focaccia",
+          "quantity": 1
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "customer_002",
+          "dishes": [
+            {
+              "dish_name": "Australian selected Ribeye",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Grilled chicken salad",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Sweet potato fries",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 5,
+    "image_name": "restaurant4",
+    "image_path": "restaurant4.mp4",
+    "image_description": "You and your friend are in a restaurant. You can see that the waiter has served you three dishes on the tablel.",
+    "key": "dish_name",
+    "value": [
+      "Tuna panini"
+    ],
+    "_v8_original_index": 5
+  },
+  {
+    "Instruction": "You are a frugal diner (User ID: customer_008). There are three dishes in front of you. Regarding the raw salmon dish, ask the AI Service Agent to query its price. Instruct the AI Service Agent to judge: if the unit price of this dish exceeds 50 yuan, ask the AI Service Agent to find items in the \"Sandwich\" category that are [Low Fat] and have the [Highest Protein], and add them to the order. If there are multiple items tied for the highest protein among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI Service Agent to find items in the \"Cold Cut\" category that are [High Sodium] (high_sodium) and have the [Lowest Price], and add them to the order. If there are multiple items tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total dietary fiber content of the current order.",
+    "analysis": "1. Check the price of raw salmon.\n\n2. If the unit price of raw salmon exceeds 50 yuan, select low-fat items with the highest protein content from the \"Sandwich\" category and add the item with the highest protein content to the order. If there are multiple items tied for the highest protein content among those that meet the conditions, add all of them to the order.\n\n3. If the unit price of raw salmon is 50 yuan or less, select high-calcium items with the lowest price from the \"Cold Cut\" category and add the item with the lowest price to the order. If there are multiple items tied for the lowest price among those that meet the conditions, add all of them to the order.\n\n4. Calculate the total dietary fiber content of the current order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_008",
+          "dish_name": "Culatello",
+          "quantity": 1,
+          "category": "Cold Cuts",
+          "price": 28,
+          "tax_rate": 0.07,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "customer_008",
+          "dishes": [
+            {
+              "dish_name": "Beef filet",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Buratta salad",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Walnut bread",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Steak Lovers Set",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Culatello",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 6,
+    "image_name": "restaurant4",
+    "image_path": "restaurant4.mp4",
+    "image_description": "You and your friend are in a restaurant. You can see that the waiter has served you three dishes on the tablel.",
+    "key": "dish_name",
+    "value": [
+      "Salmone affumicato"
+    ],
+    "_v8_original_index": 6
+  },
+  {
+    "Instruction": "You are a health-conscious fitness enthusiast (User ID: customer_003). There are three dishes in front of you. Regarding the Panini, ask the AI service agent to query its carbohydrate content. Ask the AI service agent to determine: if the carbohydrate content is higher than 50 grams, ask the AI service agent to find an item in the \"Cold Cuts\" category that is [High Protein] and has the [Lowest Price], and add it to the order. If there are multiple items tied for the lowest price among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI service agent to find an item in the \"Cheese & Olives\" category that is [Low Calorie] and has the [Lowest Fat Content], and add it to the order. If there are multiple items tied for the lowest fat content among those that meet the conditions, you want all of them to be added. Next, ask the AI service agent to determine: if the total protein intake of the current order is below 30 grams, then additionally add one portion of the lowest priced salad. If there are multiple salads tied for the lowest price, you want all of them to be added. Finally, ask the AI service agent to calculate the total amount of the entire order.",
+    "analysis": "Results:\n1. Check the carbohydrate content of the Panini.\n\n2. If the carbohydrate content of the Panini is higher than 50 grams, select a high-protein item with the lowest price from the \"Cold Cuts\" category and add it to the order. If there are multiple items tied for the lowest price among those that meet the conditions, add all of them.\n\n3. If the carbohydrate content of the Panini is not higher than 50 grams, select a low-sodium item with the lowest fat content from the \"Cheese & Olives\" category and add it to the order. If there are multiple items tied for the lowest fat content among those that meet the conditions, add all of them.\n\n4. Determine whether the total protein intake is lower than 30 grams; if it is lower than 30 grams, additionally add the cheapest salad to the order. If there are multiple salads tied for the lowest price, add all of them.\n\n5. Calculate the total amount of the entire order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_003",
+          "dish_name": "Green olives",
+          "quantity": 1,
+          "category": "Cheese & Olives",
+          "price": 25,
+          "tax_rate": 0.12,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "compute_total_payment",
+        "parameters": {
+          "user_id": "customer_003",
+          "dishes": [
+            {
+              "dish_name": "Green olives",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Salmon & asparagus",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Grilled salmon",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Tuna salad",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Seafood Delight Set",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 10,
+    "image_name": "restaurant4",
+    "image_path": "restaurant4.mp4",
+    "image_description": "You and your friend are in a restaurant. You can see that the waiter has served you three dishes on the tablel.",
+    "key": "dish_name",
+    "value": [
+      "Tuna panini"
+    ],
+    "_v8_original_index": 10
+  }
+]

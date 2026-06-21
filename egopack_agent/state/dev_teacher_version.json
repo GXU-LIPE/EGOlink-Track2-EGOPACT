@@ -1,0 +1,13 @@
+{
+  "version": "V2_prompt_plan",
+  "output_model_name": "deepseek-v4-pro-gate-gate_restart_20260609_235626",
+  "service_model_name": "deepseek-v4-pro",
+  "joint_success": 0.25,
+  "result_success": 0.25,
+  "micro_tool_accuracy": 0.5625,
+  "external_api_used": true,
+  "final_compliant": false,
+  "role": "dev_teacher_only",
+  "notes": "DeepSeek gate result preserved for teacher/debug comparison only. Not a final candidate.",
+  "updated_at": "2026-06-13T21:31:08+08:00"
+}

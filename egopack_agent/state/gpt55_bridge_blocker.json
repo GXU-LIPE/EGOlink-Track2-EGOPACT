@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-06-17T00:46:05+0800",
+  "status": "blocked_invalid_openai_key",
+  "openai_key_present": true,
+  "key_value_logged": false,
+  "local_bridge_reachable": true,
+  "valid_gate_metrics": false,
+  "report": "reports/gpt55_bridge_blocker_20260617_004602.md"
+}

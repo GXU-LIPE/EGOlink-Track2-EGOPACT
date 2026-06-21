@@ -1,0 +1,28 @@
+{
+  "auto_submit": false,
+  "final_run": false,
+  "mini_shadow_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V37_V34_MINI_SHADOW_RESULT_v37_v34_chain_20260621_1944.md",
+  "mini_shadow_skipped": true,
+  "mini_shadow_summary": {
+    "gt_tools": 0,
+    "interaction_calls": 0,
+    "joint": 0,
+    "matched_tools": 0,
+    "micro": 0,
+    "result": 0,
+    "tool": 0,
+    "valid": 0
+  },
+  "mini_shadow_task_count": 0,
+  "run_id": "v37_v34_chain_20260621_1944",
+  "smoke_a_passed": true,
+  "smoke_b_passed": false,
+  "smoke_c_passed": false,
+  "smoke_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V37_V34_CHAIN_SMOKE_RESULT_v37_v34_chain_20260621_1944.md",
+  "uses_final_hidden_metadata": false,
+  "v10_expected_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+  "v10_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+  "v10_sha_matches_expected": true,
+  "v10_zip_exists": true,
+  "version": "V37_OFFICIAL_SYNC_REBASE_AUDIT_AND_V34_CHAIN"
+}

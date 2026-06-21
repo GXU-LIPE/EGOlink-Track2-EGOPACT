@@ -1,0 +1,11 @@
+{
+  "started_at": "2026-06-19T21:15:02+0800",
+  "gt_run_id": "v14_gt_distill_20260619_211502",
+  "gt_pid": 3758632,
+  "gt_log": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/logs/v14_gt_distill_20260619_211502.log",
+  "distilled_run_id": "v14_distilled_val41_20260619_211502",
+  "distilled_pid": 3758633,
+  "distilled_log": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/logs/v14_distilled_val41_20260619_211502.log",
+  "workers": 10,
+  "final_run": false
+}

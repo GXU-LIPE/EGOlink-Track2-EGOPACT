@@ -1,0 +1,2871 @@
+{
+  "tools": {
+    "add_recipe_to_menu": {
+      "name": "add_recipe_to_menu",
+      "scenario": "kitchen",
+      "required": [
+        "user_id",
+        "recipe_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "recipe_name": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "tool_name": "add_recipe_to_menu",
+        "description": "Add a recipe to the user's daily menu.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string",
+              "description": "User ID"
+            },
+            "recipe_name": {
+              "type": "string",
+              "description": "Name of the recipe to add"
+            }
+          },
+          "required": [
+            "user_id",
+            "recipe_name"
+          ]
+        }
+      }
+    },
+    "remove_recipe_from_menu": {
+      "name": "remove_recipe_from_menu",
+      "scenario": "kitchen",
+      "required": [
+        "user_id",
+        "recipe_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "recipe_name": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "tool_name": "remove_recipe_from_menu",
+        "description": "Remove a recipe from the user's daily menu.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string",
+              "description": "User ID"
+            },
+            "recipe_name": {
+              "type": "string",
+              "description": "Name of the recipe to remove"
+            }
+          },
+          "required": [
+            "user_id",
+            "recipe_name"
+          ]
+        }
+      }
+    },
+    "get_current_menu": {
+      "name": "get_current_menu",
+      "scenario": "kitchen",
+      "required": [
+        "user_id"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "tool_name": "get_current_menu",
+        "description": "Retrieve the list of recipes planned for today.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string",
+              "description": "User ID"
+            }
+          },
+          "required": [
+            "user_id"
+          ]
+        }
+      }
+    },
+    "tally_total_nutritional_characteristics": {
+      "name": "tally_total_nutritional_characteristics",
+      "scenario": "kitchen",
+      "required": [
+        "user_id",
+        "recipes"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "recipes": "array"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "tally_total_nutritional_characteristics",
+        "description": "Aggregate nutritional characteristics for specified recipes in the menu.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string",
+              "description": "User ID"
+            },
+            "recipes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "List of recipe names to calculate nutritional characteristics for"
+            }
+          },
+          "required": [
+            "user_id",
+            "recipes"
+          ]
+        }
+      }
+    },
+    "tally_total_tastes": {
+      "name": "tally_total_tastes",
+      "scenario": "kitchen",
+      "required": [
+        "user_id",
+        "recipes"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "recipes": "array"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "tally_total_tastes",
+        "description": "Aggregate taste characteristics for specified recipes in the menu.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string",
+              "description": "User ID"
+            },
+            "recipes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "List of recipe names to calculate tastes for"
+            }
+          },
+          "required": [
+            "user_id",
+            "recipes"
+          ]
+        }
+      }
+    },
+    "add_to_shopping_list": {
+      "name": "add_to_shopping_list",
+      "scenario": "kitchen",
+      "required": [
+        "user_id",
+        "ingredient_name",
+        "quantity"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "ingredient_name": "string",
+        "quantity": "number"
+      },
+      "state_changing": true,
+      "raw": {
+        "tool_name": "add_to_shopping_list",
+        "description": "Add ingredients with quantities to the shopping list.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string",
+              "description": "User ID"
+            },
+            "ingredient_name": {
+              "type": "string",
+              "description": "Name of the ingredient to add"
+            },
+            "quantity": {
+              "type": "number",
+              "description": "Quantity to add (in units of 100g, must be greater than 0)"
+            }
+          },
+          "required": [
+            "user_id",
+            "ingredient_name",
+            "quantity"
+          ]
+        }
+      }
+    },
+    "remove_from_shopping_list": {
+      "name": "remove_from_shopping_list",
+      "scenario": "kitchen",
+      "required": [
+        "user_id",
+        "ingredient_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "ingredient_name": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "tool_name": "remove_from_shopping_list",
+        "description": "Remove a specific ingredient from the shopping list.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string",
+              "description": "User ID"
+            },
+            "ingredient_name": {
+              "type": "string",
+              "description": "Name of the ingredient to remove"
+            }
+          },
+          "required": [
+            "user_id",
+            "ingredient_name"
+          ]
+        }
+      }
+    },
+    "compute_total_nutritions": {
+      "name": "compute_total_nutritions",
+      "scenario": "kitchen",
+      "required": [
+        "user_id",
+        "ingredients"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "ingredients": "array"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "compute_total_nutritions",
+        "description": "Calculate total nutritional values for specified ingredients in the shopping list.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string",
+              "description": "User ID"
+            },
+            "ingredients": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "ingredient_name": {
+                    "type": "string",
+                    "description": "Name of the ingredient"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "description": "Quantity (in units of 100g)"
+                  }
+                },
+                "required": [
+                  "ingredient_name",
+                  "quantity"
+                ]
+              },
+              "description": "List of ingredients with quantities to calculate nutrition for"
+            }
+          },
+          "required": [
+            "user_id",
+            "ingredients"
+          ]
+        }
+      }
+    },
+    "get_cooking_steps": {
+      "name": "get_cooking_steps",
+      "scenario": "kitchen",
+      "required": [
+        "recipe_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "recipe_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "get_cooking_steps",
+        "description": "Retrieve detailed step-by-step instructions for a recipe.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "recipe_name": {
+              "type": "string",
+              "description": "Name of the recipe"
+            }
+          },
+          "required": [
+            "recipe_name"
+          ]
+        }
+      }
+    },
+    "get_recipe_allergens": {
+      "name": "get_recipe_allergens",
+      "scenario": "kitchen",
+      "required": [
+        "recipe_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "recipe_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "get_recipe_allergens",
+        "description": "Retrieve allergen information for a specific recipe.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "recipe_name": {
+              "type": "string",
+              "description": "Name of the recipe"
+            }
+          },
+          "required": [
+            "recipe_name"
+          ]
+        }
+      }
+    },
+    "find_recipes_by_allergen": {
+      "name": "find_recipes_by_allergen",
+      "scenario": "kitchen",
+      "required": [
+        "allergen"
+      ],
+      "optional": [],
+      "param_types": {
+        "allergen": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "find_recipes_by_allergen",
+        "description": "Find all recipes containing a specific allergen.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "allergen": {
+              "type": "string",
+              "description": "Allergen name (e.g., 'gluten', 'dairy', 'nuts', 'shellfish', 'soy')"
+            }
+          },
+          "required": [
+            "allergen"
+          ]
+        }
+      }
+    },
+    "get_recipe_taste": {
+      "name": "get_recipe_taste",
+      "scenario": "kitchen",
+      "required": [
+        "recipe_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "recipe_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "get_recipe_taste",
+        "description": "Retrieve taste profile for a specific recipe.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "recipe_name": {
+              "type": "string",
+              "description": "Name of the recipe"
+            }
+          },
+          "required": [
+            "recipe_name"
+          ]
+        }
+      }
+    },
+    "find_recipes_by_taste": {
+      "name": "find_recipes_by_taste",
+      "scenario": "kitchen",
+      "required": [
+        "taste"
+      ],
+      "optional": [],
+      "param_types": {
+        "taste": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "find_recipes_by_taste",
+        "description": "Find all recipes matching a specific taste profile.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "taste": {
+              "type": "string",
+              "enum": [
+                "sweet",
+                "salty",
+                "spicy",
+                "sour",
+                "bitter",
+                "umami",
+                "mild",
+                "savory"
+              ],
+              "description": "Taste profile to search for"
+            }
+          },
+          "required": [
+            "taste"
+          ]
+        }
+      }
+    },
+    "get_recipe_ingredients": {
+      "name": "get_recipe_ingredients",
+      "scenario": "kitchen",
+      "required": [
+        "recipe_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "recipe_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "get_recipe_ingredients",
+        "description": "Retrieve the list of ingredients and quantities required for a recipe.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "recipe_name": {
+              "type": "string",
+              "description": "Name of the recipe"
+            }
+          },
+          "required": [
+            "recipe_name"
+          ]
+        }
+      }
+    },
+    "find_recipes_by_ingredient": {
+      "name": "find_recipes_by_ingredient",
+      "scenario": "kitchen",
+      "required": [
+        "ingredient_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "ingredient_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "find_recipes_by_ingredient",
+        "description": "Find all recipes that require a specific ingredient.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "ingredient_name": {
+              "type": "string",
+              "description": "Name of the ingredient"
+            }
+          },
+          "required": [
+            "ingredient_name"
+          ]
+        }
+      }
+    },
+    "get_ingredient_shelf_life": {
+      "name": "get_ingredient_shelf_life",
+      "scenario": "kitchen",
+      "required": [
+        "ingredient_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "ingredient_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "get_ingredient_shelf_life",
+        "description": "Retrieve the expiration date for a specific ingredient.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "ingredient_name": {
+              "type": "string",
+              "description": "Name of the ingredient"
+            }
+          },
+          "required": [
+            "ingredient_name"
+          ]
+        }
+      }
+    },
+    "find_ingredients_by_expiry_date": {
+      "name": "find_ingredients_by_expiry_date",
+      "scenario": "kitchen",
+      "required": [
+        "date"
+      ],
+      "optional": [],
+      "param_types": {
+        "date": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "find_ingredients_by_expiry_date",
+        "description": "Find ingredients expiring after a specific date.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string",
+              "description": "Target date in YYYY-MM-DD format (e.g., '2025-12-11')"
+            }
+          },
+          "required": [
+            "date"
+          ]
+        }
+      }
+    },
+    "get_ingredient_location": {
+      "name": "get_ingredient_location",
+      "scenario": "kitchen",
+      "required": [
+        "ingredient_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "ingredient_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "get_ingredient_location",
+        "description": "Retrieve the storage location for a specific ingredient.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "ingredient_name": {
+              "type": "string",
+              "description": "Name of the ingredient"
+            }
+          },
+          "required": [
+            "ingredient_name"
+          ]
+        }
+      }
+    },
+    "find_ingredients_by_location": {
+      "name": "find_ingredients_by_location",
+      "scenario": "kitchen",
+      "required": [
+        "location"
+      ],
+      "optional": [],
+      "param_types": {
+        "location": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "find_ingredients_by_location",
+        "description": "Find all ingredients stored in a specific location.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "location": {
+              "type": "string",
+              "enum": [
+                "fridge",
+                "freezer",
+                "pantry",
+                "countertop",
+                "spice_rack"
+              ],
+              "description": "Storage location to search for"
+            }
+          },
+          "required": [
+            "location"
+          ]
+        }
+      }
+    },
+    "get_ingredient_nutrition": {
+      "name": "get_ingredient_nutrition",
+      "scenario": "kitchen",
+      "required": [
+        "ingredient_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "ingredient_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "get_ingredient_nutrition",
+        "description": "Retrieve detailed nutritional facts for a specific ingredient.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "ingredient_name": {
+              "type": "string",
+              "description": "Name of the ingredient"
+            }
+          },
+          "required": [
+            "ingredient_name"
+          ]
+        }
+      }
+    },
+    "get_ingredient_quantity": {
+      "name": "get_ingredient_quantity",
+      "scenario": "kitchen",
+      "required": [
+        "ingredient_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "ingredient_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "get_ingredient_quantity",
+        "description": "Retrieve the current stock quantity of a specific ingredient.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "ingredient_name": {
+              "type": "string",
+              "description": "Name of the ingredient"
+            }
+          },
+          "required": [
+            "ingredient_name"
+          ]
+        }
+      }
+    },
+    "get_all_recipe_names": {
+      "name": "get_all_recipe_names",
+      "scenario": "kitchen",
+      "required": [],
+      "optional": [],
+      "param_types": {},
+      "state_changing": false,
+      "raw": {
+        "tool_name": "get_all_recipe_names",
+        "description": "Retrieve the names of all available recipes.",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "get_ingredients_by_category": {
+      "name": "get_ingredients_by_category",
+      "scenario": "kitchen",
+      "required": [
+        "category"
+      ],
+      "optional": [],
+      "param_types": {
+        "category": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "get_ingredients_by_category",
+        "description": "Retrieve ingredients belonging to a specific category.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "description": "Ingredient category (e.g., 'vegetable', 'meat', 'dairy', 'carbs/grains', 'seasoning', 'fruits', 'drinks')"
+            }
+          },
+          "required": [
+            "category"
+          ]
+        }
+      }
+    },
+    "find_ingredient_category": {
+      "name": "find_ingredient_category",
+      "scenario": "kitchen",
+      "required": [
+        "ingredient_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "ingredient_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "find_ingredient_category",
+        "description": "Find the category of a specific ingredient.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "ingredient_name": {
+              "type": "string",
+              "description": "Name of the ingredient"
+            }
+          },
+          "required": [
+            "ingredient_name"
+          ]
+        }
+      }
+    },
+    "get_current_shopping_list": {
+      "name": "get_current_shopping_list",
+      "scenario": "kitchen",
+      "required": [
+        "user_id"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "tool_name": "get_current_shopping_list",
+        "description": "Retrieve the user's current shopping list.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string",
+              "description": "User ID"
+            }
+          },
+          "required": [
+            "user_id"
+          ]
+        }
+      }
+    },
+    "get_recipe_nutritional_characteristics": {
+      "name": "get_recipe_nutritional_characteristics",
+      "scenario": "kitchen",
+      "required": [
+        "recipe_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "recipe_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "get_recipe_nutritional_characteristics",
+        "description": "Retrieve nutritional characteristic tags for a specific recipe.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "recipe_name": {
+              "type": "string",
+              "description": "Name of the recipe"
+            }
+          },
+          "required": [
+            "recipe_name"
+          ]
+        }
+      }
+    },
+    "find_recipes_by_nutritional_characteristics": {
+      "name": "find_recipes_by_nutritional_characteristics",
+      "scenario": "kitchen",
+      "required": [
+        "characteristic"
+      ],
+      "optional": [],
+      "param_types": {
+        "characteristic": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "tool_name": "find_recipes_by_nutritional_characteristics",
+        "description": "Find all recipes matching specific nutritional characteristics.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "characteristic": {
+              "type": "string",
+              "description": "Nutritional characteristic tag (e.g., 'high_protein', 'low_fat', 'high_fiber', 'gluten_free', 'vegan')"
+            }
+          },
+          "required": [
+            "characteristic"
+          ]
+        }
+      }
+    },
+    "get_all_ingredient_names": {
+      "name": "get_all_ingredient_names",
+      "scenario": "kitchen",
+      "required": [],
+      "optional": [],
+      "param_types": {},
+      "state_changing": false,
+      "raw": {
+        "tool_name": "get_all_ingredient_names",
+        "description": "Retrieve the names of all available ingredients.",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+      }
+    },
+    "add_product": {
+      "name": "add_product",
+      "scenario": "retail",
+      "required": [
+        "product_name",
+        "category",
+        "price",
+        "tax_rate",
+        "discount",
+        "nutritional_characteristics",
+        "taste",
+        "country_of_origin"
+      ],
+      "optional": [
+        "nutrition",
+        "allergens"
+      ],
+      "param_types": {
+        "product_name": "string",
+        "category": "string",
+        "price": "number",
+        "tax_rate": "number",
+        "discount": "number",
+        "nutritional_characteristics": "array",
+        "taste": "array",
+        "country_of_origin": "string",
+        "nutrition": "object",
+        "allergens": "array"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "add_product",
+          "description": "Add or update a product in the global catalog. Product is keyed by 'name'. Price is tax-inclusive. Discount is a factor (1.0 = full price).",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "product_name": {
+                "type": "string",
+                "description": "Unique product name (primary key)."
+              },
+              "category": {
+                "type": "string"
+              },
+              "price": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Shelf price including tax."
+              },
+              "tax_rate": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Tax rate (e.g., 0.08 for 8%)."
+              },
+              "discount": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1.0,
+                "description": "Discount factor: final amount = price * discount."
+              },
+              "nutritional_characteristics": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "low_calories",
+                    "low_fat",
+                    "low_sugar",
+                    "low_sodium",
+                    "no_additives",
+                    "high_fiber",
+                    "high_protein",
+                    "high_calcium",
+                    "sugar_free",
+                    "gluten_free",
+                    "vegan"
+                  ]
+                },
+                "description": "Nutritional/health tags."
+              },
+              "taste": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "sweet",
+                    "salty",
+                    "spicy",
+                    "sour",
+                    "bitter",
+                    "umami",
+                    "mild",
+                    "savory"
+                  ]
+                },
+                "description": "Taste profiles."
+              },
+              "country_of_origin": {
+                "type": "string",
+                "description": "Country where the product originates."
+              },
+              "nutrition": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "basis": {
+                    "type": "string",
+                    "enum": [
+                      "PER_100G",
+                      "PER_SERVING"
+                    ]
+                  },
+                  "serving_size_g": {
+                    "type": "number"
+                  },
+                  "calories_kcal": {
+                    "type": "number"
+                  },
+                  "protein_g": {
+                    "type": "number"
+                  },
+                  "fat_g": {
+                    "type": "number"
+                  },
+                  "carbs_g": {
+                    "type": "number"
+                  },
+                  "sugar_g": {
+                    "type": "number"
+                  },
+                  "sodium_mg": {
+                    "type": "number"
+                  },
+                  "fiber_g": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "basis"
+                ]
+              },
+              "allergens": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "product_name",
+              "category",
+              "price",
+              "tax_rate",
+              "discount",
+              "nutritional_characteristics",
+              "taste",
+              "country_of_origin"
+            ]
+          }
+        }
+      }
+    },
+    "delete_product": {
+      "name": "delete_product",
+      "scenario": "retail",
+      "required": [
+        "product_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "product_name": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "delete_product",
+          "description": "Delete a product from the catalog by name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "product_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "product_name"
+            ]
+          }
+        }
+      }
+    },
+    "find_products_by_nutritional_characteristic": {
+      "name": "find_products_by_nutritional_characteristic",
+      "scenario": "retail",
+      "required": [
+        "characteristic"
+      ],
+      "optional": [],
+      "param_types": {
+        "characteristic": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "find_products_by_nutritional_characteristic",
+          "description": "Find all products that include a specific nutritional characteristic tag.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "characteristic": {
+                "type": "string",
+                "enum": [
+                  "low_calories",
+                  "low_fat",
+                  "low_sugar",
+                  "low_sodium",
+                  "no_additives",
+                  "high_fiber",
+                  "high_protein",
+                  "high_calcium",
+                  "sugar_free",
+                  "gluten_free",
+                  "vegan"
+                ]
+              }
+            },
+            "required": [
+              "characteristic"
+            ]
+          }
+        }
+      }
+    },
+    "find_products_by_taste": {
+      "name": "find_products_by_taste",
+      "scenario": "retail",
+      "required": [
+        "taste"
+      ],
+      "optional": [],
+      "param_types": {
+        "taste": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "find_products_by_taste",
+          "description": "Find all products that include a specific taste profile.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "taste": {
+                "type": "string",
+                "enum": [
+                  "sweet",
+                  "salty",
+                  "spicy",
+                  "sour",
+                  "bitter",
+                  "umami",
+                  "mild",
+                  "savory"
+                ]
+              }
+            },
+            "required": [
+              "taste"
+            ]
+          }
+        }
+      }
+    },
+    "find_products_by_country_of_origin": {
+      "name": "find_products_by_country_of_origin",
+      "scenario": "retail",
+      "required": [
+        "country"
+      ],
+      "optional": [],
+      "param_types": {
+        "country": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "find_products_by_country_of_origin",
+          "description": "Find all products from a specific country of origin (exact match).",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "country": {
+                "type": "string",
+                "description": "Country name (e.g., 'Italy', 'Japan')."
+              }
+            },
+            "required": [
+              "country"
+            ]
+          }
+        }
+      }
+    },
+    "get_price": {
+      "name": "get_price",
+      "scenario": "retail",
+      "required": [
+        "product_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "product_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_price",
+          "description": "Get the tax-inclusive price of a product by name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "product_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "product_name"
+            ]
+          }
+        }
+      }
+    },
+    "find_products_by_price_range": {
+      "name": "find_products_by_price_range",
+      "scenario": "retail",
+      "required": [
+        "min_price",
+        "max_price"
+      ],
+      "optional": [],
+      "param_types": {
+        "min_price": "number",
+        "max_price": "number"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "find_products_by_price_range",
+          "description": "Find all products with a price within a specified inclusive range.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "min_price": {
+                "type": "number",
+                "minimum": 0
+              },
+              "max_price": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "min_price",
+              "max_price"
+            ]
+          }
+        }
+      }
+    },
+    "get_tax_rate": {
+      "name": "get_tax_rate",
+      "scenario": "restaurant",
+      "required": [
+        "dish_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "dish_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_tax_rate",
+          "description": "Retrieve the tax rate for a specific dish by name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "dish_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dish_name"
+            ]
+          }
+        }
+      }
+    },
+    "get_category": {
+      "name": "get_category",
+      "scenario": "retail",
+      "required": [
+        "product_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "product_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_category",
+          "description": "Get the category of a product by name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "product_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "product_name"
+            ]
+          }
+        }
+      }
+    },
+    "get_discount": {
+      "name": "get_discount",
+      "scenario": "retail",
+      "required": [
+        "product_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "product_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_discount",
+          "description": "Get the discount factor of a product by name (1.0 = no discount).",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "product_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "product_name"
+            ]
+          }
+        }
+      }
+    },
+    "get_nutrition": {
+      "name": "get_nutrition",
+      "scenario": "retail",
+      "required": [
+        "product_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "product_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_nutrition",
+          "description": "Get nutrition facts for a product by name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "product_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "product_name"
+            ]
+          }
+        }
+      }
+    },
+    "list_discounted_products": {
+      "name": "list_discounted_products",
+      "scenario": "retail",
+      "required": [],
+      "optional": [],
+      "param_types": {},
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "list_discounted_products",
+          "description": "Return all product names where discount < 1.0.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {},
+            "required": []
+          }
+        }
+      }
+    },
+    "add_to_cart": {
+      "name": "add_to_cart",
+      "scenario": "retail",
+      "required": [
+        "user_id",
+        "product_name",
+        "qty",
+        "category",
+        "price",
+        "tax_rate",
+        "discount"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "product_name": "string",
+        "qty": "number",
+        "category": "string",
+        "price": "number",
+        "tax_rate": "number",
+        "discount": "number"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "add_to_cart",
+          "description": "Add quantity of a product to a user's cart.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string"
+              },
+              "product_name": {
+                "type": "string"
+              },
+              "qty": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "category": {
+                "type": "string"
+              },
+              "price": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Shelf price including tax."
+              },
+              "tax_rate": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Tax rate (e.g., 0.08 for 8%)."
+              },
+              "discount": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1.0,
+                "description": "Discount factor: final amount = price * discount."
+              }
+            },
+            "required": [
+              "user_id",
+              "product_name",
+              "qty",
+              "category",
+              "price",
+              "tax_rate",
+              "discount"
+            ]
+          }
+        }
+      }
+    },
+    "get_cart": {
+      "name": "get_cart",
+      "scenario": "retail",
+      "required": [
+        "user_id"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_cart",
+          "description": "Get all items in a user's cart.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "user_id"
+            ]
+          }
+        }
+      }
+    },
+    "remove_from_cart": {
+      "name": "remove_from_cart",
+      "scenario": "retail",
+      "required": [
+        "user_id",
+        "product_name",
+        "qty"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "product_name": "string",
+        "qty": "number"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "remove_from_cart",
+          "description": "Remove a quantity of a product from the user's cart.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string"
+              },
+              "product_name": {
+                "type": "string"
+              },
+              "qty": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "required": [
+              "user_id",
+              "product_name",
+              "qty"
+            ]
+          }
+        }
+      }
+    },
+    "clear_cart": {
+      "name": "clear_cart",
+      "scenario": "retail",
+      "required": [
+        "user_id"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "clear_cart",
+          "description": "Remove all items from a user's cart.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "user_id"
+            ]
+          }
+        }
+      }
+    },
+    "compute_total_payment": {
+      "name": "compute_total_payment",
+      "scenario": "restaurant",
+      "required": [
+        "user_id",
+        "dishes"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "dishes": "array"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "compute_total_payment",
+          "description": "Compute total payable amount for the specified dishes: sum(price * discount * qty).",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string",
+                "description": "The unique identifier of the user"
+              },
+              "dishes": {
+                "type": "array",
+                "description": "List of dishes to calculate total payment for",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "dish_name": {
+                      "type": "string",
+                      "description": "Name of the dish"
+                    },
+                    "quantity": {
+                      "type": "integer",
+                      "description": "Quantity of the dish to purchase"
+                    }
+                  },
+                  "required": [
+                    "dish_name",
+                    "quantity"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "user_id",
+              "dishes"
+            ]
+          }
+        }
+      }
+    },
+    "compute_total_tax": {
+      "name": "compute_total_tax",
+      "scenario": "restaurant",
+      "required": [
+        "user_id",
+        "dishes"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "dishes": "array"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "compute_total_tax",
+          "description": "Compute total tax amount for the specified dishes. Since price is tax-inclusive, tax per item = (price * tax_rate / (1 + tax_rate)) * discount * qty.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string",
+                "description": "The unique identifier of the user"
+              },
+              "dishes": {
+                "type": "array",
+                "description": "List of dishes to calculate total tax for",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "dish_name": {
+                      "type": "string",
+                      "description": "Name of the dish"
+                    },
+                    "quantity": {
+                      "type": "integer",
+                      "description": "Quantity of the dish to purchase"
+                    }
+                  },
+                  "required": [
+                    "dish_name",
+                    "quantity"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "user_id",
+              "dishes"
+            ]
+          }
+        }
+      }
+    },
+    "compute_total_nutrition": {
+      "name": "compute_total_nutrition",
+      "scenario": "restaurant",
+      "required": [
+        "user_id",
+        "dishes"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "dishes": "array"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "compute_total_nutrition",
+          "description": "Compute total nutrition values across all items for the specified dishes.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string",
+                "description": "The unique identifier of the user"
+              },
+              "dishes": {
+                "type": "array",
+                "description": "List of dishes to calculate total nutrition values for",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "dish_name": {
+                      "type": "string",
+                      "description": "Name of the dish"
+                    },
+                    "quantity": {
+                      "type": "integer",
+                      "description": "Quantity of the dish to purchase"
+                    }
+                  },
+                  "required": [
+                    "dish_name",
+                    "quantity"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "user_id",
+              "dishes"
+            ]
+          }
+        }
+      }
+    },
+    "get_shopping_list": {
+      "name": "get_shopping_list",
+      "scenario": "retail",
+      "required": [
+        "user_id"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_shopping_list",
+          "description": "Get shopping list from the user",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "user_id"
+            ]
+          }
+        }
+      }
+    },
+    "add_dish_to_catalog": {
+      "name": "add_dish_to_catalog",
+      "scenario": "restaurant",
+      "required": [
+        "dish_name",
+        "category",
+        "price",
+        "tax_rate",
+        "discount",
+        "nutritional_characteristics",
+        "taste",
+        "allergens",
+        "nutrition"
+      ],
+      "optional": [],
+      "param_types": {
+        "dish_name": "string",
+        "category": "string",
+        "price": "number",
+        "tax_rate": "number",
+        "discount": "number",
+        "nutritional_characteristics": "array",
+        "taste": "array",
+        "allergens": "array",
+        "nutrition": "object"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "add_dish_to_catalog",
+          "description": "Add or update a dish in the restaurant's catalog. Each dish must have a unique name, category, price, discount factor, nutritional tags, taste profile, allergens, and nutrition facts.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "dish_name": {
+                "type": "string",
+                "description": "Unique dish name (primary key)."
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "Pizza",
+                  "Pasta",
+                  "Salads",
+                  "Sandwiches & Panini",
+                  "Antipasti & Snacks",
+                  "Cheese & Olives",
+                  "Cold Cuts",
+                  "Steaks",
+                  "Handmade Bread"
+                ]
+              },
+              "price": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Shelf price including tax."
+              },
+              "tax_rate": {
+                "type": "number",
+                "minimum": 0,
+                "description": "Tax rate (e.g., 0.08 for 8%)."
+              },
+              "discount": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1.0,
+                "description": "Discount factor: final amount = price * discount."
+              },
+              "nutritional_characteristics": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "low_calories",
+                    "low_fat",
+                    "low_sugar",
+                    "low_sodium",
+                    "no_additives",
+                    "high_fiber",
+                    "high_protein",
+                    "high_calcium",
+                    "sugar_free",
+                    "gluten_free",
+                    "high_omega3",
+                    "vegan"
+                  ]
+                },
+                "description": "Nutritional/health tags."
+              },
+              "taste": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "sweet",
+                    "salty",
+                    "spicy",
+                    "sour",
+                    "bitter",
+                    "umami",
+                    "mild",
+                    "savory",
+                    "smoky"
+                  ]
+                },
+                "description": "Taste profiles."
+              },
+              "allergens": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "nutrition": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "basis": {
+                    "type": "string",
+                    "enum": [
+                      "PER_100G",
+                      "PER_SERVING"
+                    ]
+                  },
+                  "serving_size_g": {
+                    "type": "number"
+                  },
+                  "calories_kcal": {
+                    "type": "number"
+                  },
+                  "protein_g": {
+                    "type": "number"
+                  },
+                  "fat_g": {
+                    "type": "number"
+                  },
+                  "carbs_g": {
+                    "type": "number"
+                  },
+                  "sugar_g": {
+                    "type": "number"
+                  },
+                  "sodium_mg": {
+                    "type": "number"
+                  },
+                  "fiber_g": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "basis"
+                ]
+              }
+            },
+            "required": [
+              "dish_name",
+              "category",
+              "price",
+              "tax_rate",
+              "discount",
+              "nutritional_characteristics",
+              "taste",
+              "allergens",
+              "nutrition"
+            ]
+          }
+        }
+      }
+    },
+    "remove_dish_from_catalog": {
+      "name": "remove_dish_from_catalog",
+      "scenario": "restaurant",
+      "required": [
+        "dish_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "dish_name": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "remove_dish_from_catalog",
+          "description": "Remove a dish from the catalog by its exact name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "dish_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dish_name"
+            ]
+          }
+        }
+      }
+    },
+    "update_dish_price": {
+      "name": "update_dish_price",
+      "scenario": "restaurant",
+      "required": [
+        "dish_name",
+        "new_price"
+      ],
+      "optional": [],
+      "param_types": {
+        "dish_name": "string",
+        "new_price": "number"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "update_dish_price",
+          "description": "Update the price of an existing dish in the catalog.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "dish_name": {
+                "type": "string"
+              },
+              "new_price": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "dish_name",
+              "new_price"
+            ]
+          }
+        }
+      }
+    },
+    "update_dish_discount": {
+      "name": "update_dish_discount",
+      "scenario": "restaurant",
+      "required": [
+        "dish_name",
+        "new_discount"
+      ],
+      "optional": [],
+      "param_types": {
+        "dish_name": "string",
+        "new_discount": "number"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "update_dish_discount",
+          "description": "Update the discount factor for an existing dish.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "dish_name": {
+                "type": "string"
+              },
+              "new_discount": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1.0
+              }
+            },
+            "required": [
+              "dish_name",
+              "new_discount"
+            ]
+          }
+        }
+      }
+    },
+    "get_dish_nutrition": {
+      "name": "get_dish_nutrition",
+      "scenario": "restaurant",
+      "required": [
+        "dish_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "dish_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_dish_nutrition",
+          "description": "Retrieve detailed nutrition information for a specific dish by name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "dish_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dish_name"
+            ]
+          }
+        }
+      }
+    },
+    "get_dish_allergens": {
+      "name": "get_dish_allergens",
+      "scenario": "restaurant",
+      "required": [
+        "dish_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "dish_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_dish_allergens",
+          "description": "Retrieve allergen information for a specific dish by name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "dish_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dish_name"
+            ]
+          }
+        }
+      }
+    },
+    "get_dish_taste_profile": {
+      "name": "get_dish_taste_profile",
+      "scenario": "restaurant",
+      "required": [
+        "dish_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "dish_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_dish_taste_profile",
+          "description": "Retrieve the taste profile (e.g., sweet, spicy) for a specific dish by name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "dish_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dish_name"
+            ]
+          }
+        }
+      }
+    },
+    "get_dish_price": {
+      "name": "get_dish_price",
+      "scenario": "restaurant",
+      "required": [
+        "dish_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "dish_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_dish_price",
+          "description": "Get only the current shelf price (including tax) for a specific dish by name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "dish_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dish_name"
+            ]
+          }
+        }
+      }
+    },
+    "get_dish_discount": {
+      "name": "get_dish_discount",
+      "scenario": "restaurant",
+      "required": [
+        "dish_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "dish_name": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_dish_discount",
+          "description": "Get only the current discount factor for a specific dish by name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "dish_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dish_name"
+            ]
+          }
+        }
+      }
+    },
+    "find_dishes_by_category": {
+      "name": "find_dishes_by_category",
+      "scenario": "restaurant",
+      "required": [
+        "category"
+      ],
+      "optional": [],
+      "param_types": {
+        "category": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "find_dishes_by_category",
+          "description": "List all dishes belonging to a specific category (e.g., 'Pizza', 'Salads').",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "category": {
+                "type": "string",
+                "enum": [
+                  "Pizza",
+                  "Pasta",
+                  "Salads",
+                  "Sandwiches & Panini",
+                  "Antipasti & Snacks",
+                  "Cheese & Olives",
+                  "Cold Cuts",
+                  "Steaks",
+                  "Handmade Bread"
+                ]
+              }
+            },
+            "required": [
+              "category"
+            ]
+          }
+        }
+      }
+    },
+    "find_dishes_by_nutritional_tag": {
+      "name": "find_dishes_by_nutritional_tag",
+      "scenario": "restaurant",
+      "required": [
+        "tag"
+      ],
+      "optional": [],
+      "param_types": {
+        "tag": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "find_dishes_by_nutritional_tag",
+          "description": "Find all dishes that have a specific nutritional characteristic tag (e.g., 'low_calories', 'vegan').",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "tag": {
+                "type": "string",
+                "enum": [
+                  "low_calories",
+                  "low_fat",
+                  "low_sugar",
+                  "low_sodium",
+                  "no_additives",
+                  "high_fiber",
+                  "high_protein",
+                  "high_calcium",
+                  "sugar_free",
+                  "gluten_free",
+                  "high_omega3",
+                  "vegan"
+                ]
+              }
+            },
+            "required": [
+              "tag"
+            ]
+          }
+        }
+      }
+    },
+    "find_dishes_by_taste": {
+      "name": "find_dishes_by_taste",
+      "scenario": "restaurant",
+      "required": [
+        "taste"
+      ],
+      "optional": [],
+      "param_types": {
+        "taste": "string"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "find_dishes_by_taste",
+          "description": "Find all dishes that match a specific taste profile (e.g., 'spicy', 'sweet').",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "taste": {
+                "type": "string",
+                "enum": [
+                  "sweet",
+                  "salty",
+                  "spicy",
+                  "sour",
+                  "bitter",
+                  "umami",
+                  "mild",
+                  "savory",
+                  "smoky"
+                ]
+              }
+            },
+            "required": [
+              "taste"
+            ]
+          }
+        }
+      }
+    },
+    "add_dish_to_order": {
+      "name": "add_dish_to_order",
+      "scenario": "restaurant",
+      "required": [
+        "user_id",
+        "dish_name",
+        "quantity"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "dish_name": "string",
+        "quantity": "number"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "add_dish_to_order",
+          "description": "Add one or more servings of a dish to a user's current order. Order is keyed by user_id.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string"
+              },
+              "dish_name": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "required": [
+              "user_id",
+              "dish_name",
+              "quantity"
+            ]
+          }
+        }
+      }
+    },
+    "remove_dish_from_order": {
+      "name": "remove_dish_from_order",
+      "scenario": "restaurant",
+      "required": [
+        "user_id",
+        "dish_name",
+        "quantity"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "dish_name": "string",
+        "quantity": "number"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "remove_dish_from_order",
+          "description": "Remove a specified quantity of a dish from a user's current order.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string"
+              },
+              "dish_name": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "required": [
+              "user_id",
+              "dish_name",
+              "quantity"
+            ]
+          }
+        }
+      }
+    },
+    "clear_user_order": {
+      "name": "clear_user_order",
+      "scenario": "restaurant",
+      "required": [
+        "user_id"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "clear_user_order",
+          "description": "Clear all items from a user's current order.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "user_id"
+            ]
+          }
+        }
+      }
+    },
+    "get_user_order_summary": {
+      "name": "get_user_order_summary",
+      "scenario": "restaurant",
+      "required": [
+        "user_id"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_user_order_summary",
+          "description": "Retrieve the full list of dishes and quantities in a user's current order.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "user_id"
+            ]
+          }
+        }
+      }
+    },
+    "list_all_discounted_dishes": {
+      "name": "list_all_discounted_dishes",
+      "scenario": "restaurant",
+      "required": [],
+      "optional": [],
+      "param_types": {},
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "list_all_discounted_dishes",
+          "description": "Return a list of all dish names that currently have a discount factor less than 1.0.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {}
+          }
+        }
+      }
+    },
+    "filter_dishes_by_price_range": {
+      "name": "filter_dishes_by_price_range",
+      "scenario": "restaurant",
+      "required": [
+        "min_price",
+        "max_price"
+      ],
+      "optional": [],
+      "param_types": {
+        "min_price": "number",
+        "max_price": "number"
+      },
+      "state_changing": false,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "filter_dishes_by_price_range",
+          "description": "Find all dishes with a price within a specified inclusive range.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "min_price": {
+                "type": "number",
+                "minimum": 0
+              },
+              "max_price": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "min_price",
+              "max_price"
+            ]
+          }
+        }
+      }
+    },
+    "create_set_meal": {
+      "name": "create_set_meal",
+      "scenario": "restaurant",
+      "required": [
+        "set_meal_name",
+        "included_dishes",
+        "set_meal_price",
+        "set_meal_discount"
+      ],
+      "optional": [],
+      "param_types": {
+        "set_meal_name": "string",
+        "included_dishes": "array",
+        "set_meal_price": "number",
+        "set_meal_discount": "number"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "create_set_meal",
+          "description": "Create a new set meal by combining existing dishes. The set meal will have a fixed name, a composite price, and a discount factor.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "set_meal_name": {
+                "type": "string"
+              },
+              "included_dishes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "dish_name": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    }
+                  },
+                  "required": [
+                    "dish_name",
+                    "quantity"
+                  ]
+                }
+              },
+              "set_meal_price": {
+                "type": "number",
+                "minimum": 0
+              },
+              "set_meal_discount": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1.0
+              }
+            },
+            "required": [
+              "set_meal_name",
+              "included_dishes",
+              "set_meal_price",
+              "set_meal_discount"
+            ]
+          }
+        }
+      }
+    },
+    "get_set_meal_details": {
+      "name": "get_set_meal_details",
+      "scenario": "restaurant",
+      "required": [
+        "set_meal_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "set_meal_name": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "get_set_meal_details",
+          "description": "Retrieve the composition, price, and discount of a set meal by its name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "set_meal_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "set_meal_name"
+            ]
+          }
+        }
+      }
+    },
+    "add_set_meal_to_order": {
+      "name": "add_set_meal_to_order",
+      "scenario": "restaurant",
+      "required": [
+        "user_id",
+        "set_meal_name",
+        "quantity"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "set_meal_name": "string",
+        "quantity": "number"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "add_set_meal_to_order",
+          "description": "Add a pre-defined set meal to a user's order. The set meal is treated as a single item with its own price and discount.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string"
+              },
+              "set_meal_name": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "required": [
+              "user_id",
+              "set_meal_name",
+              "quantity"
+            ]
+          }
+        }
+      }
+    },
+    "find_set_meals_containing_dish": {
+      "name": "find_set_meals_containing_dish",
+      "scenario": "restaurant",
+      "required": [
+        "dish_name"
+      ],
+      "optional": [],
+      "param_types": {
+        "dish_name": "string"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "find_set_meals_containing_dish",
+          "description": "Find all set meals that include a specific dish by name.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "dish_name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "dish_name"
+            ]
+          }
+        }
+      }
+    },
+    "remove_set_meal_from_order": {
+      "name": "remove_set_meal_from_order",
+      "scenario": "restaurant",
+      "required": [
+        "user_id",
+        "set_meal_name",
+        "quantity"
+      ],
+      "optional": [],
+      "param_types": {
+        "user_id": "string",
+        "set_meal_name": "string",
+        "quantity": "number"
+      },
+      "state_changing": true,
+      "raw": {
+        "type": "function",
+        "function": {
+          "tool_name": "remove_set_meal_from_order",
+          "description": "Remove a specified quantity of a pre-defined set meal from a user's order. The set meal is treated as a single item with its own price and discount.",
+          "parameters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "user_id": {
+                "type": "string"
+              },
+              "set_meal_name": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "required": [
+              "user_id",
+              "set_meal_name",
+              "quantity"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "kitchen": [
+      "add_recipe_to_menu",
+      "remove_recipe_from_menu",
+      "get_current_menu",
+      "tally_total_nutritional_characteristics",
+      "tally_total_tastes",
+      "add_to_shopping_list",
+      "remove_from_shopping_list",
+      "compute_total_nutritions",
+      "get_cooking_steps",
+      "get_recipe_allergens",
+      "find_recipes_by_allergen",
+      "get_recipe_taste",
+      "find_recipes_by_taste",
+      "get_recipe_ingredients",
+      "find_recipes_by_ingredient",
+      "get_ingredient_shelf_life",
+      "find_ingredients_by_expiry_date",
+      "get_ingredient_location",
+      "find_ingredients_by_location",
+      "get_ingredient_nutrition",
+      "get_ingredient_quantity",
+      "get_all_recipe_names",
+      "get_ingredients_by_category",
+      "find_ingredient_category",
+      "get_current_shopping_list",
+      "get_recipe_nutritional_characteristics",
+      "find_recipes_by_nutritional_characteristics",
+      "get_all_ingredient_names"
+    ],
+    "retail": [
+      "add_product",
+      "delete_product",
+      "find_products_by_nutritional_characteristic",
+      "find_products_by_taste",
+      "find_products_by_country_of_origin",
+      "get_price",
+      "find_products_by_price_range",
+      "get_tax_rate",
+      "get_category",
+      "get_discount",
+      "get_nutrition",
+      "list_discounted_products",
+      "add_to_cart",
+      "get_cart",
+      "remove_from_cart",
+      "clear_cart",
+      "compute_total_payment",
+      "compute_total_tax",
+      "compute_total_nutrition",
+      "get_shopping_list"
+    ],
+    "order": [
+      "add_dish_to_catalog",
+      "remove_dish_from_catalog",
+      "update_dish_price",
+      "update_dish_discount",
+      "get_dish_nutrition",
+      "get_tax_rate",
+      "get_dish_allergens",
+      "get_dish_taste_profile",
+      "get_dish_price",
+      "get_dish_discount",
+      "find_dishes_by_category",
+      "find_dishes_by_nutritional_tag",
+      "find_dishes_by_taste",
+      "add_dish_to_order",
+      "remove_dish_from_order",
+      "clear_user_order",
+      "get_user_order_summary",
+      "compute_total_payment",
+      "compute_total_tax",
+      "compute_total_nutrition",
+      "list_all_discounted_dishes",
+      "filter_dishes_by_price_range",
+      "create_set_meal",
+      "get_set_meal_details",
+      "add_set_meal_to_order",
+      "find_set_meals_containing_dish",
+      "remove_set_meal_from_order"
+    ],
+    "restaurant": [
+      "add_dish_to_catalog",
+      "remove_dish_from_catalog",
+      "update_dish_price",
+      "update_dish_discount",
+      "get_dish_nutrition",
+      "get_dish_allergens",
+      "get_tax_rate",
+      "get_dish_taste_profile",
+      "get_dish_price",
+      "get_dish_discount",
+      "find_dishes_by_category",
+      "find_dishes_by_nutritional_tag",
+      "find_dishes_by_taste",
+      "add_dish_to_order",
+      "remove_dish_from_order",
+      "clear_user_order",
+      "get_user_order_summary",
+      "compute_total_payment",
+      "compute_total_tax",
+      "compute_total_nutrition",
+      "list_all_discounted_dishes",
+      "filter_dishes_by_price_range",
+      "create_set_meal",
+      "get_set_meal_details",
+      "add_set_meal_to_order",
+      "remove_set_meal_from_order",
+      "find_set_meals_containing_dish"
+    ]
+  }
+}

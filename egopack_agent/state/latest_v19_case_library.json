@@ -1,0 +1,34 @@
+{
+  "updated_at": "2026-06-20T15:41:44+0800",
+  "run_id": "v19_case_library_20260620_1545",
+  "case_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_case_library_v19",
+  "manifest": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_case_library_v19/gt100_case_manifest.json",
+  "reflection_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V19_ROUTE_CORRECTION_REFLECTION_v19_case_library_20260620_1545.md",
+  "case_audit_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V19_CASE_LIBRARY_AUDIT_v19_case_library_20260620_1545.md",
+  "summary": {
+    "run_id": "v19_case_library_20260620_1545",
+    "source_pool": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v16/gt100_pool.jsonl",
+    "source_manifest": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v16/gt100_pool_manifest.json",
+    "input_pool_rows": 696,
+    "cases": 695,
+    "replay_joint100_rate": 1.0,
+    "all_excluded_final309": true,
+    "all_excluded_val41": true,
+    "scenario_distribution": {
+      "kitchen": 117,
+      "order": 92,
+      "restaurant": 160,
+      "retail": 326
+    },
+    "task_type_distribution": {
+      "branch-then-mutation+aggregate": 658,
+      "cart/order/menu mutation": 35,
+      "aggregate-required": 2
+    },
+    "v16_manifest_total_pool_rows": 696,
+    "uses_final_hidden_metadata": false,
+    "uses_val41_label_for_training": false,
+    "for_final_candidate": false
+  },
+  "final_run": false
+}

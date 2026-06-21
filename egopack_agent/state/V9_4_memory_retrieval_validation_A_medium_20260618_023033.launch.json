@@ -1,0 +1,9 @@
+{
+  "run_id": "V9_4_memory_retrieval_validation_A_medium_20260618_023033",
+  "stage": "validation_A_medium",
+  "version": "V9_4_memory_retrieval",
+  "limit_per_scenario": "30",
+  "pid": 993490,
+  "log": "logs/V9_4_memory_retrieval_validation_A_medium_20260618_023033.launcher.log",
+  "started_at": "2026-06-18T02:30:33+0800"
+}

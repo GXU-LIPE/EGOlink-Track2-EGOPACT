@@ -1,0 +1,41 @@
+{
+  "updated_at": "2026-06-20T15:22:33+0800",
+  "run_id": "v18_val41_gt100_pool_20260620_1530",
+  "manifest": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v18_val41_oracle/val41_gt100_manifest.json",
+  "pool": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v18_val41_oracle/val41_gt100_pool.jsonl",
+  "report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V18_VAL41_GT100_POOL_AUDIT_v18_val41_gt100_pool_20260620_1530.md",
+  "summary": {
+    "run_id": "v18_val41_gt100_pool_20260620_1530",
+    "version": "V18_VAL41_ORACLE_GT100_POOL",
+    "status": "PASS",
+    "source_split": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/state/materialized_splits/validation_A_limit30",
+    "val41_total_tasks": 41,
+    "gt_replay_attempted": 41,
+    "joint100_retained": 41,
+    "replay_failed": 0,
+    "expected_min_joint100": 20,
+    "passed_min_gate": true,
+    "uses_val41_gt": true,
+    "uses_final_hidden_metadata": false,
+    "for_final_candidate": false,
+    "by_spec": {
+      "kitchen1": 3,
+      "kitchen2": 1,
+      "kitchen3": 4,
+      "order1": 8,
+      "restaurant1": 1,
+      "restaurant2": 1,
+      "restaurant3": 4,
+      "restaurant4": 3,
+      "retail1": 1,
+      "retail2": 2,
+      "retail3": 4,
+      "retail4": 5,
+      "retail7": 2,
+      "retail8": 2
+    },
+    "failed_examples": [],
+    "pool_path": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v18_val41_oracle/val41_gt100_pool.jsonl"
+  },
+  "final_run": false
+}

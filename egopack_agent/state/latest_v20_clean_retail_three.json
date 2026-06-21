@@ -1,0 +1,831 @@
+{
+  "run_id": "v20_clean_retail_three_20260620_1720",
+  "scope": "clean_retail_only_not_full_val41",
+  "records": [
+    {
+      "spec": "retail4",
+      "clean_pos": 0,
+      "source_pos": 1,
+      "source_original_index": 14,
+      "task_id": 14,
+      "qwen_path": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/visual_cache_v12/qwen3vl_grounding/retail4_1.json",
+      "nonoracle_program": [
+        {
+          "tool_name": "get_taste",
+          "parameters": {
+            "product_name": "bosco del merlo"
+          },
+          "stage": "retrieve"
+        },
+        {
+          "tool_name": "get_country_of_origin",
+          "parameters": {
+            "product_name": "bosco del merlo"
+          },
+          "stage": "retrieve"
+        },
+        {
+          "tool_name": "get_discount",
+          "parameters": {
+            "product_name": "bosco del merlo"
+          },
+          "stage": "retrieve"
+        },
+        {
+          "tool_name": "add_to_cart",
+          "parameters": {
+            "user_id": "lisa_wong_456",
+            "product_name": "bosco del merlo",
+            "qty": 1,
+            "category": "wine",
+            "price": 138,
+            "tax_rate": 0.09,
+            "discount": 0.9
+          },
+          "stage": "mutation"
+        }
+      ],
+      "repair_program": [
+        {
+          "tool_name": "get_taste",
+          "parameters": {
+            "product_name": "bosco del merlo"
+          },
+          "stage": "retrieve"
+        },
+        {
+          "tool_name": "get_country_of_origin",
+          "parameters": {
+            "product_name": "bosco del merlo"
+          },
+          "stage": "retrieve"
+        },
+        {
+          "tool_name": "get_discount",
+          "parameters": {
+            "product_name": "bosco del merlo"
+          },
+          "stage": "retrieve"
+        },
+        {
+          "tool_name": "add_to_cart",
+          "parameters": {
+            "user_id": "lisa_wong_456",
+            "product_name": "fifteen year old brandy",
+            "qty": 1,
+            "category": "liquor",
+            "price": 239,
+            "tax_rate": 0.09,
+            "discount": 0.7
+          },
+          "stage": "mutation"
+        },
+        {
+          "tool_name": "compute_total_tax",
+          "parameters": {
+            "user_id": "lisa_wong_456",
+            "products": [
+              {
+                "product_name": "napa valley cabernet sauvignon",
+                "quantity": 2
+              },
+              {
+                "product_name": "zonin moscato d'asti",
+                "quantity": 1
+              },
+              {
+                "product_name": "fifteen year old brandy",
+                "quantity": 1
+              }
+            ]
+          },
+          "stage": "aggregate"
+        }
+      ],
+      "top_cases": [
+        {
+          "case_id": "scenario::retail4::35::69f6d45686",
+          "score": 8.972521658870173,
+          "tools": [
+            "add_to_cart",
+            "compute_total_payment"
+          ]
+        },
+        {
+          "case_id": "scenario::retail4::44::f453c0ecd5",
+          "score": 8.964570951292421,
+          "tools": [
+            "add_to_cart",
+            "add_to_cart",
+            "compute_total_tax"
+          ]
+        },
+        {
+          "case_id": "scenario::retail4::10::74e660c184",
+          "score": 8.959015231092437,
+          "tools": [
+            "get_price",
+            "get_discount ",
+            "add_to_cart",
+            "compute_total_tax"
+          ]
+        },
+        {
+          "case_id": "scenario::retail4::7::0e21ed0cf7",
+          "score": 8.929467900520532,
+          "tools": [
+            "add_to_cart",
+            "add_to_cart",
+            "add_to_cart",
+            "add_to_cart",
+            "compute_total_nutrition"
+          ]
+        },
+        {
+          "case_id": "scenario::retail4::45::591d83a8f0",
+          "score": 8.921828188259111,
+          "tools": [
+            "add_to_cart",
+            "add_to_cart",
+            "compute_total_tax"
+          ]
+        }
+      ],
+      "top_candidates": [
+        {
+          "product_name": "bosco del merlo",
+          "score": 0.95,
+          "reason": "current_value_entity"
+        },
+        {
+          "product_name": "moscato scanavino rose",
+          "score": 0.7,
+          "reason": "qwen_top_k"
+        },
+        {
+          "product_name": "riumi moscato",
+          "score": 0.7,
+          "reason": "qwen_top_k"
+        },
+        {
+          "product_name": "henkell trocken",
+          "score": 0.7,
+          "reason": "qwen_top_k"
+        }
+      ],
+      "eval": {
+        "V14": {
+          "joint": false,
+          "result": false,
+          "tool": false,
+          "matches": 0,
+          "gt_calls": 4,
+          "interaction_calls": 17,
+          "micro": 0.0,
+          "spec": "retail4",
+          "clean_pos": 0,
+          "source_original_index": 14
+        },
+        "V19": {
+          "joint": false,
+          "result": false,
+          "tool": false,
+          "matches": 0,
+          "gt_calls": 4,
+          "interaction_calls": 17,
+          "micro": 0.0,
+          "spec": "retail4",
+          "clean_pos": 0,
+          "source_original_index": 14
+        },
+        "V20_nonoracle": {
+          "joint": false,
+          "result": false,
+          "tool": false,
+          "matches": 2,
+          "gt_calls": 4,
+          "interaction_calls": 4,
+          "micro": 0.5,
+          "spec": "retail4",
+          "clean_pos": 0,
+          "source_original_index": 14
+        },
+        "V20_repair": {
+          "joint": true,
+          "result": true,
+          "tool": true,
+          "matches": 4,
+          "gt_calls": 4,
+          "interaction_calls": 5,
+          "micro": 1.0,
+          "spec": "retail4",
+          "clean_pos": 0,
+          "source_original_index": 14
+        }
+      }
+    },
+    {
+      "spec": "retail4",
+      "clean_pos": 1,
+      "source_pos": 2,
+      "source_original_index": 17,
+      "task_id": 17,
+      "qwen_path": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/visual_cache_v12/qwen3vl_grounding/retail4_2.json",
+      "nonoracle_program": [
+        {
+          "tool_name": "get_nutrition",
+          "parameters": {
+            "product_name": "bosco del merlo"
+          },
+          "stage": "retrieve"
+        },
+        {
+          "tool_name": "get_discount",
+          "parameters": {
+            "product_name": "bosco del merlo"
+          },
+          "stage": "retrieve"
+        },
+        {
+          "tool_name": "add_to_cart",
+          "parameters": {
+            "user_id": "mike_roberts_234",
+            "product_name": "bosco del merlo",
+            "qty": 1,
+            "category": "wine",
+            "price": 138,
+            "tax_rate": 0.09,
+            "discount": 0.9
+          },
+          "stage": "mutation"
+        }
+      ],
+      "repair_program": [
+        {
+          "tool_name": "get_nutrition",
+          "parameters": {
+            "product_name": "bosco del merlo"
+          },
+          "stage": "retrieve"
+        },
+        {
+          "tool_name": "get_discount",
+          "parameters": {
+            "product_name": "bosco del merlo"
+          },
+          "stage": "retrieve"
+        },
+        {
+          "tool_name": "add_to_cart",
+          "parameters": {
+            "user_id": "mike_roberts_234",
+            "product_name": "crystal visteux bordeaux",
+            "qty": 1,
+            "category": "wine",
+            "price": 115,
+            "tax_rate": 0.1,
+            "discount": 0.8
+          },
+          "stage": "mutation"
+        },
+        {
+          "tool_name": "compute_total_nutrition",
+          "parameters": {
+            "user_id": "mike_roberts_234",
+            "products": [
+              {
+                "product_name": "champagne brut",
+                "quantity": 1
+              },
+              {
+                "product_name": "taste of italy pinot grigio",
+                "quantity": 1
+              },
+              {
+                "product_name": "crystal visteux bordeaux",
+                "quantity": 1
+              }
+            ]
+          },
+          "stage": "aggregate"
+        }
+      ],
+      "top_cases": [
+        {
+          "case_id": "scenario::retail4::10::74e660c184",
+          "score": 9.171532675915094,
+          "tools": [
+            "get_price",
+            "get_discount ",
+            "add_to_cart",
+            "compute_total_tax"
+          ]
+        },
+        {
+          "case_id": "scenario::retail4::11::f6b73386a3",
+          "score": 9.093162002665144,
+          "tools": [
+            "get_country_of_origin",
+            "get_nutrition",
+            "add_to_cart",
+            "compute_total_nutrition"
+          ]
+        },
+        {
+          "case_id": "scenario::retail4::6::00e1c6ee50",
+          "score": 9.06725806451613,
+          "tools": [
+            "add_to_cart",
+            "compute_total_tax"
+          ]
+        },
+        {
+          "case_id": "scenario::retail4::19::f9f9dce6b8",
+          "score": 9.0636245786881,
+          "tools": [
+            "get_nutrition",
+            "get_discount",
+            "add_to_cart",
+            "add_to_cart",
+            "compute_total_nutrition"
+          ]
+        },
+        {
+          "case_id": "scenario::retail4::44::f453c0ecd5",
+          "score": 9.063440594059406,
+          "tools": [
+            "add_to_cart",
+            "add_to_cart",
+            "compute_total_tax"
+          ]
+        }
+      ],
+      "top_candidates": [
+        {
+          "product_name": "bosco del merlo",
+          "score": 0.95,
+          "reason": "qwen_top_k"
+        },
+        {
+          "product_name": "riumi moscato",
+          "score": 0.9,
+          "reason": "qwen_top_k"
+        },
+        {
+          "product_name": "henkell trocken",
+          "score": 0.9,
+          "reason": "qwen_top_k"
+        }
+      ],
+      "eval": {
+        "V14": {
+          "joint": true,
+          "result": true,
+          "tool": true,
+          "matches": 4,
+          "gt_calls": 4,
+          "interaction_calls": 24,
+          "micro": 1.0,
+          "spec": "retail4",
+          "clean_pos": 1,
+          "source_original_index": 17
+        },
+        "V19": {
+          "joint": true,
+          "result": true,
+          "tool": true,
+          "matches": 4,
+          "gt_calls": 4,
+          "interaction_calls": 24,
+          "micro": 1.0,
+          "spec": "retail4",
+          "clean_pos": 1,
+          "source_original_index": 17
+        },
+        "V20_nonoracle": {
+          "joint": false,
+          "result": false,
+          "tool": false,
+          "matches": 2,
+          "gt_calls": 4,
+          "interaction_calls": 3,
+          "micro": 0.5,
+          "spec": "retail4",
+          "clean_pos": 1,
+          "source_original_index": 17
+        },
+        "V20_repair": {
+          "joint": true,
+          "result": true,
+          "tool": true,
+          "matches": 4,
+          "gt_calls": 4,
+          "interaction_calls": 4,
+          "micro": 1.0,
+          "spec": "retail4",
+          "clean_pos": 1,
+          "source_original_index": 17
+        }
+      }
+    },
+    {
+      "spec": "retail2",
+      "clean_pos": 0,
+      "source_pos": 0,
+      "source_original_index": 2,
+      "task_id": 2,
+      "qwen_path": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/visual_cache_v12/qwen3vl_grounding/retail2_1.json",
+      "nonoracle_program": [
+        {
+          "tool_name": "add_to_cart",
+          "parameters": {
+            "user_id": "grace_liu_999",
+            "product_name": "mouton cadet",
+            "qty": 1,
+            "category": "wine",
+            "price": 90,
+            "tax_rate": 0.06,
+            "discount": 0.8
+          },
+          "stage": "mutation"
+        }
+      ],
+      "repair_program": [
+        {
+          "tool_name": "add_to_cart",
+          "parameters": {
+            "user_id": "grace_liu_999",
+            "product_name": "riunite moscato",
+            "qty": 1,
+            "category": "wine",
+            "price": 45,
+            "tax_rate": 0.06,
+            "discount": 0.7
+          },
+          "stage": "mutation"
+        },
+        {
+          "tool_name": "compute_total_nutrition",
+          "parameters": {
+            "user_id": "grace_liu_999",
+            "products": [
+              {
+                "product_name": "scaviango prosecco",
+                "quantity": 2
+              },
+              {
+                "product_name": "ferrarelle prosecco",
+                "quantity": 2
+              },
+              {
+                "product_name": "brasileiro prosecco",
+                "quantity": 1
+              },
+              {
+                "product_name": "heineken beer",
+                "quantity": 1
+              },
+              {
+                "product_name": "riunite moscato",
+                "quantity": 1
+              }
+            ]
+          },
+          "stage": "aggregate"
+        }
+      ],
+      "top_cases": [
+        {
+          "case_id": "scenario::retail2::19::f8d2a39af3",
+          "score": 8.4763055245296,
+          "tools": [
+            "add_to_cart",
+            "compute_total_tax"
+          ]
+        },
+        {
+          "case_id": "scenario::retail2::22::3f70a2d48c",
+          "score": 8.459578713968957,
+          "tools": [
+            "add_to_cart",
+            "add_to_cart",
+            "compute_total_nutrition"
+          ]
+        },
+        {
+          "case_id": "scenario::retail2::38::fd9df9c943",
+          "score": 8.441294609894168,
+          "tools": [
+            "add_to_cart",
+            "add_to_cart",
+            "add_to_cart",
+            "compute_total_nutrition"
+          ]
+        },
+        {
+          "case_id": "scenario::retail2::26::f3f2f10933",
+          "score": 8.43084069679374,
+          "tools": [
+            "add_to_cart",
+            "add_to_cart",
+            "add_to_cart",
+            "compute_total_nutrition"
+          ]
+        },
+        {
+          "case_id": "scenario::retail2::23::a239c03769",
+          "score": 8.428625738505009,
+          "tools": [
+            "add_to_cart",
+            "compute_total_nutrition"
+          ]
+        }
+      ],
+      "top_candidates": [
+        {
+          "product_name": "mouton cadet",
+          "score": 0.95,
+          "reason": "current_value_entity"
+        },
+        {
+          "product_name": "riunite moscato",
+          "score": 0.95,
+          "reason": "current_value_entity"
+        }
+      ],
+      "eval": {
+        "V14": {
+          "joint": false,
+          "result": false,
+          "tool": false,
+          "matches": 0,
+          "gt_calls": 2,
+          "interaction_calls": 11,
+          "micro": 0.0,
+          "spec": "retail2",
+          "clean_pos": 0,
+          "source_original_index": 2
+        },
+        "V19": {
+          "joint": false,
+          "result": false,
+          "tool": false,
+          "matches": 0,
+          "gt_calls": 2,
+          "interaction_calls": 11,
+          "micro": 0.0,
+          "spec": "retail2",
+          "clean_pos": 0,
+          "source_original_index": 2
+        },
+        "V20_nonoracle": {
+          "joint": false,
+          "result": false,
+          "tool": false,
+          "matches": 0,
+          "gt_calls": 2,
+          "interaction_calls": 1,
+          "micro": 0.0,
+          "spec": "retail2",
+          "clean_pos": 0,
+          "source_original_index": 2
+        },
+        "V20_repair": {
+          "joint": true,
+          "result": true,
+          "tool": true,
+          "matches": 2,
+          "gt_calls": 2,
+          "interaction_calls": 2,
+          "micro": 1.0,
+          "spec": "retail2",
+          "clean_pos": 0,
+          "source_original_index": 2
+        }
+      }
+    },
+    {
+      "spec": "retail1",
+      "clean_pos": 0,
+      "source_pos": 0,
+      "source_original_index": 24,
+      "task_id": 24,
+      "qwen_path": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/visual_cache_v12/qwen3vl_grounding/retail1_1.json",
+      "nonoracle_program": [
+        {
+          "tool_name": "add_to_cart",
+          "parameters": {
+            "user_id": "lisa_taylor_321",
+            "product_name": "merlot oyster bay",
+            "qty": 1,
+            "category": "wine",
+            "price": 139,
+            "tax_rate": 0.11,
+            "discount": 0.8
+          },
+          "stage": "mutation"
+        }
+      ],
+      "repair_program": [
+        {
+          "tool_name": "add_to_cart",
+          "parameters": {
+            "user_id": "lisa_taylor_321",
+            "product_name": "kim crawford sauvignon blanc",
+            "qty": 1,
+            "category": "wine",
+            "price": 139,
+            "tax_rate": 0.06,
+            "discount": 0.9
+          },
+          "stage": "mutation"
+        },
+        {
+          "tool_name": "compute_total_nutrition",
+          "parameters": {
+            "user_id": "lisa_taylor_321",
+            "products": [
+              {
+                "product_name": "la vigna malbec",
+                "quantity": 2
+              },
+              {
+                "product_name": "duc de guiche",
+                "quantity": 2
+              },
+              {
+                "product_name": "merlot oyster bay",
+                "quantity": 1
+              },
+              {
+                "product_name": "river terrace chardonnay",
+                "quantity": 1
+              },
+              {
+                "product_name": "kim crawford sauvignon blanc",
+                "quantity": 1
+              }
+            ]
+          },
+          "stage": "aggregate"
+        }
+      ],
+      "top_cases": [
+        {
+          "case_id": "scenario::retail1::19::7f7fcf80d9",
+          "score": 8.444119601328904,
+          "tools": [
+            "add_to_cart",
+            "compute_total_nutrition"
+          ]
+        },
+        {
+          "case_id": "scenario::retail1::16::4673f15795",
+          "score": 8.430401284109148,
+          "tools": [
+            "add_to_cart",
+            "compute_total_nutrition"
+          ]
+        },
+        {
+          "case_id": "scenario::retail1::9::8ed2d383af",
+          "score": 8.41473463333454,
+          "tools": [
+            "add_to_cart",
+            "compute_total_payment"
+          ]
+        },
+        {
+          "case_id": "scenario::retail1::3::76ac0074ec",
+          "score": 8.414343891402716,
+          "tools": [
+            "get_nutrition",
+            "add_to_cart",
+            "compute_total_nutrition"
+          ]
+        },
+        {
+          "case_id": "scenario::retail1::17::bfcb999ea2",
+          "score": 8.413826350856386,
+          "tools": [
+            "add_to_cart",
+            "compute_total_tax"
+          ]
+        }
+      ],
+      "top_candidates": [
+        {
+          "product_name": "merlot oyster bay",
+          "score": 0.95,
+          "reason": "current_value_entity"
+        },
+        {
+          "product_name": "river terrace chardonnay",
+          "score": 0.95,
+          "reason": "current_value_entity"
+        },
+        {
+          "product_name": "kim crawford sauvignon blanc",
+          "score": 0.95,
+          "reason": "current_value_entity"
+        }
+      ],
+      "eval": {
+        "V14": {
+          "joint": false,
+          "result": false,
+          "tool": false,
+          "matches": 0,
+          "gt_calls": 4,
+          "interaction_calls": 1,
+          "micro": 0.0,
+          "spec": "retail1",
+          "clean_pos": 0,
+          "source_original_index": 24
+        },
+        "V19": {
+          "joint": false,
+          "result": false,
+          "tool": false,
+          "matches": 0,
+          "gt_calls": 4,
+          "interaction_calls": 1,
+          "micro": 0.0,
+          "spec": "retail1",
+          "clean_pos": 0,
+          "source_original_index": 24
+        },
+        "V20_nonoracle": {
+          "joint": false,
+          "result": false,
+          "tool": false,
+          "matches": 1,
+          "gt_calls": 4,
+          "interaction_calls": 1,
+          "micro": 0.25,
+          "spec": "retail1",
+          "clean_pos": 0,
+          "source_original_index": 24
+        },
+        "V20_repair": {
+          "joint": false,
+          "result": false,
+          "tool": false,
+          "matches": 2,
+          "gt_calls": 4,
+          "interaction_calls": 2,
+          "micro": 0.5,
+          "spec": "retail1",
+          "clean_pos": 0,
+          "source_original_index": 24
+        }
+      }
+    }
+  ],
+  "summary": {
+    "V14": {
+      "valid": 4,
+      "joint": 0.25,
+      "result": 0.25,
+      "tool": 0.25,
+      "micro": 0.2857142857142857,
+      "matched_tools": 4,
+      "gt_tools": 14,
+      "interaction_calls": 53
+    },
+    "V19": {
+      "valid": 4,
+      "joint": 0.25,
+      "result": 0.25,
+      "tool": 0.25,
+      "micro": 0.2857142857142857,
+      "matched_tools": 4,
+      "gt_tools": 14,
+      "interaction_calls": 53
+    },
+    "V20_nonoracle": {
+      "valid": 4,
+      "joint": 0.0,
+      "result": 0.0,
+      "tool": 0.0,
+      "micro": 0.35714285714285715,
+      "matched_tools": 5,
+      "gt_tools": 14,
+      "interaction_calls": 9
+    },
+    "V20_repair": {
+      "valid": 4,
+      "joint": 0.75,
+      "result": 0.75,
+      "tool": 0.75,
+      "micro": 0.8571428571428571,
+      "matched_tools": 12,
+      "gt_tools": 14,
+      "interaction_calls": 13
+    }
+  },
+  "result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V20_CLEAN_RETAIL_THREE-v20_clean_retail_three_20260620_1720",
+  "full_val41_run": false,
+  "final_run": false,
+  "v10_zip_overwritten": false
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "Instruction": "\nYour user ID is cook_008, and today is May 11, 2026. You ask the AI Service Agent to examine the first-person view of cutting the fried pork chop, determine the current recipe name, and identify the seasoning ingredient used in the smallest amount in this dish. Next, have the AI Service Agent check if the current stock of this seasoning ingredient is zero. If it is zero, have the AI Service Agent find the ingredient with the lowest fat content among all ingredients belonging to the egg/dairy/soy product category, and add it to the shopping list with a requirement of 500 grams. If there are multiple ingredients tied for the lowest fat content among those that meet the conditions, you want 500 grams of each of them to be added. Otherwise, have the AI Service Agent find the ingredient with the highest sugar content among all ingredients stored in the same location as that seasoning, and add it to the shopping list with a requirement of 200 grams. If there are multiple ingredients tied for the highest sugar content among those that meet the conditions, you want 200 grams of each of them to be added. Next, have the AI Service Agent remove all recipes from the current menu that require ingredients from the storage cabinet. Finally, have the AI Service Agent calculate and summarize the overall nutritional content (sugar, protein, fat) of the current shopping list.",
+    "analysis": "Results:\n1. Based on the first-person view of cutting the fried pork cutlet, identify the name of the current recipe.\n\n2. Identify the vegetable ingredient used in the smallest quantity in this dish.\n\n3. If the current stock of that vegetable is 0, identify the ingredient with the lowest fat content among all egg, dairy, or soy product ingredients and add 500 grams to the shopping list. If multiple ingredients tie for the lowest fat content, add 500 grams of each tied ingredient.\n\n4. If the current stock of that vegetable is not 0, identify the ingredient with the highest sugar content among all ingredients stored in the same location as that vegetable and add 200 grams to the shopping list. If multiple ingredients tie for the highest sugar content, add 200 grams of each tied ingredient.\n\n5. Remove all recipes from the current menu that require ingredients from the storage cabinet.\n\n6. Calculate the total sugar, total protein, and total fat for all ingredients in the current shopping list.",
+    "ground_truth": [
+      {
+        "tool_name": "add_to_shopping_list",
+        "parameters": {
+          "user_id": "cook_008",
+          "ingredient_name": "Garlic Powder",
+          "quantity": "2"
+        }
+      },
+      {
+        "tool_name": "remove_recipe_from_menu",
+        "parameters": {
+          "user_id": "cook_008",
+          "recipe_name": "Tofu Soup"
+        }
+      },
+      {
+        "tool_name": "remove_recipe_from_menu",
+        "parameters": {
+          "user_id": "cook_008",
+          "recipe_name": "Turkey & Apple Soup"
+        }
+      },
+      {
+        "tool_name": "remove_recipe_from_menu",
+        "parameters": {
+          "user_id": "cook_008",
+          "recipe_name": "Egg & Spinach Frittata"
+        }
+      },
+      {
+        "tool_name": "compute_total_nutritions",
+        "parameters": {
+          "user_id": "cook_008",
+          "ingredients": [
+            {
+              "ingredient_name": "Chickpeas",
+              "quantity": 4
+            },
+            {
+              "ingredient_name": "Garlic Powder",
+              "quantity": 3
+            },
+            {
+              "ingredient_name": "Olive Oil",
+              "quantity": 5
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 33,
+    "image_name": "kitchen2",
+    "image_path": "deep_fried.mp4",
+    "image_description": "You are cooking in the kitchen. You are currently at a step in one of the dishes: cutting the already fried pork chop into strips.",
+    "key": "recipe_name",
+    "value": [
+      "Deep-fried Meat Platter"
+    ],
+    "_v8_original_index": 33
+  }
+]

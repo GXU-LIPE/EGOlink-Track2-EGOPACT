@@ -1,0 +1,72 @@
+{
+  "run_id": "v21_retail_branch_target_clean4_20260620_1710",
+  "version": "V21_retail_branch_target_resolver_clean4",
+  "summary": {
+    "V14": {
+      "valid": 4,
+      "joint": 0.25,
+      "result": 0.25,
+      "tool": 0.25,
+      "micro": 0.2857142857142857,
+      "matched_tools": 4,
+      "gt_tools": 14,
+      "interaction_calls": 53
+    },
+    "V19": {
+      "valid": 4,
+      "joint": 0.25,
+      "result": 0.25,
+      "tool": 0.25,
+      "micro": 0.2857142857142857,
+      "matched_tools": 4,
+      "gt_tools": 14,
+      "interaction_calls": 53
+    },
+    "V20_nonoracle": {
+      "valid": 4,
+      "joint": 0.0,
+      "result": 0.0,
+      "tool": 0.0,
+      "micro": 0.35714285714285715,
+      "matched_tools": 5,
+      "gt_tools": 14,
+      "interaction_calls": 9
+    },
+    "V20_repair": {
+      "valid": 4,
+      "joint": 0.75,
+      "result": 0.75,
+      "tool": 0.75,
+      "micro": 0.8571428571428571,
+      "matched_tools": 12,
+      "gt_tools": 14,
+      "interaction_calls": 13
+    },
+    "V21_nonoracle": {
+      "valid": 4,
+      "joint": 0.75,
+      "result": 0.75,
+      "tool": 0.75,
+      "micro": 0.8571428571428571,
+      "matched_tools": 12,
+      "gt_tools": 14,
+      "interaction_calls": 43
+    },
+    "V21_repaired_nonoracle": {
+      "valid": 4,
+      "joint": 0.75,
+      "result": 0.75,
+      "tool": 0.75,
+      "micro": 0.8571428571428571,
+      "matched_tools": 12,
+      "gt_tools": 14,
+      "interaction_calls": 43
+    }
+  },
+  "trace_jsonl": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v21_retail_chain_trace.jsonl",
+  "score_jsonl": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v21_retail_candidate_scores.jsonl",
+  "result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V21_retail_branch_target_resolver_clean4-v21_retail_branch_target_clean4_20260620_1710",
+  "full_val41_run": false,
+  "final_run": false,
+  "v10_zip_overwritten": false
+}

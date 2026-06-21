@@ -1,0 +1,20 @@
+{
+  "updated_at": "2026-06-19T21:33:21+0800",
+  "run_id": "v14_distilled_val41_20260619_211502",
+  "version": "V14_val41_distilled_no_task_oracle",
+  "model": "gpt-5.5",
+  "report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V14_DISTILLED_PROCESS_VAL41_v14_distilled_val41_20260619_211502.md",
+  "summary": {
+    "valid": 41,
+    "joint": 0.14634146341463414,
+    "result": 0.1951219512195122,
+    "tool": 0.17073170731707318,
+    "micro": 0.33974358974358976,
+    "avg_task_accuracy": 0.32194408786193124,
+    "correct_calls": 53,
+    "gt_calls": 156,
+    "interaction_calls": 1022
+  },
+  "final_run": false,
+  "uses_val41_gt_directly": false
+}

@@ -1,0 +1,15 @@
+{
+  "version": "V9_5_memory_deepseek_rerank",
+  "run_id": "V9_5_memory_deepseek_rerank_validation_A_medium_20260618_1420_frozen_noproxy",
+  "stage": "validation_A_medium",
+  "split": "validation_A_limit30_materialized_from_V9_4_5",
+  "joint_success": 0.12195121951219512,
+  "result_success": 0.17073170731707318,
+  "tool_success": 0.12195121951219512,
+  "micro_tool_accuracy": 0.26282051282051283,
+  "valid": 41,
+  "protected_best_updated": false,
+  "final_submission": false,
+  "note": "Candidate only. Does not beat protected V6; no holdout/final.",
+  "updated_at": "2026-06-18T15:50:51+0800"
+}

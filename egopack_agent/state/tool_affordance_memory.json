@@ -1,0 +1,1172 @@
+{
+  "generated_at": "2026-06-20T14:38:36+0800",
+  "tools": {
+    "add_recipe_to_menu": {
+      "name": "add_recipe_to_menu",
+      "scenario": "kitchen",
+      "family": "state_changing_add",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "requires_user_id",
+        "risky",
+        "state_changing_add",
+        "stateful_collection_mutation"
+      ],
+      "required": [
+        "user_id",
+        "recipe_name"
+      ],
+      "optional": []
+    },
+    "remove_recipe_from_menu": {
+      "name": "remove_recipe_from_menu",
+      "scenario": "kitchen",
+      "family": "state_changing_remove",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "requires_user_id",
+        "risky",
+        "state_changing_remove",
+        "stateful_collection_mutation"
+      ],
+      "required": [
+        "user_id",
+        "recipe_name"
+      ],
+      "optional": []
+    },
+    "get_current_menu": {
+      "name": "get_current_menu",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id"
+      ],
+      "optional": []
+    },
+    "tally_total_nutritional_characteristics": {
+      "name": "tally_total_nutritional_characteristics",
+      "scenario": "kitchen",
+      "family": "other",
+      "tags": [
+        "other",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id",
+        "recipes"
+      ],
+      "optional": []
+    },
+    "tally_total_tastes": {
+      "name": "tally_total_tastes",
+      "scenario": "kitchen",
+      "family": "other",
+      "tags": [
+        "other",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id",
+        "recipes"
+      ],
+      "optional": []
+    },
+    "add_to_shopping_list": {
+      "name": "add_to_shopping_list",
+      "scenario": "kitchen",
+      "family": "state_changing_add",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "requires_user_id",
+        "risky",
+        "state_changing_add",
+        "stateful_collection_mutation"
+      ],
+      "required": [
+        "user_id",
+        "ingredient_name",
+        "quantity"
+      ],
+      "optional": []
+    },
+    "remove_from_shopping_list": {
+      "name": "remove_from_shopping_list",
+      "scenario": "kitchen",
+      "family": "state_changing_remove",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "requires_user_id",
+        "risky",
+        "state_changing_remove",
+        "stateful_collection_mutation"
+      ],
+      "required": [
+        "user_id",
+        "ingredient_name"
+      ],
+      "optional": []
+    },
+    "compute_total_nutritions": {
+      "name": "compute_total_nutritions",
+      "scenario": "kitchen",
+      "family": "aggregate_compute",
+      "tags": [
+        "aggregate_compute",
+        "final_only",
+        "requires_prior_retrieval",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id",
+        "ingredients"
+      ],
+      "optional": []
+    },
+    "get_cooking_steps": {
+      "name": "get_cooking_steps",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "recipe_name"
+      ],
+      "optional": []
+    },
+    "get_recipe_allergens": {
+      "name": "get_recipe_allergens",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "recipe_name"
+      ],
+      "optional": []
+    },
+    "find_recipes_by_allergen": {
+      "name": "find_recipes_by_allergen",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "allergen"
+      ],
+      "optional": []
+    },
+    "get_recipe_taste": {
+      "name": "get_recipe_taste",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "recipe_name"
+      ],
+      "optional": []
+    },
+    "find_recipes_by_taste": {
+      "name": "find_recipes_by_taste",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "taste"
+      ],
+      "optional": []
+    },
+    "get_recipe_ingredients": {
+      "name": "get_recipe_ingredients",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "recipe_name"
+      ],
+      "optional": []
+    },
+    "find_recipes_by_ingredient": {
+      "name": "find_recipes_by_ingredient",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "ingredient_name"
+      ],
+      "optional": []
+    },
+    "get_ingredient_shelf_life": {
+      "name": "get_ingredient_shelf_life",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "ingredient_name"
+      ],
+      "optional": []
+    },
+    "find_ingredients_by_expiry_date": {
+      "name": "find_ingredients_by_expiry_date",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "date"
+      ],
+      "optional": []
+    },
+    "get_ingredient_location": {
+      "name": "get_ingredient_location",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "ingredient_name"
+      ],
+      "optional": []
+    },
+    "find_ingredients_by_location": {
+      "name": "find_ingredients_by_location",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "location"
+      ],
+      "optional": []
+    },
+    "get_ingredient_nutrition": {
+      "name": "get_ingredient_nutrition",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "ingredient_name"
+      ],
+      "optional": []
+    },
+    "get_ingredient_quantity": {
+      "name": "get_ingredient_quantity",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "ingredient_name"
+      ],
+      "optional": []
+    },
+    "get_all_recipe_names": {
+      "name": "get_all_recipe_names",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [],
+      "optional": []
+    },
+    "get_ingredients_by_category": {
+      "name": "get_ingredients_by_category",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "category"
+      ],
+      "optional": []
+    },
+    "find_ingredient_category": {
+      "name": "find_ingredient_category",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "ingredient_name"
+      ],
+      "optional": []
+    },
+    "get_current_shopping_list": {
+      "name": "get_current_shopping_list",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id"
+      ],
+      "optional": []
+    },
+    "get_recipe_nutritional_characteristics": {
+      "name": "get_recipe_nutritional_characteristics",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "recipe_name"
+      ],
+      "optional": []
+    },
+    "find_recipes_by_nutritional_characteristics": {
+      "name": "find_recipes_by_nutritional_characteristics",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "characteristic"
+      ],
+      "optional": []
+    },
+    "get_all_ingredient_names": {
+      "name": "get_all_ingredient_names",
+      "scenario": "kitchen",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [],
+      "optional": []
+    },
+    "add_product": {
+      "name": "add_product",
+      "scenario": "retail",
+      "family": "state_changing_add",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "risky",
+        "state_changing_add"
+      ],
+      "required": [
+        "product_name",
+        "category",
+        "price",
+        "tax_rate",
+        "discount",
+        "nutritional_characteristics",
+        "taste",
+        "country_of_origin"
+      ],
+      "optional": [
+        "nutrition",
+        "allergens"
+      ]
+    },
+    "delete_product": {
+      "name": "delete_product",
+      "scenario": "retail",
+      "family": "state_changing_remove",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "risky",
+        "state_changing_remove"
+      ],
+      "required": [
+        "product_name"
+      ],
+      "optional": []
+    },
+    "find_products_by_nutritional_characteristic": {
+      "name": "find_products_by_nutritional_characteristic",
+      "scenario": "retail",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "characteristic"
+      ],
+      "optional": []
+    },
+    "find_products_by_taste": {
+      "name": "find_products_by_taste",
+      "scenario": "retail",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "taste"
+      ],
+      "optional": []
+    },
+    "find_products_by_country_of_origin": {
+      "name": "find_products_by_country_of_origin",
+      "scenario": "retail",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "country"
+      ],
+      "optional": []
+    },
+    "get_price": {
+      "name": "get_price",
+      "scenario": "retail",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "product_name"
+      ],
+      "optional": []
+    },
+    "find_products_by_price_range": {
+      "name": "find_products_by_price_range",
+      "scenario": "retail",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "min_price",
+        "max_price"
+      ],
+      "optional": []
+    },
+    "get_tax_rate": {
+      "name": "get_tax_rate",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "dish_name"
+      ],
+      "optional": []
+    },
+    "get_category": {
+      "name": "get_category",
+      "scenario": "retail",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "product_name"
+      ],
+      "optional": []
+    },
+    "get_discount": {
+      "name": "get_discount",
+      "scenario": "retail",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "product_name"
+      ],
+      "optional": []
+    },
+    "get_nutrition": {
+      "name": "get_nutrition",
+      "scenario": "retail",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "product_name"
+      ],
+      "optional": []
+    },
+    "list_discounted_products": {
+      "name": "list_discounted_products",
+      "scenario": "retail",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [],
+      "optional": []
+    },
+    "add_to_cart": {
+      "name": "add_to_cart",
+      "scenario": "retail",
+      "family": "state_changing_add",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "requires_user_id",
+        "risky",
+        "state_changing_add",
+        "stateful_collection_mutation"
+      ],
+      "required": [
+        "user_id",
+        "product_name",
+        "qty",
+        "category",
+        "price",
+        "tax_rate",
+        "discount"
+      ],
+      "optional": []
+    },
+    "get_cart": {
+      "name": "get_cart",
+      "scenario": "retail",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id"
+      ],
+      "optional": []
+    },
+    "remove_from_cart": {
+      "name": "remove_from_cart",
+      "scenario": "retail",
+      "family": "state_changing_remove",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "requires_user_id",
+        "risky",
+        "state_changing_remove",
+        "stateful_collection_mutation"
+      ],
+      "required": [
+        "user_id",
+        "product_name",
+        "qty"
+      ],
+      "optional": []
+    },
+    "clear_cart": {
+      "name": "clear_cart",
+      "scenario": "retail",
+      "family": "other",
+      "tags": [
+        "other",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id"
+      ],
+      "optional": []
+    },
+    "compute_total_payment": {
+      "name": "compute_total_payment",
+      "scenario": "restaurant",
+      "family": "aggregate_compute",
+      "tags": [
+        "aggregate_compute",
+        "final_only",
+        "requires_prior_retrieval",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id",
+        "dishes"
+      ],
+      "optional": []
+    },
+    "compute_total_tax": {
+      "name": "compute_total_tax",
+      "scenario": "restaurant",
+      "family": "aggregate_compute",
+      "tags": [
+        "aggregate_compute",
+        "final_only",
+        "requires_prior_retrieval",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id",
+        "dishes"
+      ],
+      "optional": []
+    },
+    "compute_total_nutrition": {
+      "name": "compute_total_nutrition",
+      "scenario": "restaurant",
+      "family": "aggregate_compute",
+      "tags": [
+        "aggregate_compute",
+        "final_only",
+        "requires_prior_retrieval",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id",
+        "dishes"
+      ],
+      "optional": []
+    },
+    "get_shopping_list": {
+      "name": "get_shopping_list",
+      "scenario": "retail",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id"
+      ],
+      "optional": []
+    },
+    "add_dish_to_catalog": {
+      "name": "add_dish_to_catalog",
+      "scenario": "restaurant",
+      "family": "state_changing_add",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "risky",
+        "state_changing_add"
+      ],
+      "required": [
+        "dish_name",
+        "category",
+        "price",
+        "tax_rate",
+        "discount",
+        "nutritional_characteristics",
+        "taste",
+        "allergens",
+        "nutrition"
+      ],
+      "optional": []
+    },
+    "remove_dish_from_catalog": {
+      "name": "remove_dish_from_catalog",
+      "scenario": "restaurant",
+      "family": "state_changing_remove",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "risky",
+        "state_changing_remove"
+      ],
+      "required": [
+        "dish_name"
+      ],
+      "optional": []
+    },
+    "update_dish_price": {
+      "name": "update_dish_price",
+      "scenario": "restaurant",
+      "family": "state_changing_update",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "risky",
+        "state_changing_update"
+      ],
+      "required": [
+        "dish_name",
+        "new_price"
+      ],
+      "optional": []
+    },
+    "update_dish_discount": {
+      "name": "update_dish_discount",
+      "scenario": "restaurant",
+      "family": "state_changing_update",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "risky",
+        "state_changing_update"
+      ],
+      "required": [
+        "dish_name",
+        "new_discount"
+      ],
+      "optional": []
+    },
+    "get_dish_nutrition": {
+      "name": "get_dish_nutrition",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "dish_name"
+      ],
+      "optional": []
+    },
+    "get_dish_allergens": {
+      "name": "get_dish_allergens",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "dish_name"
+      ],
+      "optional": []
+    },
+    "get_dish_taste_profile": {
+      "name": "get_dish_taste_profile",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "dish_name"
+      ],
+      "optional": []
+    },
+    "get_dish_price": {
+      "name": "get_dish_price",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "dish_name"
+      ],
+      "optional": []
+    },
+    "get_dish_discount": {
+      "name": "get_dish_discount",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "dish_name"
+      ],
+      "optional": []
+    },
+    "find_dishes_by_category": {
+      "name": "find_dishes_by_category",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "category"
+      ],
+      "optional": []
+    },
+    "find_dishes_by_nutritional_tag": {
+      "name": "find_dishes_by_nutritional_tag",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "tag"
+      ],
+      "optional": []
+    },
+    "find_dishes_by_taste": {
+      "name": "find_dishes_by_taste",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "taste"
+      ],
+      "optional": []
+    },
+    "add_dish_to_order": {
+      "name": "add_dish_to_order",
+      "scenario": "restaurant",
+      "family": "state_changing_add",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "requires_user_id",
+        "risky",
+        "state_changing_add",
+        "stateful_collection_mutation"
+      ],
+      "required": [
+        "user_id",
+        "dish_name",
+        "quantity"
+      ],
+      "optional": []
+    },
+    "remove_dish_from_order": {
+      "name": "remove_dish_from_order",
+      "scenario": "restaurant",
+      "family": "state_changing_remove",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "requires_user_id",
+        "risky",
+        "state_changing_remove",
+        "stateful_collection_mutation"
+      ],
+      "required": [
+        "user_id",
+        "dish_name",
+        "quantity"
+      ],
+      "optional": []
+    },
+    "clear_user_order": {
+      "name": "clear_user_order",
+      "scenario": "restaurant",
+      "family": "other",
+      "tags": [
+        "other",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id"
+      ],
+      "optional": []
+    },
+    "get_user_order_summary": {
+      "name": "get_user_order_summary",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_user_id"
+      ],
+      "required": [
+        "user_id"
+      ],
+      "optional": []
+    },
+    "list_all_discounted_dishes": {
+      "name": "list_all_discounted_dishes",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [],
+      "optional": []
+    },
+    "filter_dishes_by_price_range": {
+      "name": "filter_dishes_by_price_range",
+      "scenario": "restaurant",
+      "family": "other",
+      "tags": [
+        "other",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "min_price",
+        "max_price"
+      ],
+      "optional": []
+    },
+    "create_set_meal": {
+      "name": "create_set_meal",
+      "scenario": "restaurant",
+      "family": "other",
+      "tags": [
+        "other",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "set_meal_name",
+        "included_dishes",
+        "set_meal_price",
+        "set_meal_discount"
+      ],
+      "optional": []
+    },
+    "get_set_meal_details": {
+      "name": "get_set_meal_details",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "set_meal_name"
+      ],
+      "optional": []
+    },
+    "add_set_meal_to_order": {
+      "name": "add_set_meal_to_order",
+      "scenario": "restaurant",
+      "family": "state_changing_add",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "requires_user_id",
+        "risky",
+        "state_changing_add",
+        "stateful_collection_mutation"
+      ],
+      "required": [
+        "user_id",
+        "set_meal_name",
+        "quantity"
+      ],
+      "optional": []
+    },
+    "find_set_meals_containing_dish": {
+      "name": "find_set_meals_containing_dish",
+      "scenario": "restaurant",
+      "family": "read_only_retrieval",
+      "tags": [
+        "idempotent",
+        "read_only_retrieval",
+        "requires_canonical_entity"
+      ],
+      "required": [
+        "dish_name"
+      ],
+      "optional": []
+    },
+    "remove_set_meal_from_order": {
+      "name": "remove_set_meal_from_order",
+      "scenario": "restaurant",
+      "family": "state_changing_remove",
+      "tags": [
+        "non_idempotent",
+        "requires_canonical_entity",
+        "requires_prior_retrieval",
+        "requires_user_id",
+        "risky",
+        "state_changing_remove",
+        "stateful_collection_mutation"
+      ],
+      "required": [
+        "user_id",
+        "set_meal_name",
+        "quantity"
+      ],
+      "optional": []
+    }
+  },
+  "scenarios": {
+    "kitchen": [
+      "add_recipe_to_menu",
+      "remove_recipe_from_menu",
+      "get_current_menu",
+      "tally_total_nutritional_characteristics",
+      "tally_total_tastes",
+      "add_to_shopping_list",
+      "remove_from_shopping_list",
+      "compute_total_nutritions",
+      "get_cooking_steps",
+      "get_recipe_allergens",
+      "find_recipes_by_allergen",
+      "get_recipe_taste",
+      "find_recipes_by_taste",
+      "get_recipe_ingredients",
+      "find_recipes_by_ingredient",
+      "get_ingredient_shelf_life",
+      "find_ingredients_by_expiry_date",
+      "get_ingredient_location",
+      "find_ingredients_by_location",
+      "get_ingredient_nutrition",
+      "get_ingredient_quantity",
+      "get_all_recipe_names",
+      "get_ingredients_by_category",
+      "find_ingredient_category",
+      "get_current_shopping_list",
+      "get_recipe_nutritional_characteristics",
+      "find_recipes_by_nutritional_characteristics",
+      "get_all_ingredient_names"
+    ],
+    "retail": [
+      "add_product",
+      "delete_product",
+      "find_products_by_nutritional_characteristic",
+      "find_products_by_taste",
+      "find_products_by_country_of_origin",
+      "get_price",
+      "find_products_by_price_range",
+      "get_category",
+      "get_discount",
+      "get_nutrition",
+      "list_discounted_products",
+      "add_to_cart",
+      "get_cart",
+      "remove_from_cart",
+      "clear_cart",
+      "get_shopping_list"
+    ],
+    "restaurant": [
+      "get_tax_rate",
+      "compute_total_payment",
+      "compute_total_tax",
+      "compute_total_nutrition",
+      "add_dish_to_catalog",
+      "remove_dish_from_catalog",
+      "update_dish_price",
+      "update_dish_discount",
+      "get_dish_nutrition",
+      "get_dish_allergens",
+      "get_dish_taste_profile",
+      "get_dish_price",
+      "get_dish_discount",
+      "find_dishes_by_category",
+      "find_dishes_by_nutritional_tag",
+      "find_dishes_by_taste",
+      "add_dish_to_order",
+      "remove_dish_from_order",
+      "clear_user_order",
+      "get_user_order_summary",
+      "list_all_discounted_dishes",
+      "filter_dishes_by_price_range",
+      "create_set_meal",
+      "get_set_meal_details",
+      "add_set_meal_to_order",
+      "find_set_meals_containing_dish",
+      "remove_set_meal_from_order"
+    ]
+  }
+}

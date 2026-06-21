@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-06-18T17:15:10+0800",
+  "gpt55": {
+    "base_url": "https://ai-pixel.online/v1",
+    "model": "gpt-5.5",
+    "key_present": true,
+    "ok": true,
+    "http_status": 200,
+    "response_preview": "OK"
+  },
+  "deepseek": {
+    "base_url": "https://api.deepseek.com/v1",
+    "model": "deepseek-chat",
+    "key_present": false,
+    "ok": false,
+    "enabled_for_v10": false,
+    "disabled_reason": "missing_key"
+  },
+  "no_proxy": "ai-pixel.online,cf.ai-pixel.online,localhost,127.0.0.1,::1"
+}

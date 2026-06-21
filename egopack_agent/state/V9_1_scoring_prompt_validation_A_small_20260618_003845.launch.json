@@ -1,0 +1,9 @@
+{
+  "run_id": "V9_1_scoring_prompt_validation_A_small_20260618_003845",
+  "stage": "validation_A_small",
+  "version": "V9_1_scoring_prompt",
+  "limit_per_scenario": "5",
+  "pid": 796292,
+  "log": "logs/V9_1_scoring_prompt_validation_A_small_20260618_003845.launcher.log",
+  "started_at": "2026-06-18T00:38:45+0800"
+}

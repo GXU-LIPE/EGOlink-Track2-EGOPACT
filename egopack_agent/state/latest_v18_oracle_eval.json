@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-06-20T15:22:58+0800",
+  "run_id": "v18_oracle_eval_20260620_1532",
+  "version": "V18_val41_oracle_gt100_distilled",
+  "result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V18_val41_oracle_gt100_distilled-v18_oracle_eval_20260620_1532",
+  "eval_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V18_VAL41_ORACLE_EVAL_v18_oracle_eval_20260620_1532.md",
+  "failure_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V18_ORACLE_FAILURE_ANALYSIS_v18_oracle_eval_20260620_1532.md",
+  "decision_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V18_NEXT_DECISION_v18_oracle_eval_20260620_1532.md",
+  "summary": {
+    "valid": 41,
+    "joint": 1.0,
+    "result": 1.0,
+    "tool": 1.0,
+    "micro": 1.0,
+    "avg_task_accuracy": 1.0,
+    "correct_calls": 156,
+    "gt_calls": 156,
+    "interaction_calls": 156
+  },
+  "final_run": false,
+  "protected_best_updated": false,
+  "v10_zip_overwritten": false
+}

@@ -1,0 +1,67 @@
+{
+  "auto_submit": false,
+  "baseline": {
+    "V34_selected": {
+      "gt_tools": 156,
+      "interaction_calls": 731,
+      "joint": 0.2682926829268293,
+      "matched_tools": 68,
+      "micro": 0.4358974358974359,
+      "result": 0.3902439024390244,
+      "tool": 0.2926829268292683,
+      "valid": 41
+    }
+  },
+  "candidate_count": 1034,
+  "data_usage": {
+    "nonfinal_skeleton_count": 696,
+    "uses_final_hidden_metadata": false,
+    "uses_val41_gt_for_post_eval": true,
+    "uses_val41_gt_for_runtime": false
+  },
+  "decision": "V36 skeleton/lattice candidate pool did not beat V34; do not promote.",
+  "final_run": false,
+  "frozen_selected": {
+    "new_joint_vs_v34": [],
+    "result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V36_frozen_selected-v36_db_lattice_20260621_1906",
+    "summary": {
+      "gt_tools": 156,
+      "interaction_calls": 796,
+      "joint": 0.2682926829268293,
+      "matched_tools": 67,
+      "micro": 0.42948717948717946,
+      "result": 0.3170731707317073,
+      "tool": 0.2926829268292683,
+      "valid": 41
+    }
+  },
+  "lattice_task_count": 30,
+  "oracle_best": {
+    "new_joint_vs_v34": [],
+    "result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V36_oracle_best-v36_db_lattice_20260621_1906",
+    "summary": {
+      "gt_tools": 156,
+      "interaction_calls": 816,
+      "joint": 0.2682926829268293,
+      "matched_tools": 71,
+      "micro": 0.4551282051282051,
+      "result": 0.4146341463414634,
+      "tool": 0.2926829268292683,
+      "valid": 41
+    }
+  },
+  "preflight": {
+    "final_run": false,
+    "openai_env_exists": true,
+    "uses_final_hidden_metadata": false,
+    "v10_expected_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+    "v10_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+    "v10_zip_exists": true,
+    "v10_zip_overwritten": false
+  },
+  "protected_success_count": 11,
+  "run_id": "v36_db_lattice_20260621_1906",
+  "target_task_count": 30,
+  "uses_final_hidden_metadata": false,
+  "version": "V36_DB_GROUNDED_HYPOTHESIS_LATTICE"
+}

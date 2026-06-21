@@ -1,0 +1,57 @@
+{
+  "updated_at": "2026-06-19T17:24:22+0800",
+  "run_id": "V12_qwen3vl_prior_all_modules_val41_parallel_20260619_170302",
+  "version": "V12_official_style_qwen3vl_memory",
+  "model": "gpt-5.5",
+  "stage": "validation_A_medium",
+  "parallel": true,
+  "report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V12_VAL41_PARALLEL_QWEN3VL_MEMORY_V12_qwen3vl_prior_all_modules_val41_parallel_20260619_170302.md",
+  "summary": {
+    "valid": 41,
+    "joint": 0.12195121951219512,
+    "result": 0.17073170731707318,
+    "tool": 0.14634146341463414,
+    "micro": 0.2948717948717949,
+    "avg_task_accuracy": 0.2872557409784624,
+    "correct_calls": 46,
+    "gt_calls": 156,
+    "interaction_calls": 873
+  },
+  "qwen3vl_prompt_hit_audit": {
+    "hit_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/runs/V12_official_style_qwen3vl_memory/V12_qwen3vl_prior_all_modules_val41_parallel_20260619_170302/qwen3vl_grounding_hits",
+    "event_count": 41,
+    "task_count": 21,
+    "task_keys": [
+      "kitchen_1",
+      "kitchen_2",
+      "kitchen_3",
+      "kitchen_4",
+      "order_1",
+      "order_2",
+      "order_3",
+      "order_4",
+      "order_5",
+      "order_6",
+      "order_7",
+      "order_8",
+      "restaurant_1",
+      "restaurant_2",
+      "restaurant_3",
+      "restaurant_4",
+      "retail_1",
+      "retail_2",
+      "retail_3",
+      "retail_4",
+      "retail_5"
+    ],
+    "events_with_top_k": 20,
+    "video_fallback_events": 9,
+    "missing_or_failed_events": 21,
+    "status_counts": {
+      "grounding_failed": 21,
+      "qwen3vl_success": 20
+    }
+  },
+  "final_run": false,
+  "v10_zip_overwritten": false
+}

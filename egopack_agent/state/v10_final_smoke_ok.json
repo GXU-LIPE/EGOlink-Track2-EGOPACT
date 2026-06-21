@@ -1,0 +1,64 @@
+{
+  "ok": true,
+  "stats": {
+    "team": "V10_full_memory_final_candidate_draft",
+    "root": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V10_full_memory_final_candidate_draft",
+    "files": {
+      "retail6_easy.json": {
+        "exists": true,
+        "valid_json_list": true,
+        "tasks": 2,
+        "expected": 49,
+        "count_ok": false
+      },
+      "retail10_easy.json": {
+        "exists": true,
+        "valid_json_list": true,
+        "tasks": 2,
+        "expected": 63,
+        "count_ok": false
+      },
+      "kitchen4_easy.json": {
+        "exists": true,
+        "valid_json_list": true,
+        "tasks": 2,
+        "expected": 50,
+        "count_ok": false
+      },
+      "restaurant5_easy.json": {
+        "exists": true,
+        "valid_json_list": true,
+        "tasks": 2,
+        "expected": 50,
+        "count_ok": false
+      },
+      "order2_easy.json": {
+        "exists": true,
+        "valid_json_list": true,
+        "tasks": 2,
+        "expected": 97,
+        "count_ok": false
+      }
+    },
+    "total_tasks": 10,
+    "missing_files": [],
+    "empty_dialogue": 0,
+    "empty_tool_calls": 0,
+    "api_error_hits": 0,
+    "timeout_hits": 0,
+    "mixed_json_text_hits": 0,
+    "total_turns": 49,
+    "total_tool_calls": 409,
+    "max_tool_calls": 97,
+    "final_hidden_metadata_leaks": 0,
+    "avg_turns": 4.9,
+    "avg_tool_calls": 40.9,
+    "task_count_ok": false,
+    "all_files_ok": false
+  },
+  "memory": {
+    "memory_hit_records": 16,
+    "selected_cards_total": 64,
+    "no_final_metadata_false": 0
+  }
+}

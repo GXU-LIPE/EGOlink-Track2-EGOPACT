@@ -1,0 +1,304 @@
+{
+  "run_id": "v16_gt100_pool_20260619_2325",
+  "generated_at": "2026-06-19T23:38:00+0800",
+  "final_run": false,
+  "uses_final_hidden_metadata": false,
+  "excludes_official_final309": true,
+  "excluded_final309_specs": [
+    "kitchen4",
+    "order2",
+    "restaurant5",
+    "retail10",
+    "retail6"
+  ],
+  "excludes_frozen_val41": true,
+  "frozen_val41_manifest": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/state/materialized_splits/validation_A_limit30/manifest.json",
+  "uses_val41_label_for_training": false,
+  "raw_scenario_gt_candidates": 695,
+  "scenario_joint100_kept": 695,
+  "train_data_fallback_kept": 1,
+  "total_pool_rows": 696,
+  "excluded_rows": 82,
+  "scenario_distribution": {
+    "kitchen": 117,
+    "order": 93,
+    "restaurant": 160,
+    "retail": 326
+  },
+  "task_type_distribution": {
+    "branch-then-mutation+aggregate": 659,
+    "cart/order/menu mutation": 35,
+    "aggregate-required": 2
+  },
+  "module_counts": {
+    "tool_sequence_automata": 215,
+    "slot_resolver_tool_rules": 44,
+    "branch_condition_templates": 300,
+    "scenario_entity_lexicon_scenarios": 4,
+    "anti_failure_rules": 7,
+    "process_repair_templates": 4
+  },
+  "source_audit": {
+    "kitchen1": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/runs/V8_tmp_scenarios/v613_valA_small_20260617_quick/kitchen1.official_backup.json",
+      "raw_count": 46,
+      "with_gt": 46,
+      "kept_pre_replay": 43,
+      "replay_metrics": {
+        "valid": 43,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 164,
+        "gt_calls": 164,
+        "interaction_calls": 164
+      }
+    },
+    "kitchen2": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/runs/V8_tmp_scenarios/v8_smoke_20260617_1823/kitchen2.official_backup.json",
+      "raw_count": 40,
+      "with_gt": 40,
+      "kept_pre_replay": 39,
+      "replay_metrics": {
+        "valid": 39,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 162,
+        "gt_calls": 162,
+        "interaction_calls": 162
+      }
+    },
+    "kitchen3": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/scenarios/final/kitchen3.json",
+      "raw_count": 39,
+      "with_gt": 39,
+      "kept_pre_replay": 35,
+      "replay_metrics": {
+        "valid": 35,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 173,
+        "gt_calls": 173,
+        "interaction_calls": 173
+      }
+    },
+    "order1": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/scenarios/final/order1.json",
+      "raw_count": 100,
+      "with_gt": 100,
+      "kept_pre_replay": 92,
+      "replay_metrics": {
+        "valid": 92,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 291,
+        "gt_calls": 291,
+        "interaction_calls": 291
+      }
+    },
+    "restaurant1": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/scenarios/final/restaurant1.json",
+      "raw_count": 40,
+      "with_gt": 40,
+      "kept_pre_replay": 39,
+      "replay_metrics": {
+        "valid": 39,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 136,
+        "gt_calls": 136,
+        "interaction_calls": 136
+      }
+    },
+    "restaurant2": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/scenarios/final/restaurant2.json",
+      "raw_count": 30,
+      "with_gt": 30,
+      "kept_pre_replay": 29,
+      "replay_metrics": {
+        "valid": 29,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 94,
+        "gt_calls": 94,
+        "interaction_calls": 94
+      }
+    },
+    "restaurant3": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/scenarios/final/restaurant3.json",
+      "raw_count": 59,
+      "with_gt": 59,
+      "kept_pre_replay": 55,
+      "replay_metrics": {
+        "valid": 55,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 122,
+        "gt_calls": 122,
+        "interaction_calls": 122
+      }
+    },
+    "restaurant4": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/scenarios/final/restaurant4.json",
+      "raw_count": 40,
+      "with_gt": 40,
+      "kept_pre_replay": 37,
+      "replay_metrics": {
+        "valid": 37,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 81,
+        "gt_calls": 81,
+        "interaction_calls": 81
+      }
+    },
+    "retail1": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/scenarios/final/retail1.json",
+      "raw_count": 32,
+      "with_gt": 32,
+      "kept_pre_replay": 31,
+      "replay_metrics": {
+        "valid": 31,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 75,
+        "gt_calls": 75,
+        "interaction_calls": 75
+      }
+    },
+    "retail2": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/scenarios/final/retail2.json",
+      "raw_count": 41,
+      "with_gt": 41,
+      "kept_pre_replay": 39,
+      "replay_metrics": {
+        "valid": 39,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 138,
+        "gt_calls": 138,
+        "interaction_calls": 138
+      }
+    },
+    "retail3": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/scenarios/final/retail3.json",
+      "raw_count": 49,
+      "with_gt": 49,
+      "kept_pre_replay": 45,
+      "replay_metrics": {
+        "valid": 45,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 179,
+        "gt_calls": 179,
+        "interaction_calls": 179
+      }
+    },
+    "retail4": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/runs/V8_tmp_scenarios/V9_4_memory_retrieval_validation_A_medium_20260618_023033/retail4.official_backup.json",
+      "raw_count": 48,
+      "with_gt": 48,
+      "kept_pre_replay": 43,
+      "replay_metrics": {
+        "valid": 43,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 153,
+        "gt_calls": 153,
+        "interaction_calls": 153
+      }
+    },
+    "retail5": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/scenarios/final/retail5.json",
+      "raw_count": 50,
+      "with_gt": 50,
+      "kept_pre_replay": 50,
+      "replay_metrics": {
+        "valid": 50,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 155,
+        "gt_calls": 155,
+        "interaction_calls": 155
+      }
+    },
+    "retail7": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/scenarios/final/retail7.json",
+      "raw_count": 48,
+      "with_gt": 48,
+      "kept_pre_replay": 46,
+      "replay_metrics": {
+        "valid": 46,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 157,
+        "gt_calls": 157,
+        "interaction_calls": 157
+      }
+    },
+    "retail8": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/scenarios/final/retail8.json",
+      "raw_count": 25,
+      "with_gt": 25,
+      "kept_pre_replay": 23,
+      "replay_metrics": {
+        "valid": 23,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 85,
+        "gt_calls": 85,
+        "interaction_calls": 85
+      }
+    },
+    "retail9": {
+      "source_path": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/runs/V8_tmp_scenarios/v8_smoke_/retail9.official_backup.json",
+      "raw_count": 49,
+      "with_gt": 49,
+      "kept_pre_replay": 49,
+      "replay_metrics": {
+        "valid": 49,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "correct_calls": 162,
+        "gt_calls": 162,
+        "interaction_calls": 162
+      }
+    }
+  },
+  "outputs": {
+    "pool": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v16/gt100_pool.jsonl",
+    "manifest": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v16/gt100_pool_manifest.json"
+  },
+  "report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V16_GT100_POOL_AUDIT_v16_gt100_pool_20260619_2325.md"
+}

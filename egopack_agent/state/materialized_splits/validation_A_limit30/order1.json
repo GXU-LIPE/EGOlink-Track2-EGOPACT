@@ -1,0 +1,512 @@
+[
+  {
+    "Instruction": "Today is your friend's birthday, and you want to surprise them with a lavish dinner. You have opened two saved restaurant menus on your phone: Mediterranean Greek Restaurant and Annie Italian Restaurant. Since your friend loves potato dishes like fries, ask the AI Service Agent to recommend the more suitable restaurant. Once the restaurant is selected, inform the AI service agent that all subsequent tasks will be based on this chosen restaurant, and you won’t need to reiterate it. You are a white-collar worker preparing for a work lunch (User ID: customer_005). You have pointed at three dishes in sequence. Ask the AI Service Agent to determine if the third pointed dish belongs to the Italian Classic Set. If it does, ask the AI Service Agent to find a dish in the section with a small hand illustration on the left border of the right fold-out page that is [Low Sugar] and has the [Highest Discount], and add it to the order. If there are multiple dishes tied for the highest discount among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI Service Agent to find a dish in the section with a dark background and white text located in the bottom right corner that is [Buttery Aroma] and has the [Highest Price], and add it to the order. If there are multiple dishes tied for the highest price among those that meet the conditions, you want all of them to be added. Next, ask the AI Service Agent to determine if the total cost of non-set meal items in the order is less than 50 yuan. If so, ask the AI Service Agent to add Annie's Special Set directly to the order. Finally, ask the AI Service Agent to calculate the total carbohydrate content of the entire order.",
+    "analysis": "All tool calls and database dish searches for this task are limited to Annie Italian Restaurant.\n\n1. Determine whether the third dish pointed out belongs to the Italian Classic Set.\n\n2. If it does, search within the section on the left border of the right fold-out page that features a small hand illustration. Find a dish that is [Low Sugar] and has the [Highest Discount], and add it to the order. If there are multiple dishes tied for the highest discount, add all of them to the order.\n\n3. Otherwise, search within the smaller section at the bottom right. Find a dish that is [Buttery Aroma] and has the [Highest Price], and add it to the order. If there are multiple dishes tied for the highest price, add all of them to the order.\n\n4. Check the current total cost. If it is less than 50 yuan, add Annie's Special Set to the order.\n\n5. Calculate the total carbohydrate content of the entire order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_005\n",
+          "dish_name": "Australian imported M9+ grain-fed Ribeye",
+          "quantity": 1,
+          "category": "Selected Steaks\n",
+          "price": 659,
+          "tax_rate": 0.07,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_005",
+          "dishes": [
+            {
+              "dish_name": "Annie's pizza",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Annie's salad",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Cheesecake",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Steak Lovers Set",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Seafood Delight Set",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Australian imported M9+ grain-fed Ribeye",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 3,
+    "image_name": "order1",
+    "image_path": "order1.mp4",
+    "image_description": "You and your friend are in a order. You look at the menu and point to three dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Margherita"
+    ],
+    "_v8_original_index": 3
+  },
+  {
+    "Instruction": "You and your neighbor have decided to take turns treating each other, and this time it is your turn to order. Your neighbor likes eating starchy vegetables. You have opened the menus for \"Sunshine Restaurant\" (where all ingredients marked in dark brown are sold out) and \"Annie Italian Restaurant\". You are particularly looking for dishes with complex sauce preparation processes, so you need to ask the AI Service Agent to help you select a restaurant first. Once the restaurant is selected, inform the AI service agent that all subsequent tasks will be based on this chosen restaurant, and you won’t need to reiterate it. You are a diner who does not eat spicy food (User ID: customer_010). You pointed at three dishes in sequence. Ask the AI Service Agent to determine: if the second dish you pointed at is spicy, then ask the AI Service Agent to look in the \"small card category in the middle of the left fold\" for items that are [mild flavor] and [lowest price], and add the cheapest qualifying item to the order. If there are multiple items tied for the lowest price among those that meet the conditions, add all of them. Otherwise, ask the AI Service Agent to look in the category directly above the \"category with lively small hand illustrations on the right border\" for an item that is [fresh flavor] and [highest protein content], and add the item with the highest protein content to the order. If there are multiple items tied for the highest protein content among those that meet the conditions, add all of them. Then, ask the AI Service Agent to check if the total number of dishes in the current order is less than two. If so, ask the AI Service Agent to additionally add one Seafood Delight Set. Finally, ask the AI Service Agent to calculate the total amount payable for the final order after discounts.",
+    "analysis": "All tool calls and database dish searches for this task are limited to Annie Italian Restaurant.\n1. Determine whether the second dish being pointed at is spicy.\n2. If it is spicy, search within the small card category in the middle of the left panel for dishes that are [Mild Flavor] and have the [Lowest Price], and add them to the order. If there are multiple dishes tied for the lowest price, add all of them.\n3. Otherwise, search within the category directly above the \"Lively Little Hand\" classification on the right side for dishes that are [Light Flavor] and have the [Highest Protein], and add them to the order. If there are multiple dishes tied for the highest protein, add all of them.\n4. Check the total number of dishes in the current order. If there are fewer than two, add an additional portion of Seafood Delight Set.\n5. Calculate the total amount payable for the final order after discounts.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_010",
+          "dish_name": "Buffalo mozzarella caprese",
+          "quantity": 1,
+          "category": "Antipasti & Snacks",
+          "price": 68,
+          "tax_rate": 0.05,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "get_user_order_summary",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_010"
+        }
+      },
+      {
+        "tool_name": "compute_total_payment",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_010",
+          "dishes": [
+            {
+              "dish_name": "Buffalo mozzarella caprese",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Black truffle",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Salmon & cream",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Sesame & nuts",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Italian Classic Set",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 15,
+    "image_name": "order1",
+    "image_path": "order1.mp4",
+    "image_description": "You and your friend are in a order. You look at the menu and point to three dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Ham & melon"
+    ],
+    "_v8_original_index": 15
+  },
+  {
+    "Instruction": "You have an important speech tomorrow, and tonight you need to eat some deep-sea fish that helps enhance memory. You have checked the menu of Afrikana Kitchen (currently only dishes in the dark gray section are available) and the menu of Annie Italian Restaurant. You need the AI service agent to select the more suitable restaurant based on this requirement. Once the restaurant is selected, inform the AI service agent that all subsequent tasks will be based on this chosen restaurant, and you won’t need to reiterate it. You are a supervisor arranging a company dinner (User ID: customer_004). You have pointed at three dishes in sequence. Ask the AI Service Agent to determine whether the unit price of the first dish you pointed at exceeds 100 yuan. If it does, ask the AI Service Agent to find a dish in the category located in the middle of the far-right fold of the menu that is [High Carb] and has the [lowest unit price], and add it to the order. If there are multiple dishes tied for the lowest price among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI Service Agent to look in the category at the top of the middle fold, find an item that is [Salty and Fresh Flavor] and has the [largest discount], and add it to the order. If there are multiple items tied for the largest discount among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to determine, given a total budget of 70 yuan, if there is still remaining budget for the team, then ask the AI Service Agent to add one Italian Classic Set to the order. Finally, ask the AI Service Agent to calculate the total cost of this team building order.",
+    "analysis": "All tool calls and database dish searches for this task are limited to Annie Italian Restaurant.\n\n1. Determine whether the unit price of the first pointed-out dish exceeds 100 yuan.\n\n2. If it exceeds 100 yuan, search in the middle category of the rightmost fold for a dish that is [High Carb] and has the [Lowest Unit Price], and add it to the order. If there are multiple dishes tied for the lowest price among those that meet the conditions, you want all of them to be added.\n\n3. Otherwise, search in the top category of the middle fold for an item that is [Savory Flavor] and has the [Biggest Discount], and add it to the order. If there are multiple items tied for the biggest discount among those that meet the conditions, you want all of them to be added.\n\n4. Determine if there is any remaining total budget. If so, add one portion of Italian Classic Set to the order.\n\n5. Calculate the total cost of this order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_004",
+          "dish_name": "Mixed cold cuts plank",
+          "quantity": 1,
+          "category": "Antipasti & Snacks",
+          "price": 98,
+          "tax_rate": 0.06,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "compute_total_payment",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_004",
+          "dishes": [
+            {
+              "product_name": "Mixed cold cuts plank",
+              "quantity": 1
+            },
+            {
+              "product_name": "Cold cuts & cheese plate",
+              "quantity": 1
+            },
+            {
+              "product_name": "Comte",
+              "quantity": 1
+            },
+            {
+              "product_name": "Annie's Special Set",
+              "quantity": 1
+            },
+            {
+              "product_name": "Mixed cold cuts plank",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 17,
+    "image_name": "order1",
+    "image_path": "order1.mp4",
+    "image_description": "You and your friend are in a order. You look at the menu and point to three dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Lasagne"
+    ],
+    "_v8_original_index": 17
+  },
+  {
+    "Instruction": "Tonight you are hosting a foreign client who likes salmon. You have looked at the black-and-white Butcher Restaurant menu and the green-and-white Annie Italian Restaurant menu. You need the AI service assistant to select the more suitable restaurant based on the client's preference. Once the restaurant is selected, inform the AI service agent that all subsequent tasks will be based on this chosen restaurant, and you won’t need to reiterate it. You are a food blogger writing reviews on affordable Italian cuisine (User ID: customer_009). You pointed at three dishes in sequence. Ask the AI Service Agent to determine if the first dish you pointed at is currently on sale. If it is, ask the AI Service Agent to find items in the top category of the right-hand fold that are [Rich Flavor] and have the [Lowest Unit Price], and add two portions of them to the order. If multiple items tie for the lowest unit price, add two portions of each tied item. Otherwise, ask the AI Service Agent to find an item in the category with a small hand illustration to the left of the middle fold title that is [High Iron] and has the [Highest Protein], and add it to the order. If multiple items tie for the highest protein, add one of each tied item. Subsequently, ask the AI Service Agent to determine if the total amount of non-set meal items in the current order has exceeded 120 yuan. If so, ask the AI Service Agent to directly remove the most expensive non-set meal item. Finally, ask the AI Service Agent to calculate the total tax included in your final order.",
+    "analysis": "All tool calls and database dish searches for this task are limited to Annie Italian Restaurant.\n1. Determine whether the first pointed-out dish is currently on sale.\n2. If it is on sale, search in the top category of the right tab for dishes with [Rich Flavor] and the [Lowest Unit Price], and add two portions to the cart. If there are multiple dishes tied for the lowest price among those that meet the conditions, you want two portions of each of them to be added.\n3. Otherwise, in the category on the middle tab that has a small hand illustration to the left of the title, find a dish with [High Iron] and the [Highest Protein], and add one to the order. If there are multiple dishes tied for the highest protein, you want one of each of them to be added.\n4. Check the current order total. If it exceeds 120 yuan, remove the most expensive dish directly.\n5. Calculate the total tax included in the final order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_009",
+          "dish_name": "Calzone",
+          "quantity": 2,
+          "category": "Pizza",
+          "price": 55,
+          "tax_rate": 0.09,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "remove_dish_from_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_009",
+          "dish_name": "Calzone",
+          "quantity": 2
+        }
+      },
+      {
+        "tool_name": "compute_total_tax",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_009",
+          "dishes": [
+            {
+              "dish_name": "Lasagne",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Salmone affumicato",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Italian Classic Set",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Cold Cuts & Cheese Platter",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 44,
+    "image_name": "order1",
+    "image_path": "order1.mp4",
+    "image_description": "You and your friend are in a order. You look at the menu and point to three dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Lasagne"
+    ],
+    "_v8_original_index": 44
+  },
+  {
+    "Instruction": "On Friday night, you and your colleagues need to work overtime late, so you decide to order food together to replenish energy. Everyone voted for ciabatta bread because this type of food fills you up quickly and is convenient to eat. You opened the menu for Butcher Restaurant (black and white color scheme) and the menu for Annie Italian Restaurant (green and white color scheme). First, you need to ask the AI Service Agent to recommend a restaurant based on your needs. Once the restaurant is selected, inform the AI service agent that all subsequent tasks will be based on this chosen restaurant, and you won’t need to reiterate it. You are a frugal office worker (User ID: customer_006). You pointed at three dishes sequentially in the video. Ask the AI Service Agent to check whether the second pointed-at dish contains gluten. Ask the AI Service Agent to determine: if the dish contains gluten, then ask the AI Service Agent to look in the section on the right side of the menu with a dark background and white font, find an item with [rich flavor] and [lowest sodium content], and add two portions of it to the order. If there are multiple items tied for the lowest sodium content among those that meet the conditions, you want two portions of each of them to be added. Otherwise, ask the AI Service Agent to look in the category on the right border of the middle fold of the menu that has a small hand illustration, find a dish with [mild flavor] and [highest protein content], and add it to the order. If there are multiple items tied for the highest protein content among those that meet the conditions, you want one of each of them to be added. Subsequently, ask the AI Service Agent to determine: if the cost of non-set meal items in the current order exceeds 120 yuan, then ask the AI Service Agent to remove one portion of the non-set meal item with the smallest discount in the order. Finally, ask the AI Service Agent to sum up the total grams of carbohydrates in the current order.",
+    "analysis": "All tool calls and database dish searches for this task are limited exclusively to Annie Italian Restaurant.\n1. Check whether the second dish being pointed at contains gluten.\n2. If it does, look for an item with [Rich Flavor] and [the lowest sodium content] in the section on the right with a dark background and white text, and add two portions to the cart. If multiple items tie for the lowest sodium content, add two portions of each of those tied items.\n3. Otherwise, look for an item with [Slightly Salty Flavor] and [the highest protein content] in the category on the right border of the middle fold featuring a small hand illustration, and add one to the order. If multiple items tie for the highest protein content, add one of each of those tied items.\n4. Check the total cost of the current order; if it exceeds 120 yuan, remove the most recently added dish from the order.\n5. Calculate the total grams of carbohydrates in the current order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_006",
+          "dish_name": "Cooked ham baguette",
+          "quantity": 1,
+          "category": "Sandwiches & Panini",
+          "price": 38,
+          "tax_rate": 0.11,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "remove_dish_from_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_006",
+          "dish_name": "Tuna panini",
+          "quantity": 1
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_006",
+          "dishes": [
+            {
+              "dish_name": "Cooked ham baguette",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Tuna panini",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Veggie salad",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Annie's Special Set",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 47,
+    "image_name": "order1",
+    "image_path": "order1.mp4",
+    "image_description": "You and your friend are in a order. You look at the menu and point to three dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Ham & melon"
+    ],
+    "_v8_original_index": 47
+  },
+  {
+    "Instruction": "You are hosting a family gathering, and your family insists on having pasta (spaghetti or noodles) for every meal. You have checked the white-background menu of the Mediterranean Greek Restaurant and the colorful background menu of Afrikana Kitchen. Based on this information, you need to ask the AI Service Agent to select one restaurant first. Once the restaurant is selected, inform the AI service agent that all subsequent tasks will be based on this chosen restaurant, and you won’t need to reiterate it. You are a food blogger reviewing restaurant value for money (User ID: customer_006). In the video, you pointed out three dishes in sequence. Ask the AI Service Agent to check if the first pointed-out dish has a discount. Ask the AI Service Agent to determine: if the dish does not have a discount, then ask the AI Service Agent to look under the category with the dark background on the right side of the menu for a dish that is [High Calcium] and [Lowest Carbs], and add one portion to the order. If there are multiple dishes tied for the lowest carbs among those that meet the conditions, you want one portion of each of them to be added. Otherwise, ask the AI Service Agent to filter out a dish that is [Slightly Sour Taste] and [Highest Price] in the category at the bottom of the left flap, and add two portions of it to the order. If there are multiple dishes tied for the highest price among those that meet the conditions, you want two portions of each of them to be added. Ask the AI Service Agent to determine: if the total amount of non-set meal items in the current order exceeds 300 yuan, then ask the AI Service Agent to remove the most expensive non-set meal item and replace it with Annie's Special Set. Finally, ask the AI Service Agent to calculate the total discount amount for your order.",
+    "analysis": "All tool calls and database dish searches for this task are limited to Annie Italian Restaurant.\n1. Check if the first pointed-at dish has a discount.\n2. If there is no discount, search under the category with the dark background on the right for dishes that are [High Calcium] and have the [Lowest Carbs], and add one portion to the order. If multiple dishes tie for the lowest carb content among those meeting the conditions, add one portion of each.\n3. Otherwise, in the category at the very bottom of the left foldout, filter for dishes with a [Slightly Sour Taste] and the [Highest Price], and add two portions to the order. If multiple dishes tie for the highest price among those meeting the conditions, add two portions of each.\n4. Check the total order amount. If it exceeds 300 yuan, remove the most expensive dish and replace it with Annie's Special Set.\n5. Calculate the total discount amount for the order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_006",
+          "dish_name": "Annie's salad",
+          "quantity": 2,
+          "category": "Annie's top dishes",
+          "price": 39,
+          "tax_rate": 0.09,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "remove_dish_from_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_006",
+          "dish_name": "Annie's salad",
+          "quantity": 2
+        }
+      },
+      {
+        "tool_name": "add_set_meal_to_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_006",
+          "set_meal_name": "Annie's Special Set",
+          "quantity": 2
+        }
+      },
+      {
+        "tool_name": "compute_total_payment",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_006",
+          "dishes": [
+            {
+              "dish_name": "Tuna panini",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Veggie salad",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Annie's Special Set",
+              "quantity": 3
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 53,
+    "image_name": "order1",
+    "image_path": "order1.mp4",
+    "image_description": "You and your friend are in a order. You look at the menu and point to three dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Lasagne"
+    ],
+    "_v8_original_index": 53
+  },
+  {
+    "Instruction": "\nTo celebrate your promotion, you want to treat yourself to a fancy lunch. You have opened the menus of two restaurants: one is Annie Italian Restaurant, and the other is Pau Hana Bar. You suddenly have a strong craving for fries, so you need the AI service agent to select one of these two restaurants based on this preference. Once the restaurant is selected, inform the AI service agent that all subsequent tasks will be based on this chosen restaurant, and you won’t need to reiterate it. You are a customer attempting to minimize sugar intake (User ID: customer_003). You pointed at three dishes. Ask the AI service agent to query the total calories of the third dish you pointed at. If the total calories of that dish are below 400 kcal, ask the AI service agent to look in the section with a small hand illustration on the left border of the right menu fold for a [Gluten-free] item with the [Highest Price] and add it to the order. If there are multiple items tied for the highest price among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI service agent to look in the category with a small hand illustration on the right border of the middle menu fold for a [High Carbs (high_carbs)] dish with the [Lowest Unit Price] and add it to the order. If there are multiple dishes tied for the lowest price among those that meet the conditions, you want all of them to be added. Next, ask the AI service agent to check if there are more than 2 single items in the order. If so, ask the AI service agent to remove the dish that was just added. Finally, ask the AI service agent to calculate the total sodium content in milligrams for your current consumption.",
+    "analysis": "All tool calls and database dish searches for this task are limited to Annie Italian Restaurant.\n1. Check whether the total calories of the third pointed dish are below 400 kcal.\n2. If below 400 kcal, search in the section with small hand illustrations on the left border of the right fold for an item that is [Gluten-Free] and has the [Highest Price], and add it to the order. If multiple items tie for the highest price, add all of them.\n3. Otherwise, search in the category with small hand illustrations on the right border of the middle fold for a dish that is [High Fiber] and has the [Lowest Unit Price], and add it to the order. If multiple items tie for the lowest price, add all of them.\n4. Check the total number of items in the order. If it exceeds 2 items, remove the dish that was added to the order first.\n5. Calculate the total sodium content in milligrams for this order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_003",
+          "dish_name": "Piadina",
+          "quantity": 1,
+          "category": "Sandwiches & Panini",
+          "price": 88,
+          "tax_rate": 0.13,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "remove_dish_from_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_003",
+          "dish_name": "Piadina",
+          "quantity": 1
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_003",
+          "dishes": [
+            {
+              "dish_name": "Salmon & asparagus",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Grilled salmon",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Tuna salad",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Seafood Delight Set",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 63,
+    "image_name": "order1",
+    "image_path": "order1.mp4",
+    "image_description": "You and your friend are in a order. You look at the menu and point to three dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Ham & melon"
+    ],
+    "_v8_original_index": 63
+  },
+  {
+    "Instruction": "You are hosting a family gathering, and some members do not eat meat. You have viewed the white-background menu of Annie Italian Restaurant and the colored-background menu of Afrikana Kitchen. Based on this information, you need the AI service agent to select a restaurant first. Once the restaurant is selected, inform the AI service agent that all subsequent tasks will be based on this chosen restaurant, and you won’t need to reiterate it. You are customer_005. You are a chef diligently studying menu flavor profile combinations. Ask the AI Service Agent to determine: if the first pointed dish has the [Rich] mouthfeel tag, then ask the AI Service Agent to look for dishes with [High Carb] attributes in the topmost category on the right flap, and add the dish with the largest discount to the order. If there are multiple dishes tied for the largest discount among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI Service Agent to look for dishes with [Earthy/Fruity] flavors in the category directly below the topmost category on the right flap, and add the dish with the lowest sodium content to the order. If there are multiple dishes tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. Next, ask the AI Service Agent to add one \"Steak Lovers Set\" meal set to the order. Ask the AI Service Agent to determine: if the order's total protein content per unit (100g) exceeds 200g, then ask the AI Service Agent to remove the non-set dish with the lowest protein content from the order. If there are multiple dishes tied for the lowest protein content, you want all of them to be removed. Finally, ask the AI Service Agent to calculate the total tax generated for the entire order.",
+    "analysis": "Results:\nAll tool calls and database dish searches for this task are limited to Annie Italian Restaurant.\n1. Determine whether the first dish being pointed at has the [Rich] taste tag.\n2. If it does, look in the category at the very top of the right sidebar for a dish that is [High Carb] and has the [Maximum Discount], and add it to the order. If multiple dishes tie for the maximum discount, add all of them to the order.\n3. Otherwise, look in the category directly below the top category in the right sidebar for a dish that is [Earthy/Fruity] and has the [Lowest Sodium Content], and add it to the order. If multiple dishes tie for the lowest sodium content, add all of them to the order.\n4. Add one portion of the \"Steak Lovers Set\" to the order.\n5. Check the total protein content of the order. If it exceeds 200 grams, remove the dish with the lowest protein content from the order.\n6. Calculate the total tax for the entire order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_005",
+          "dish_name": "Hawaiiana",
+          "quantity": 1,
+          "category": "Pizza",
+          "price": 58,
+          "tax_rate": 0.07,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_set_meal_to_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_005",
+          "set_meal_name": "Steak Lovers Set",
+          "quantity": 1
+        }
+      },
+      {
+        "tool_name": "remove_dish_from_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_005",
+          "dish_name": "Annie's salad",
+          "quantity": 2
+        }
+      },
+      {
+        "tool_name": "compute_total_tax",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_005",
+          "dishes": [
+            {
+              "dish_name": "Annie's pizza",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Cheesecake",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Steak Lovers Set",
+              "quantity": 3
+            },
+            {
+              "dish_name": "Seafood Delight Set",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Hawaiiana",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 87,
+    "image_name": "order1",
+    "image_path": "order1.mp4",
+    "image_description": "You and your friend are in a order. You look at the menu and point to three dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Lasagne"
+    ],
+    "_v8_original_index": 87
+  }
+]

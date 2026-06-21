@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-06-17T10:15:39+0800",
+  "key_present": true,
+  "key_logged": false,
+  "endpoints": [
+    {
+      "root": "https://cf.ai-pixel.online",
+      "base_url": "https://cf.ai-pixel.online/v1",
+      "models": [],
+      "chat": [
+        {
+          "ok": false,
+          "status": 403,
+          "latency_sec": 0.594,
+          "error_type": "HTTPError",
+          "error_preview": "error code: 1010",
+          "model": "gpt-5.5",
+          "content_preview": ""
+        },
+        {
+          "ok": false,
+          "status": 403,
+          "latency_sec": 0.409,
+          "error_type": "HTTPError",
+          "error_preview": "error code: 1010",
+          "model": "gpt-5",
+          "content_preview": ""
+        },
+        {
+          "ok": false,
+          "status": 403,
+          "latency_sec": 0.42,
+          "error_type": "HTTPError",
+          "error_preview": "error code: 1010",
+          "model": "gpt-4.1",
+          "content_preview": ""
+        },
+        {
+          "ok": false,
+          "status": 403,
+          "latency_sec": 0.406,
+          "error_type": "HTTPError",
+          "error_preview": "error code: 1010",
+          "model": "gpt-4o",
+          "content_preview": ""
+        }
+      ],
+      "models_probe": {
+        "ok": false,
+        "status": 403,
+        "latency_sec": 0.606,
+        "error_type": "HTTPError",
+        "error_preview": "error code: 1010"
+      }
+    },
+    {
+      "root": "https://ai-pixel.online",
+      "base_url": "https://ai-pixel.online/v1",
+      "models": [
+        "codex-auto-review",
+        "gpt-4o-audio-preview",
+        "gpt-4o-realtime-preview",
+        "gpt-5.2",
+        "gpt-5.2-2025-12-11",
+        "gpt-5.2-chat-latest",
+        "gpt-5.2-pro",
+        "gpt-5.2-pro-2025-12-11",
+        "gpt-5.3-codex",
+        "gpt-5.3-codex-spark",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-image-1",
+        "gpt-image-1.5",
+        "gpt-image-2"
+      ],
+      "chat": [
+        {
+          "ok": true,
+          "status": 200,
+          "latency_sec": 2.019,
+          "model": "gpt-5.5",
+          "content_preview": "OK"
+        }
+      ],
+      "models_probe": {
+        "ok": true,
+        "status": 200,
+        "latency_sec": 0.719
+      }
+    }
+  ],
+  "recommended_base_url": "https://ai-pixel.online/v1",
+  "recommended_model": "gpt-5.5"
+}

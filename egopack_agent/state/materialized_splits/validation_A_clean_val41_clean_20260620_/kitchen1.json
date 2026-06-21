@@ -1,0 +1,41 @@
+[
+  {
+    "Instruction": "Your user ID is cook_002, and today is May 9, 2026. First, ask the AI Service Agent to identify which recipe corresponds to the dish represented by all three ingredients on the blue cutting board and the ingredients in the pot. Next, have the AI Service Agent determine whether the nutrition features of this dish include low sodium. If they do, ask the AI Service Agent to find the recipe with the highest total protein content among all recipes containing the soy allergen and add it to your menu. If there are multiple recipes tied for the highest protein content, you want all of them to be added. Otherwise, ask the AI Service Agent to find the recipe with the fewest preparation steps among all recipes that share at least two nutrition features with this recipe and add it to your menu. If there are multiple recipes tied for the fewest steps, you want all of them to be added. After that, have the AI Service Agent identify all ingredients belonging to the fruit category required by the last recipe in the current menu, and add any that are already expired to the shopping list. Finally, ask the AI Service Agent to summarize the nutrition features of all recipes in the current menu.",
+    "analysis": "1. Identify which recipe matches the combination of the three ingredients on the blue cutting board and the ingredients in the pot.\n\n2. If this recipe includes the low-sodium nutritional feature, find the recipe with the highest total protein among all recipes containing the soy allergen and add it to the menu. If there are multiple recipes tied for the highest total protein among those that meet the conditions, add all of them.\n\n3. If this recipe does not include the low-sodium nutritional feature, find the recipe with the fewest preparation steps among all recipes that share at least two nutritional features with this recipe and add it to the menu. If there are multiple recipes tied for the fewest preparation steps among those that meet the conditions, add all of them.\n\n4. Identify all fruit ingredients required for the last recipe in the current menu, and add any expired ones to the shopping list.\n\n5. Summarize the nutritional features of all recipes in the current menu.",
+    "ground_truth": [
+      {
+        "tool_name": "add_recipe_to_menu",
+        "parameters": {
+          "user_id": "cook_002",
+          "recipe_name": "Potato & Greens Salad"
+        }
+      },
+      {
+        "tool_name": "get_recipe_ingredients",
+        "parameters": {
+          "recipe_name": "Turkey & Apple Soup"
+        }
+      },
+      {
+        "tool_name": "tally_total_nutritional_characteristics",
+        "parameters": {
+          "user_id": "cook_002",
+          "recipes": [
+            "Salmon & Quinoa Bowl",
+            "Turkey & Apple Soup",
+            "Potato & Greens Salad"
+          ]
+        }
+      }
+    ],
+    "task_id": 16,
+    "image_name": "kitchen1",
+    "image_path": "kitchen1.mp4",
+    "image_description": "You are cooking. In the pot in front of you, potatoes are boiling. On the cutting board to your right, there are three chopped ingredients. Their positions are: the upper left of the cutting board (a green ingredient), the lower left (a yellow ingredient), and the right side (a green ingredient). The first two steps have already been completed for the current recipe. On the baking tray, there are roasted tomatoes on the left side, and the user is sprinkling yellow powder onto the right half of the tray. The two ingredients on the tray are for another recipe, which is currently at step 2.",
+    "key": "recipe_name",
+    "value": [
+      "Potato & Greens Salad"
+    ],
+    "_v8_original_index": 16
+  }
+]

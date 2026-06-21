@@ -1,0 +1,16 @@
+{
+  "timestamp": "20260618_121313",
+  "gpt55": {
+    "available": false,
+    "key_present": true,
+    "failure_class": "timeout",
+    "elapsed_sec": 8.01
+  },
+  "deepseek": {
+    "available": false,
+    "key_present": false,
+    "failure_class": "missing_api_key",
+    "elapsed_sec": 0
+  },
+  "report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V9_API_HEALTHCHECK_20260618_121313.md"
+}

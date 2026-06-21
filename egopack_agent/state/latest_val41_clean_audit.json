@@ -1,0 +1,82 @@
+{
+  "run_id": "val41_clean_20260620_",
+  "audit_jsonl": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/VAL41_CLEAN_AUDIT_val41_clean_20260620_.jsonl",
+  "eval_json": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/VAL41_CLEAN_EVAL_val41_clean_20260620_.json",
+  "clean_split": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/state/materialized_splits/validation_A_clean_val41_clean_20260620_",
+  "audit_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/VAL41_CLEAN_AUDIT_val41_clean_20260620_.md",
+  "eval_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/VAL41_CLEAN_EVAL_val41_clean_20260620_.md",
+  "clean_tasks": 5,
+  "summary": {
+    "V10": {
+      "valid": 5,
+      "joint": 0.0,
+      "result": 0.0,
+      "tool": 0.0,
+      "micro": 0.0,
+      "correct_calls": 0,
+      "gt_calls": 17,
+      "interaction_calls": 86,
+      "missing_or_error_specs": []
+    },
+    "V14": {
+      "valid": 5,
+      "joint": 0.2,
+      "result": 0.2,
+      "tool": 0.2,
+      "micro": 0.29411764705882354,
+      "correct_calls": 5,
+      "gt_calls": 17,
+      "interaction_calls": 102,
+      "missing_or_error_specs": []
+    },
+    "V14_candidate": {
+      "valid": 5,
+      "joint": 0.2,
+      "result": 0.2,
+      "tool": 0.2,
+      "micro": 0.29411764705882354,
+      "correct_calls": 5,
+      "gt_calls": 17,
+      "interaction_calls": 78,
+      "missing_or_error_specs": []
+    },
+    "V17": {
+      "valid": 0,
+      "joint": 0.0,
+      "result": 0.0,
+      "tool": 0.0,
+      "micro": 0.0,
+      "correct_calls": 0,
+      "gt_calls": 0,
+      "interaction_calls": 0,
+      "missing_or_error_specs": [
+        {
+          "version": "V17",
+          "spec": "kitchen1",
+          "valid": 0,
+          "error": "missing_result_file"
+        },
+        {
+          "version": "V17",
+          "spec": "retail1",
+          "valid": 0,
+          "error": "missing_result_file"
+        },
+        {
+          "version": "V17",
+          "spec": "retail2",
+          "valid": 0,
+          "error": "result_len_1_source_len_2",
+          "result_file": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/gpt-5.5-V17_compiler_repaired_smoke5-v17_smoke5_20260620_1140/retail2_easy.json"
+        },
+        {
+          "version": "V17",
+          "spec": "retail4",
+          "valid": 0,
+          "error": "missing_result_file"
+        }
+      ]
+    }
+  },
+  "final_run": false
+}

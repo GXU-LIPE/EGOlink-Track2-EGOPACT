@@ -1,0 +1,91 @@
+{
+  "split_name": "validation_A_clean",
+  "run_id": "val41_clean_20260620_",
+  "source_split": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/state/materialized_splits/validation_A_limit30",
+  "files": [
+    {
+      "file": "kitchen1.json",
+      "scenario": "kitchen",
+      "number": 1,
+      "source_local_positions": [
+        0
+      ],
+      "source_original_indices": [
+        16
+      ],
+      "task_count": 1
+    },
+    {
+      "file": "retail1.json",
+      "scenario": "retail",
+      "number": 1,
+      "source_local_positions": [
+        0
+      ],
+      "source_original_indices": [
+        24
+      ],
+      "task_count": 1
+    },
+    {
+      "file": "retail2.json",
+      "scenario": "retail",
+      "number": 2,
+      "source_local_positions": [
+        0
+      ],
+      "source_original_indices": [
+        2
+      ],
+      "task_count": 1
+    },
+    {
+      "file": "retail4.json",
+      "scenario": "retail",
+      "number": 4,
+      "source_local_positions": [
+        1,
+        2
+      ],
+      "source_original_indices": [
+        14,
+        17
+      ],
+      "task_count": 2
+    }
+  ],
+  "specs": [
+    [
+      "kitchen",
+      1,
+      [
+        16
+      ]
+    ],
+    [
+      "retail",
+      1,
+      [
+        24
+      ]
+    ],
+    [
+      "retail",
+      2,
+      [
+        2
+      ]
+    ],
+    [
+      "retail",
+      4,
+      [
+        14,
+        17
+      ]
+    ]
+  ],
+  "planned_task_count": 5,
+  "uses_val41_gt_for_filtering": true,
+  "uses_final_hidden_metadata": false
+}

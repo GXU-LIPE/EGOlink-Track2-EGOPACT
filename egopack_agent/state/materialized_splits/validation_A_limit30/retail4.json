@@ -1,0 +1,312 @@
+[
+  {
+    "Instruction": "You are a wine merchant (User ID: david_chen_456). Ask the AI Service Agent to confirm the category and price of the bottle to the right of the first bottle you are pointing at. If there are wines in the same category with a unit price below 100 yuan and currently on sale, ask the AI Service Agent to search for wines that are from Italy, have a tax rate below 0.13, a discount factor greater than 0.9, and a taste of \"sour\", and add the qualifying wine with the lowest price to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If there are no such wines in the same category, ask the AI Service Agent to check whether the second bottle to the right of the second bottle you are pointing at is from Italy. If it is, select the wine(s) from Italy with the lowest calorie count from the inventory and add them to your cart. If there are multiple wines tied for the lowest calorie count among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in your cart.",
+    "analysis": "1. Check the category and price of the bottle immediately to the right of the first bottle you are pointing at.\n\n2. If there are wines in the same category with a unit price below 100 yuan and currently on discount, search for wines that are from Spain, have a tax rate below 0.13, and feature a \"savory\" flavor. Add the cheapest qualifying wine to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add all of them.\n\n3. If no such wines are found, check whether the bottle second to the right of the second bottle you are pointing at is from Italy. If it is, select the Italian wine(s) with the lowest calorie count from the inventory and add them to your cart. If there are multiple wines tied for the lowest calorie count, add all of them.\n\n4. Calculate the total nutritional value of the items in your cart.",
+    "ground_truth": [
+      {
+        "tool_name": "get_price",
+        "parameters": {
+          "product_name": "Scanavino Prosecco"
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "david_chen_456",
+          "product_name": "ZONIN Pinot Grigio",
+          "qty": 1,
+          "category": "wine",
+          "price": 95,
+          "tax_rate": 0.11,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "david_chen_456",
+          "products": [
+            {
+              "product_name": "Lerpin Merlot",
+              "quantity": 2
+            },
+            {
+              "product_name": "Henkell Trocken",
+              "quantity": 2
+            },
+            {
+              "product_name": "Tempranillo Crianza",
+              "quantity": 1
+            },
+            {
+              "product_name": "Clos des Papes",
+              "quantity": 1
+            },
+            {
+              "product_name": "ZONIN Pinot Grigio",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 13,
+    "image_name": "retail4",
+    "image_path": "retail4.mp4",
+    "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
+    "key": "product_name",
+    "value": [
+      "Scanavino Prosecco"
+    ],
+    "_v8_original_index": 13
+  },
+  {
+    "Instruction": "You are a wine enthusiast (User ID: lisa_wong_456). Please ask the AI Service Agent to query the country of origin and taste profile of the wine you are pointing at that has a gold foil cap. Next, have the AI Service Agent check whether the bottle to the right of the wine with red liquid—which has a gold cap with red details—is on discount. If there is a discount, ask the AI Service Agent to find wines produced in France, with a tax rate below 0.12, and featuring a \"low fat\" characteristic, and add the qualifying wine(s) with the lowest sugar content to the shopping cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, add all of them. If there is no discount, ask the AI Service Agent to find wines that share the same origin as the first bottle, have a \"sweet\" taste profile, and are priced below 300 yuan, and add the cheapest qualifying wine(s) to the shopping cart. If there are multiple wines tied for the lowest price among those that meet the conditions, add all of them. Finally, ask the AI Service Agent to calculate the total tax payable for the items in the shopping cart.",
+    "analysis": "1. Query the country of origin and taste profile of the wine with a gold foil cap.\n2. Check whether the wine to the right of the wine containing red liquid, which has a gold cap with red accents, is on discount.\n3. If it is on discount, search for wines originating from France with a tax rate below 0.12 and a \"low fat\" characteristic. Add the wine with the lowest sugar content to the cart. If multiple wines tie for the lowest sugar content among those that meet the conditions, add all of them to the cart.\n4. If it is not on discount, search for wines that share the same origin as the first bottle, have a \"sweet\" taste, and are priced below 300 yuan. Add the cheapest wine to the cart. If multiple wines tie for the lowest price among those that meet the conditions, add all of them to the cart.\n5. Calculate the total tax for the items in the cart.",
+    "ground_truth": [
+      {
+        "tool_name": "get_taste",
+        "parameters": {
+          "product_name": "Bosco del Merlo"
+        }
+      },
+      {
+        "tool_name": "get_country_of_origin",
+        "parameters": {
+          "product_name": "Bosco del Merlo"
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "lisa_wong_456",
+          "product_name": "FIFTEEN YEAR OLD Brandy",
+          "qty": 1,
+          "category": "liquor",
+          "price": 239,
+          "tax_rate": 0.09,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "compute_total_tax",
+        "parameters": {
+          "user_id": "lisa_wong_456",
+          "products": [
+            {
+              "product_name": "NAPA VALLEY Cabernet Sauvignon",
+              "quantity": 2
+            },
+            {
+              "product_name": "ZONIN Moscato d'Asti",
+              "quantity": 1
+            },
+            {
+              "product_name": "FIFTEEN YEAR OLD Brandy",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 14,
+    "image_name": "retail4",
+    "image_path": "retail4.mp4",
+    "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
+    "key": "product_name",
+    "value": [
+      "Bosco del Merlo"
+    ],
+    "_v8_original_index": 14
+  },
+  {
+    "Instruction": "Results:\nYou are a wine dealer (User ID: mike_roberts_234). Ask the AI Service Agent to query the nutrition information and discount details for the first bottle of wine you are pointing at. Then, ask the AI Service Agent to check whether the bottle to the right of the wine with the pink label is from Italy. If it is, ask the AI Service Agent to search for wines from Italy with a tax rate below 0.12 and the \"low sugar\" characteristic, and add the one with the lowest calorie content to your cart. If there are multiple wines tied for the lowest calorie content, add all of them. If it is not, ask the AI Service Agent to search for wines from France with the \"low fat\" characteristic and a unit price below 200 yuan, and add the cheapest one. If there are multiple wines tied for the lowest price, add all of them. Finally, ask the AI Service Agent to calculate the total calcium content of the items in your cart.",
+    "analysis": "1. Query the nutritional information and discount details of the first bottle of wine you are pointing at.\n\n2. Check whether the bottle to the right of the wine with the pink label is produced in Italy.\n\n3. If so, search for wines produced in Italy, with a tax rate below 0.12, and featuring \"low sugar.\" Add the qualifying wine with the lowest calorie count to your cart. If multiple wines tie for the lowest calories, add one of each of those tied items to the cart.\n\n4. If not, search for wines produced in France, featuring \"low fat,\" and with a unit price below 200 yuan. Add the qualifying wine with the lowest price to your cart. If multiple wines tie for the lowest price, add one of each of those tied items to the cart.\n\n5. Calculate the total calcium content of the items in the shopping cart.",
+    "ground_truth": [
+      {
+        "tool_name": "get_nutrition",
+        "parameters": {
+          "product_name": "Bosco del Merlo"
+        }
+      },
+      {
+        "tool_name": "get_discount",
+        "parameters": {
+          "product_name": "Bosco del Merlo"
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "mike_roberts_234",
+          "product_name": "CRYSTAL VISTEUX Bordeaux",
+          "qty": 1,
+          "category": "wine",
+          "price": 115,
+          "tax_rate": 0.1,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "mike_roberts_234",
+          "products": [
+            {
+              "product_name": "Champagne Brut",
+              "quantity": 1
+            },
+            {
+              "product_name": "TASTE OF ITALY Pinot Grigio",
+              "quantity": 1
+            },
+            {
+              "product_name": "CRYSTAL VISTEUX Bordeaux",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 17,
+    "image_name": "retail4",
+    "image_path": "retail4.mp4",
+    "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
+    "key": "product_name",
+    "value": [
+      "Bosco del Merlo"
+    ],
+    "_v8_original_index": 17
+  },
+  {
+    "Instruction": "You are a professional sommelier (User ID: mike_roberts_234). Ask the AI Service Agent to check whether the price difference between the wine with the thickest bottle and the wine with the pink label exceeds 50 yuan. If it does, ask the AI Service Agent to search for wines that are from Italy, have a tax rate below 0.1, and feature a \"savory\" taste, then add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If it does not, ask the AI Service Agent to find wines that are from France, have a \"low-fat\" feature, and cost less than 150 yuan per unit, then add the one with the highest calories to your cart. If there are multiple wines tied for the highest calorie count among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI Service Agent to remove the items just added, and then calculate the total tax for the empty cart.",
+    "analysis": "1. Check whether the price difference between the wine with the thickest bottle and the wine with a pink label exceeds 50 yuan.\n\n2. If so, search for wines originating from Italy with a tax rate below 0.05 and a \"savory\" taste, and add the cheapest qualifying wine to your cart. If multiple wines tie for the lowest price, add all of them.\n\n3. If not, search for wines originating from France with a \"low fat\" characteristic and a unit price below 150 yuan, and add the qualifying wine with the highest calories to your cart. If multiple wines tie for the highest calorie count, add all of them.\n\n4. Remove the items just added, and calculate the total tax for the empty cart.",
+    "ground_truth": [
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "mike_roberts_234",
+          "product_name": "Merlot Grande Reserve",
+          "qty": 1,
+          "category": "wine",
+          "price": 288,
+          "tax_rate": 0.09,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "compute_total_tax",
+        "parameters": {
+          "user_id": "mike_roberts_234",
+          "products": [
+            {
+              "product_name": "Champagne Brut",
+              "quantity": 1
+            },
+            {
+              "product_name": "TASTE OF ITALY Pinot Grigio",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 36,
+    "image_name": "retail4",
+    "image_path": "retail4.mp4",
+    "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
+    "key": "product_name",
+    "value": [
+      "Bosco del Merlo",
+      "Moscato Scanavino Rose"
+    ],
+    "_v8_original_index": 36
+  },
+  {
+    "Instruction": "You are a shopping expert (User ID: bill_donk_143). Ask the AI Service Agent to compare the discounted prices of wines with both gold and red labels against wines with pink labels. If the former is cheaper, ask the AI Service Agent to find wines from Italy with a tax rate below 0.1 and the \"low fat\" feature, and add the one with the lowest sodium content to your cart. If there are multiple wines tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. If the latter is cheaper, ask the AI Service Agent to find wines from Spain with a \"bitter\" taste and a price higher than 140 yuan, and add the one with the highest calories and lowest price to your cart. If there are multiple wines tied for the highest calories and lowest price among those that meet the conditions, you want all of them to be added. Next, ask the AI Service Agent to find wines with a discounted price higher than 60 yuan and the \"low sugar\" feature, and add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total cost of the items in your cart.",
+    "analysis": "Results:\n1. Compare the discounted prices of wines that have both gold and red labels against wines that have pink labels.\n\n2. If the former is cheaper, search for wines from Italy with a tax rate below 0.1 and the \"low fat\" feature, and add the one with the lowest sodium content to your cart. If multiple items tie for the lowest sodium content, add one of each.\n\n3. If the latter is cheaper, search for wines from Spain with a \"sour\" taste and a price higher than 140 yuan, and add the one with the highest calorie content to your cart. If multiple items tie for the highest calorie content, add one of each.\n\n4. Search for wines with a discounted price higher than 60 yuan and the \"low sugar\" feature, and add the cheapest one to your cart. If multiple items tie for the lowest price, add one of each.\n\n5. Calculate the total cost of the items in your cart.",
+    "ground_truth": [
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "bill_donk_143",
+          "product_name": "CANTO ONE ZONE Red Wine",
+          "qty": 1,
+          "category": "wine",
+          "price": 198,
+          "tax_rate": 0.06,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "bill_donk_143",
+          "product_name": "ZONIN Pinot Grigio",
+          "qty": 1,
+          "category": "wine",
+          "price": 95,
+          "tax_rate": 0.11,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "bill_donk_143",
+          "product_name": "TASTE OF ITALY Pinot Grigio",
+          "qty": 1,
+          "category": "wine",
+          "price": 95,
+          "tax_rate": 0.13,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "compute_total_payment",
+        "parameters": {
+          "user_id": "bill_donk_143",
+          "products": [
+            {
+              "product_name": "Merlot Grande Reserve",
+              "quantity": 1
+            },
+            {
+              "product_name": "SILVER BAY Sauvignon Blanc",
+              "quantity": 1
+            },
+            {
+              "product_name": "Sauvignon Blanc",
+              "quantity": 1
+            },
+            {
+              "product_name": "ZONIN Moscato d'Asti",
+              "quantity": 2
+            },
+            {
+              "product_name": "CANTO ONE ZONE Red Wine",
+              "quantity": 1
+            },
+            {
+              "product_name": "ZONIN Pinot Grigio",
+              "quantity": 1
+            },
+            {
+              "product_name": "TASTE OF ITALY Pinot Grigio",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 46,
+    "image_name": "retail4",
+    "image_path": "retail4.mp4",
+    "image_description": "You are in a wine shop, standing in front of shelves overflowing with wines. You first point to a bottle containing a golden liquid, with a gold-leaf cap around the neck and a larger bottle. You then point to another bottle containing a red liquid, your finger moving back and forth between the two. The other wines in your field of vision are all filled with dark green or black liquids.",
+    "key": "product_name",
+    "value": [
+      "Moscato Scanavino Rose"
+    ],
+    "_v8_original_index": 46
+  }
+]

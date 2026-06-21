@@ -1,0 +1,37 @@
+{
+  "run_id": "v19_case_reuse_20260620_1546",
+  "smoke_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V19_SMOKE10_CASE_REUSE_v19_case_reuse_20260620_1546.md",
+  "smoke_passed": false,
+  "full_run": false,
+  "final_run": false,
+  "decision_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V19_NEXT_DECISION_v19_case_reuse_20260620_1546.md",
+  "protected_best_updated": false,
+  "v10_zip_overwritten": false,
+  "smoke_summary": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/runs/V19_gt100_case_reuse_val41/v19_case_reuse_20260620_1546/smoke_eval_summary.json",
+  "smoke_metrics": {
+    "v14": {
+      "valid": 10,
+      "joint": 0.1,
+      "result": 0.4,
+      "tool": 0.1,
+      "micro": 0.5121951219512195,
+      "matched_tools": 21,
+      "gt_tools": 41,
+      "interaction_calls": 217
+    },
+    "v19": {
+      "valid": 10,
+      "joint": 0.1,
+      "result": 0.4,
+      "tool": 0.1,
+      "micro": 0.5121951219512195,
+      "matched_tools": 21,
+      "gt_tools": 41,
+      "interaction_calls": 217
+    }
+  },
+  "val41_result_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V19_VAL41_CASE_REUSE_RESULT_v19_case_reuse_20260620_1546.md",
+  "v14_diff_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V19_V14_DIFF_ANALYSIS_v19_case_reuse_20260620_1546.md",
+  "completion_status": "stopped_after_failed_smoke10",
+  "updated_at_utc": "2026-06-20T08:05:32Z"
+}

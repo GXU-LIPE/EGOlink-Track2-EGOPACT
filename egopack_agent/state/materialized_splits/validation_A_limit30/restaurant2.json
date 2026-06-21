@@ -1,0 +1,105 @@
+[
+  {
+    "Instruction": "You are a food blogger (User ID: customer_004), reviewing dishes for a blog post. Ask the AI service agent to check the content of the top section of the middle panel. Ask the AI service agent to determine if it contains rich-flavored dishes. If it does, ask the AI service agent to look in the area on the right with a dark background and white font for high-protein dishes that are the highest-priced and add the highest-priced qualifying dish to the order. If there are multiple dishes tied for the highest price among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI service agent to select herbal-flavored meals from the section your finger is pointing at first that are the lowest in calories and add the lowest-calorie qualifying meal to the order. If there are multiple meals tied for the lowest calories among those that meet the conditions, you want all of them to be added. Subsequently, ask the AI service agent to select high-carb bread from the independent small section at the bottom of the right panel that is the lowest-priced and add the lowest-priced qualifying bread item to the order. If there are multiple bread items tied for the lowest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI service agent to calculate the total protein content of all items in the current order.",
+    "analysis": "1. Check the content of the section at the very top of the middle fold.\n\n2. If it contains dishes with rich flavors, then in the area on the right with a dark background and white text, select the dish(es) containing dairy products with the highest price to add to the order. If there are multiple dishes tied for the highest price, add all of them.\n\n3. If it does not contain dishes with rich flavors, then in the section pointed to first, select the meal(s) with herbal flavor and the lowest calories to add to the order. If there are multiple meals tied for the lowest calories, add all of them.\n\n4. In the independent small section at the very bottom of the right fold, select the bread(s) with high carbohydrates and the lowest price to add to the order. If there are multiple breads tied for the lowest price, add all of them.\n\n5. Calculate the total protein content of all items in the current order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_004",
+          "dish_name": "Australian imported M9+ grain-fed Ribeye",
+          "quantity": 1,
+          "category": "Selected Steaks",
+          "price": 659,
+          "tax_rate": 0.07,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_004",
+          "dish_name": "Focaccia",
+          "quantity": 1,
+          "category": "Handmade Bread",
+          "price": 15,
+          "tax_rate": 0.07,
+          "discount": 1
+        }
+      },
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_004",
+          "dish_name": "Ciabatta",
+          "quantity": 1,
+          "category": "Handmade Bread",
+          "price": 15,
+          "tax_rate": 0.07,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_004",
+          "dish_name": "Baguette",
+          "quantity": 1,
+          "category": "Handmade Bread",
+          "price": 15,
+          "tax_rate": 0.07,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "customer_004",
+          "dishes": [
+            {
+              "dish_name": "Mixed cold cuts plank",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Cold cuts & cheese plate",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Comte",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Annie's Special Set",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Australian imported M9+ grain-fed Ribeye",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Focaccia",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Ciabatta",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Baguette",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 13,
+    "image_name": "restaurant2",
+    "image_path": "restaurant2.mp4",
+    "image_description": "You and your friend are in a restaurant. You look at the menu and point to three categories in succession.",
+    "key": "category",
+    "value": [
+      "Antipasti & Snacks"
+    ],
+    "_v8_original_index": 13
+  }
+]

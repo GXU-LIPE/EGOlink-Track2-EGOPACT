@@ -1,0 +1,19 @@
+{
+  "updated_at": "2026-06-18T14:05:14+0800",
+  "protected_best_unchanged": true,
+  "protected_best_version": "V6_1_3_gpt55_guarded_endpoint",
+  "current_candidate": "V9_4_5_visual_retrieval_fix",
+  "experimental_v9_5": {
+    "version": "V9_5_memory_deepseek_rerank",
+    "run_id": "V9_5_memory_deepseek_rerank_validation_A_medium_20260618_1218_noproxy",
+    "joint": 0.05,
+    "result": 0.175,
+    "tool": 0.075,
+    "micro": 0.2582781456953642,
+    "valid": 40,
+    "retail_trim_events": 9,
+    "not_promoted_reason": "A_medium joint regressed vs V9_4_5 and split valid count drifted to 40."
+  },
+  "next_action": "Fix split materialization and process-aware order/retail rerank before B_holdout/final.",
+  "final_submitted": false
+}

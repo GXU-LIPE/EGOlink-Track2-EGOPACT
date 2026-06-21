@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-06-19T12:19:46+0800",
+  "run_id": "v12_4gate_20260619_121249",
+  "version": "V12_official_style_qwen3vl_memory",
+  "model": "gpt-5.5",
+  "report": "reports/V12_4GATE_QWEN3VL_MEMORY_v12_4gate_20260619_121249.md",
+  "final_run": false,
+  "v10_zip_overwritten": false
+}

@@ -1,0 +1,187 @@
+{
+  "run_id": "v34_v32_expansion_20260621_1658",
+  "version": "V34_V32_NATIVE_LOOP_EXPANSION_AND_PROTECTED_MERGE",
+  "workers": 64,
+  "preflight": {
+    "v10_zip_exists": true,
+    "v10_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+    "v10_expected_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+    "v34_prompt_literal_sha": "5b2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+    "v10_prompt_literal_matches_actual": false,
+    "v10_actual_matches_expected": true,
+    "openai_env_exists": true,
+    "v32_run_id": "v32_native_full_20260621_153428",
+    "final_run": false,
+    "uses_final_hidden_metadata": false,
+    "v10_zip_overwritten": false
+  },
+  "v32_run_id": "v32_native_full_20260621_153428",
+  "baseline": {
+    "V22": {
+      "valid": 41,
+      "joint": 0.21951219512195122,
+      "result": 0.2926829268292683,
+      "tool": 0.24390243902439024,
+      "micro": 0.42948717948717946,
+      "matched_tools": 67,
+      "gt_tools": 156,
+      "interaction_calls": 801
+    }
+  },
+  "v32_best_protected": {
+    "valid": 41,
+    "joint": 0.24390243902439024,
+    "result": 0.3170731707317073,
+    "tool": 0.24390243902439024,
+    "micro": 0.28846153846153844,
+    "matched_tools": 45,
+    "gt_tools": 156,
+    "interaction_calls": 527
+  },
+  "v32_best_joint_count": 10,
+  "v22_success_task_count": 9,
+  "v22_failed_task_count": 32,
+  "v32_new_joint_vs_v22": [
+    "kitchen1::31",
+    "kitchen3::12"
+  ],
+  "v34_raw_subset": {
+    "compact_rerun_seed1_r0": {
+      "valid": 32,
+      "joint": 0.03125,
+      "result": 0.125,
+      "tool": 0.03125,
+      "micro": 0.11290322580645161,
+      "matched_tools": 14,
+      "gt_tools": 124,
+      "interaction_calls": 326
+    },
+    "compact_rerun_seed2_r0": {
+      "valid": 32,
+      "joint": 0.03125,
+      "result": 0.125,
+      "tool": 0.03125,
+      "micro": 0.0743801652892562,
+      "matched_tools": 9,
+      "gt_tools": 121,
+      "interaction_calls": 235
+    },
+    "compact_low_temperature_r0": {
+      "valid": 32,
+      "joint": 0.03125,
+      "result": 0.125,
+      "tool": 0.03125,
+      "micro": 0.07258064516129033,
+      "matched_tools": 9,
+      "gt_tools": 124,
+      "interaction_calls": 176
+    },
+    "compact_with_closure_reminder_r0": {
+      "valid": 32,
+      "joint": 0.03125,
+      "result": 0.09375,
+      "tool": 0.03125,
+      "micro": 0.09090909090909091,
+      "matched_tools": 11,
+      "gt_tools": 121,
+      "interaction_calls": 197
+    },
+    "compact_with_entity_pin_reminder_r0": {
+      "valid": 32,
+      "joint": 0.0,
+      "result": 0.09375,
+      "tool": 0.03125,
+      "micro": 0.04838709677419355,
+      "matched_tools": 6,
+      "gt_tools": 124,
+      "interaction_calls": 177
+    },
+    "compact_no_broad_scan_r0": {
+      "valid": 32,
+      "joint": 0.03125,
+      "result": 0.125,
+      "tool": 0.03125,
+      "micro": 0.04838709677419355,
+      "matched_tools": 6,
+      "gt_tools": 124,
+      "interaction_calls": 153
+    },
+    "compact_finish_when_done_r0": {
+      "valid": 32,
+      "joint": 0.03125,
+      "result": 0.125,
+      "tool": 0.03125,
+      "micro": 0.08264462809917356,
+      "matched_tools": 10,
+      "gt_tools": 121,
+      "interaction_calls": 241
+    },
+    "compact_observation_branch_only_r0": {
+      "valid": 32,
+      "joint": 0.0,
+      "result": 0.09375,
+      "tool": 0.0,
+      "micro": 0.008064516129032258,
+      "matched_tools": 1,
+      "gt_tools": 124,
+      "interaction_calls": 210
+    }
+  },
+  "selected_conservative": {
+    "result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V34_v32_expansion_selected_conservative-v34_v32_expansion_20260621_1658",
+    "summary": {
+      "valid": 41,
+      "joint": 0.2682926829268293,
+      "result": 0.3902439024390244,
+      "tool": 0.2926829268292683,
+      "micro": 0.4358974358974359,
+      "matched_tools": 68,
+      "gt_tools": 156,
+      "interaction_calls": 731
+    }
+  },
+  "oracle_best_protected": {
+    "result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V34_v32_expansion_oracle_best_protected-v34_v32_expansion_20260621_1658",
+    "summary": {
+      "valid": 41,
+      "joint": 0.2682926829268293,
+      "result": 0.3902439024390244,
+      "tool": 0.2926829268292683,
+      "micro": 0.46153846153846156,
+      "matched_tools": 72,
+      "gt_tools": 156,
+      "interaction_calls": 579
+    }
+  },
+  "oracle_best_joint_count": 11,
+  "final_selected_mode": "conservative",
+  "final_selected_joint_count": 11,
+  "final_selected_summary": {
+    "valid": 41,
+    "joint": 0.2682926829268293,
+    "result": 0.3902439024390244,
+    "tool": 0.2926829268292683,
+    "micro": 0.4358974358974359,
+    "matched_tools": 68,
+    "gt_tools": 156,
+    "interaction_calls": 731
+  },
+  "useful_variants": [
+    "compact_rerun_seed1_r0",
+    "compact_rerun_seed2_r0",
+    "compact_low_temperature_r0",
+    "compact_with_closure_reminder_r0",
+    "compact_no_broad_scan_r0",
+    "compact_finish_when_done_r0"
+  ],
+  "harmful_variants": [
+    "compact_with_entity_pin_reminder_r0",
+    "compact_observation_branch_only_r0"
+  ],
+  "final_run": false,
+  "uses_final_hidden_metadata": false,
+  "uses_val41_gt_for_runtime": false,
+  "uses_val41_gt_for_post_eval": true,
+  "auto_submit": false,
+  "decision": "Keep V34 selected as current non-GT val41 candidate."
+}

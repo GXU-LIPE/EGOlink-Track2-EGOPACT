@@ -1,0 +1,14 @@
+{
+  "updated_at": "2026-06-17T15:58:16+0800",
+  "tested_version": "V7_1_process_verifier",
+  "tested_run_id": "human_prior_v71c_20260617_1506",
+  "best_updated": false,
+  "best_version": "V6_1_3_gpt55_guarded_endpoint",
+  "reports": [
+    "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/HUMAN_PRIOR_IMPLEMENTATION_20260617_155816.md",
+    "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/HUMAN_PRIOR_GATE_SUMMARY_20260617_155816.md",
+    "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/HUMAN_PRIOR_ABLATION_20260617_155816.md",
+    "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/HUMAN_PRIOR_PAPER_NOTES_20260617_155816.md"
+  ],
+  "policy_trace_count": 44
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "Instruction": "You are a wine enthusiast (User ID: grace_liu_999) who has just picked up two bottles of wine. Ask the AI Service Agent to determine whether both bottles possess a \"bitter\" taste. If both have bitterness, ask the AI Service Agent to compare their nutritional content and determine which bottle is cheaper, then add two bottles of the cheaper option to your cart. If both wines are tied for the lowest price, add two bottles of each. If only one bottle has bitterness, ask the AI Service Agent to add the bottle in your left hand to the cart. If neither bottle has bitterness, ask the AI Service Agent to add one bottle of the wine in your right hand to the cart. Finally, ask the AI Service Agent to calculate the total nutritional value of the items in your cart.",
+    "analysis": "1. Determine whether both wines being held have a \"bitter\" taste.\n2. If both are bitter, compare their nutritional content and identify which one is cheaper. Then, add two bottles of the cheaper wine to your cart. If both wines are tied for the lowest price, add two bottles of each to the cart.\n3. If only one wine is bitter, add the bottle in the left hand to your cart.\n4. If neither wine is bitter, take one bottle of the wine in the right hand and add it to your cart.\n5. Finally, calculate the total nutritional value of the items in your cart.",
+    "ground_truth": [
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "grace_liu_999",
+          "product_name": "Riunite Moscato",
+          "qty": 1,
+          "category": "wine",
+          "price": 45,
+          "tax_rate": 0.06,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "grace_liu_999",
+          "products": [
+            {
+              "product_name": "Scaviango Prosecco",
+              "quantity": 2
+            },
+            {
+              "product_name": "Ferrarelle Prosecco",
+              "quantity": 2
+            },
+            {
+              "product_name": "Brasileiro Prosecco",
+              "quantity": 1
+            },
+            {
+              "product_name": "Heineken Beer",
+              "quantity": 1
+            },
+            {
+              "product_name": "Riunite Moscato",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 2,
+    "image_name": "retail2",
+    "image_path": "retail2.mp4",
+    "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
+    "key": "product_name",
+    "value": [
+      "Mouton Cadet",
+      "Riunite Moscato"
+    ],
+    "_v8_original_index": 2
+  },
+  {
+    "Instruction": "You are a customer (User ID: tom_harris_999) who was just holding two bottles of wine. Focus on the bottle with the greener body. Please ask the AI service agent to verify the nutritional information of this wine. Then, have the AI service agent check if there are wines from the same origin with a price difference of no more than 20 yuan. If there are any, have the AI service agent select the one with the lowest calories among them and add one bottle to your cart. If there are multiple wines tied for the lowest calories among those that meet the conditions, you want one bottle of each of those tied items to be added. If there are none, have the AI service agent look for wines with the same nutrition label that are currently on sale. If found, add the cheapest one to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want one bottle of each of those tied items to be added. Finally, have the AI service agent calculate the total nutritional value of the items in your cart.",
+    "analysis": "1. Verify the nutritional information of the bottle of wine with a greenish body.\n2. Check if there are other wines from the same origin with a price difference of no more than 20 yuan.\n3. If so, select the wine with the lowest calories and add one bottle to your cart. If multiple wines tie for the lowest calories, add one bottle of each of those tied wines.\n4. If not, search for wines with the same nutrition label that are currently on sale. If found, add the cheapest one to your cart. If multiple wines tie for the lowest price, add one bottle of each of those tied wines.\n5. Calculate the total nutritional values of the items in your cart.",
+    "ground_truth": [
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "tom_harris_999",
+          "product_name": "VALDO Prosecco",
+          "qty": 1,
+          "category": "wine",
+          "price": 28,
+          "tax_rate": 0.05,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "tom_harris_999",
+          "products": [
+            {
+              "product_name": "VALDO Prosecco",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 5,
+    "image_name": "retail2",
+    "image_path": "retail2.mp4",
+    "image_description": "You are currently in front of a wine shelf. You first pick up a golden bottle and place it in your left hand. Then, wanting to choose another bottle, you reach for two black bottles with your right hand. However, you then notice a bottle next to you that seems more suitable, so you pick that bottle up with your right hand. Now you have two bottles of wine in your hand.",
+    "key": "product_name",
+    "value": [
+      "Riunite Moscato"
+    ],
+    "_v8_original_index": 5
+  }
+]

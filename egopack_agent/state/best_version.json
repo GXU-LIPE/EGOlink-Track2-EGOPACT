@@ -1,0 +1,10 @@
+{
+  "version": "V2_prompt_plan",
+  "output_model_name": "deepseek-v4-pro-gate-gate_restart_20260609_235626",
+  "service_model_name": "deepseek-v4-pro",
+  "joint_success": 0.25,
+  "result_success": 0.25,
+  "micro_tool_accuracy": 0.5625,
+  "summary_path": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/eval_result/deepseek-v4-pro-gate-gate_restart_20260609_235626/summary.json",
+  "updated_at": "2026-06-10T00:17:07+0800"
+}

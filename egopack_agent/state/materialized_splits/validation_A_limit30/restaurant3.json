@@ -1,0 +1,246 @@
+[
+  {
+    "Instruction": "You are a food lover (User ID: customer_004), looking for the most cost-effective meals. You are looking at the category at the bottom left of the menu and have pointed out two dishes. First, ask the AI Service Agent to check the calorie data of the right dish you pointed out. If its calories exceed 500 kcal, ask the AI Service Agent to look in the category where the middle fold page title also has a small hand illustration on the left for a dish with a creamy flavor and the cheapest price to add to the order. If there are multiple dishes tied for the cheapest price among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI Service Agent to look in the category right in the middle of the left fold page for a high-calcium meal with the largest discount to add to the order. If there are multiple meals tied for the largest discount among those that meet the conditions, you want all of them to be added. Next, ask the AI Service Agent to check the tax rate of the left dish you pointed out. If the tax rate equals or exceeds 0.1, ask the AI Service Agent to reduce the portion of the dish with the highest total price in the order by half. Finally, ask the AI Service Agent to calculate the total grams of carbohydrates contained in the current order.",
+    "analysis": "1. Check the calorie information for the dish on the right.\n2. If the calorie count exceeds 500 kcal, navigate to the category with a small hand illustration on the left of the title on the middle fold. Select the cream-flavored dish with the lowest price and add it to the order. If multiple dishes tie for the lowest price among those that meet the conditions, add all of them to the order.\n3. If the calorie count does not exceed 500 kcal, navigate to the category in the exact center of the left fold. Select the high-calcium item with the largest discount and add it to the order. If multiple items tie for the largest discount among those that meet the conditions, add all of them to the order.\n4. Check the tax rate for the dish on the left. If the tax rate is equal to or greater than 0.1, halve the quantity of the most expensive item in the order.\n5. Calculate the total grams of carbohydrates in the current order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_004",
+          "dish_name": "Comte",
+          "quantity": 1,
+          "category": "Cheese & Olives",
+          "price": 99,
+          "tax_rate": 0.08,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_004",
+          "dish_name": "Camembert",
+          "quantity": 1,
+          "category": "Cheese & Olives",
+          "price": 32,
+          "tax_rate": 0.06,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "customer_004",
+          "dishes": [
+            {
+              "product_name": "Mixed cold cuts plank",
+              "quantity": 1
+            },
+            {
+              "product_name": "Cold cuts & cheese plate",
+              "quantity": 1
+            },
+            {
+              "product_name": "Comte",
+              "quantity": 2
+            },
+            {
+              "product_name": "Annie's Special Set",
+              "quantity": 1
+            },
+            {
+              "product_name": "Camembert",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 16,
+    "image_name": "restaurant3",
+    "image_path": "restaurant3.mp4",
+    "image_description": "You and your friend are in a restaurant. You look at the menu and point to two dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Ham & melon"
+    ],
+    "_v8_original_index": 16
+  },
+  {
+    "Instruction": "You are a parent (User ID: customer_001) selecting meals for a child requiring a low-sugar diet. You have selected two food items from the third white rounded box on the left flap of the menu. First, ask the AI Service Agent to retrieve the sugar content of the first food item you pointed at. Ask the AI Service Agent to determine: if the sugar content is less than 10 grams, ask the AI Service Agent to filter for a gluten-free snack with the lowest carbohydrate content in the top section of the middle flap and add it to the order. If there are multiple snacks tied for the lowest carbohydrate content among those that meet the conditions, you want all of them to be added to the order. Otherwise, ask the AI Service Agent to look for a meal with a fresh flavor and the lowest sugar content in the category on the left border of the right flap that features a small hand illustration, and add it to the order. If there are multiple meals tied for the lowest sugar content among those that meet the conditions, you want all of them to be added to the order. Next, ask the AI Service Agent to check the price of the last food item you pointed at, and ask the AI Service Agent to determine: if the price exceeds 60 yuan, ask the AI Service Agent to remove the meal item with the highest total sugar content from the order. Finally, ask the AI Service Agent to calculate the total sugar content of all dishes in the entire order.",
+    "analysis": "Results:\n1. Retrieve the sugar content of the first food item you point at.\n\n2. If its sugar content is below 10 grams, select a gluten-free snack with the lowest carbohydrate content from the top section of the middle fold page and add it to the order. If there are multiple snacks tied for the lowest carbohydrate content, add all of them to the order.\n\n3. If its sugar content is 10 grams or higher, select a meal with a fresh flavor and the lowest sugar content from the category on the left border of the right fold page that features a small hand illustration, and add it to the order. If there are multiple meals tied for the lowest sugar content, add all of them to the order.\n\n4. Check the price of the last food item you point at. If the price exceeds 60 yuan, remove the meal with the highest total sugar content from the order.\n\n5. Calculate the total sugar content of all dishes in the entire order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_001",
+          "dish_name": "Tuna salad",
+          "quantity": 1,
+          "category": "Salads",
+          "price": 45,
+          "tax_rate": 0.1,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "customer_001",
+          "dishes": [
+            {
+              "dish_name": "Margherita",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Rigatoni all'arrabbiata",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Tiramisu'",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Seafood Delight Set",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Annie's Special Set",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Tuna salad",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 24,
+    "image_name": "restaurant3",
+    "image_path": "restaurant3.mp4",
+    "image_description": "You and your friend are in a restaurant. You look at the menu and point to two dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Ham & melon"
+    ],
+    "_v8_original_index": 24
+  },
+  {
+    "Instruction": "You are a parent (User ID: customer_006) placing an order for a child who needs to control sugar intake. You have selected two dishes from the Annie Special category at the bottom left of the menu. First, ask the AI Service Agent to query the sugar content value of the last dish you selected. Ask the AI Service Agent to determine: if the sugar content exceeds 5 grams, ask the AI Service Agent to find a dish in the Pasta category located in the middle-lower section of the center panel that has a fresh flavor and the lowest sugar content to replace it and add to the order. If there are multiple dishes tied for the lowest sugar content among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI Service Agent to select a meal from the section at the top of the left panel that is low-fat and has the highest price, and add it to the order. If there are multiple meals tied for the highest price, you want all of them to be added. Then, ask the AI Service Agent to query whether the first dish you selected is included in Annie's Special Set. Ask the AI Service Agent to determine: if it is included in the set, ask the AI Service Agent to remove the dish with the highest total price from the order. If there are multiple dishes tied for the highest total price, you want all of them to be removed. Finally, ask the AI Service Agent to calculate the total tax expense for your order.",
+    "analysis": "1. Query the sugar content of the last selected dish.\n\n2. If its sugar content exceeds 5 grams, select a dish with a fresh flavor and the lowest sugar content from the pasta category in the lower middle part of the middle fold-out page and add it to the order. If there are multiple dishes tied for the lowest sugar content among those that meet the conditions, add all of them to the order.\n\n3. If its sugar content does not exceed 5 grams, select a low-fat meal with the highest price from the section at the top of the left fold-out page and add it to the order. If there are multiple meals tied for the highest price among those that meet the conditions, add all of them to the order.\n\n4. Query whether the first selected dish is included in Annie's Special Set.\n\n5. If the dish is included in Annie's Special Set, remove the dish with the highest total price from the order. If there are multiple dishes tied for the highest total price, remove all of them.\n\n6. Calculate the total tax expense for the order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_006",
+          "dish_name": "Cooked ham",
+          "quantity": 1,
+          "category": "Cold Cuts",
+          "price": 28,
+          "tax_rate": 0.14,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_006",
+          "dish_name": "Turkey breast ham",
+          "quantity": 1,
+          "category": "Cold Cuts",
+          "price": 28,
+          "tax_rate": 0.11,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "compute_total_tax",
+        "parameters": {
+          "user_id": "customer_006",
+          "dishes": [
+            {
+              "dish_name": "Cooked ham",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Turkey breast ham",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Tuna panini",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Veggie salad",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Annie's Special Set",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 33,
+    "image_name": "restaurant3",
+    "image_path": "restaurant3.mp4",
+    "image_description": "You and your friend are in a restaurant. You look at the menu and point to two dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Lasagne"
+    ],
+    "_v8_original_index": 33
+  },
+  {
+    "Instruction": "You are a parent of a child who loves pizza (User ID: customer_006). Look directly at the top section of the right-hand panel. Ask the AI Service Agent to find the meal item in that section that has a rich flavor and is the most expensive. Ask the AI Service Agent to determine if it contains a spicy flavor. If it does, ask the AI Service Agent to look for a meal item with a [slightly salty flavor] and [the cheapest price] in the category on the right border of the middle panel that features a small hand illustration, and add it to the order. If there are multiple items tied for the cheapest price among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI Service Agent to add this meal item to the order. If there are multiple items tied for the most expensive price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the order.",
+    "analysis": "1. Identify the dish with the highest rating in the top section of the right-hand foldout.\n\n2. If it includes a spicy flavor, select a dish with a slightly salty flavor and the lowest price from the category illustrated with a small hand on the right border of the middle foldout, and add it to the order. If multiple dishes tie for the lowest price among those that meet the conditions, add all of them.\n\n3. If it does not include a spicy flavor, add this high-rated dish to the order. If multiple dishes tie for the highest rating, add all of them.\n\n4. Calculate the total amount payable for the order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_006",
+          "dish_name": "Beef filet",
+          "quantity": 1,
+          "category": "Pizza",
+          "price": 78,
+          "tax_rate": 0.13,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "compute_total_payment",
+        "parameters": {
+          "user_id": "customer_006",
+          "dishes": [
+            {
+              "dish_name": "Tuna panini",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Veggie salad",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Annie's Special Set",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Beef filet",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 54,
+    "image_name": "restaurant3",
+    "image_path": "restaurant3.mp4",
+    "image_description": "You and your friend are in a restaurant. You look at the menu and point to two dishes in succession.",
+    "key": "category",
+    "value": [
+      "pizza"
+    ],
+    "_v8_original_index": 54
+  }
+]

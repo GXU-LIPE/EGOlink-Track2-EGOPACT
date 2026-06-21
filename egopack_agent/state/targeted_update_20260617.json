@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-06-17T13:32:08+0800",
+  "best_version": "V6_1_3_gpt55_guarded_endpoint",
+  "best_run_id": "gpt55_endpoint_gate_20260617_105936",
+  "order_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/ORDER_PROCESS_ALIGNER_20260617_133208.md",
+  "kitchen_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/KITCHEN_BRANCH_REPAIR_20260617_133208.md",
+  "visual_ablation_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/VISUAL_PRIOR_ABLATION_20260617_133041.md",
+  "final_auto_submitted": false
+}

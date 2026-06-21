@@ -1,0 +1,54 @@
+{
+  "run_id": "v33_grounded_full_20260621_162529",
+  "version": "V33_GROUNDED_TOOL_SEARCH_AGENT",
+  "preflight": {
+    "v10_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+    "openai_env_exists": true,
+    "v22_readable": true,
+    "val41_tasks": 41,
+    "v10_zip_overwritten": false,
+    "gpt55_probe_ok": true,
+    "gpt55_probe_api": "responses"
+  },
+  "searched_task_count": 32,
+  "protected_v22_success_count": 9,
+  "aggressive_repair_used": true,
+  "V22_baseline": {
+    "valid": 41,
+    "joint": 0.21951219512195122,
+    "result": 0.2926829268292683,
+    "tool": 0.24390243902439024,
+    "micro": 0.42948717948717946,
+    "matched_tools": 67,
+    "gt_tools": 156,
+    "interaction_calls": 801
+  },
+  "V33_selected": {
+    "valid": 41,
+    "joint": 0.21951219512195122,
+    "result": 0.2926829268292683,
+    "tool": 0.24390243902439024,
+    "micro": 0.41025641025641024,
+    "matched_tools": 64,
+    "gt_tools": 156,
+    "interaction_calls": 661
+  },
+  "V33_oracle_best": {
+    "valid": 41,
+    "joint": 0.21951219512195122,
+    "result": 0.2926829268292683,
+    "tool": 0.21951219512195122,
+    "micro": 0.26282051282051283,
+    "matched_tools": 41,
+    "gt_tools": 156,
+    "interaction_calls": 474
+  },
+  "selected_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V33_grounded_search_selected-v33_grounded_full_20260621_162529",
+  "oracle_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V33_grounded_search_oracle_best-v33_grounded_full_20260621_162529",
+  "new_joint_tasks": [],
+  "regressions_vs_v22": [],
+  "final_run": false,
+  "uses_final_hidden_metadata": false,
+  "uses_val41_gt_for_runtime": false,
+  "auto_submit": false
+}

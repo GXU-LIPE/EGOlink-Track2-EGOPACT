@@ -1,0 +1,54 @@
+[
+  {
+    "Instruction": "You are a store manager (User ID: user_505). Please ask the AI Service Agent to query the prices of the orange cookies on the second shelf you are pointing at first, and the third box of brown cookies directly below them. If the price of the orange item is higher than the brown item and it is a \"high sugar\" product, then ask the AI Service Agent to add one orange item to your cart; otherwise, ask the AI Service Agent to add one brown item to the cart. Next, ask the AI Service Agent to search the product database to see if there are items priced between 22.0 and 23.0 that have the \"sour type\" characteristic. If such items exist, ask the AI Service Agent to add the item with the lowest sodium content among them to your cart. If there are multiple items tied for the lowest sodium content among those that meet the conditions, add one of each of those tied items. Finally, ask the AI Service Agent to calculate the total amount payable for all items in your cart.",
+    "analysis": "1. Confirm the nutritional properties of the first orange cookie pointed at on the second layer, and check whether the fat content of the dark brown rectangular cookie on the third layer is lower than that of the orange cookie.\n\n2. If the fat content is lower and the cookie originates from France, add 2 pieces of the dark brown cookie to the shopping cart.\n\n3. Otherwise, check whether the orange cookie contains \"milk\"; if it does, add 1 piece of the orange cookie to the shopping cart.\n\n4. Check the shopping cart to ensure there are no duplicate additions.\n\n5. Calculate the total protein content and the total amount payable.",
+    "ground_truth": [
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "user_123",
+          "product_name": "St Michel Le Sablé de Reims Coconut",
+          "qty": 1,
+          "category": "cookie",
+          "price": 22.9,
+          "tax_rate": 0.09,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "user_123",
+          "products": [
+            {
+              "product_name": "St Michel Le Sablé de Reims Coconut",
+              "quantity": 1
+            }
+          ]
+        }
+      },
+      {
+        "tool_name": "compute_total_payment",
+        "parameters": {
+          "user_id": "user_123",
+          "products": [
+            {
+              "product_name": "St Michel Le Sablé de Reims Coconut",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 13,
+    "image_name": "retail8",
+    "image_path": "retail8.mp4",
+    "image_description": "You point first at a row of orange boxes on the second shelf, then move your finger down and right to a dark brown rectangular box on the third shelf—its shape is wide and flat, with a glossy front panel showing a cookie and nut. You hold your finger there briefly before lowering your hand.",
+    "key": "product_name",
+    "value": [
+      "St Michel Le Sablé de Reims Coconut",
+      "Crispy Cups Classic"
+    ],
+    "_v8_original_index": 13
+  }
+]

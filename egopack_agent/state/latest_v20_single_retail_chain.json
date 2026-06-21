@@ -1,0 +1,245 @@
+{
+  "run_id": "v20_single_retail_chain_20260620_1708",
+  "trace": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v20_single_retail_chain_trace.json",
+  "candidates": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v20_single_retail_candidates.jsonl",
+  "result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V20_SINGLE_CLEAN_RETAIL_CHAIN_SURGERY-v20_single_retail_chain_20260620_1708",
+  "selected_sample": {
+    "spec": "retail4",
+    "scenario": "retail",
+    "number": 4,
+    "clean_local_pos": 0,
+    "source_original_index": 14,
+    "task_id": 14,
+    "audit": {
+      "uid": "retail4::14",
+      "spec": "retail4",
+      "scenario": "retail",
+      "number": 4,
+      "local_pos": 1,
+      "task_id": 14,
+      "_v8_original_index": 14,
+      "labels": [
+        "clean"
+      ],
+      "reasons": [],
+      "instruction_user_ids": [
+        "lisa_wong_456"
+      ],
+      "gt_tool_user_ids": [
+        "lisa_wong_456"
+      ],
+      "instruction_conditions": {
+        "price": true,
+        "tax": true,
+        "discount": true,
+        "nutrition": true,
+        "taste": true,
+        "origin": true
+      },
+      "analysis_conditions": {
+        "price": true,
+        "tax": true,
+        "discount": true,
+        "nutrition": true,
+        "taste": true,
+        "origin": true
+      },
+      "gt_tool_names": [
+        "get_taste",
+        "get_country_of_origin",
+        "add_to_cart",
+        "compute_total_tax"
+      ],
+      "value_entities": [
+        "Bosco del Merlo"
+      ],
+      "gt_entities": [
+        "Bosco del Merlo",
+        "FIFTEEN YEAR OLD Brandy",
+        "liquor",
+        "NAPA VALLEY Cabernet Sauvignon",
+        "ZONIN Moscato d'Asti"
+      ],
+      "video_check": {
+        "ok": true,
+        "reason": "ok"
+      },
+      "materialized_index_check": {
+        "ok": true,
+        "reason": "ok_manifest_index:14"
+      },
+      "gt_replay": {
+        "ok": true,
+        "metrics": {
+          "valid": 1,
+          "joint": 1.0,
+          "result": 1.0,
+          "tool": 1.0,
+          "micro": 1.0,
+          "correct_calls": 4,
+          "gt_calls": 4,
+          "interaction_calls": 4
+        }
+      }
+    },
+    "selection_reason": "retail4 clean sample with GT replay joint100 and V14/V19 non-joint partial trajectory"
+  },
+  "eval": [
+    {
+      "candidate_id": "A_v14_original",
+      "source": "V14",
+      "joint": false,
+      "result": false,
+      "tool": false,
+      "matches": 0,
+      "gt_calls": 4,
+      "micro": 0.0,
+      "interaction_calls": 17,
+      "tool_sequence": [
+        "find_products_by_country_of_origin",
+        "find_products_by_taste",
+        "get_discount",
+        "find_products_by_country_of_origin",
+        "find_products_by_nutritional_characteristic",
+        "get_tax_rate",
+        "get_nutrition",
+        "get_tax_rate",
+        "get_nutrition",
+        "get_tax_rate",
+        "get_nutrition",
+        "get_category",
+        "get_price",
+        "get_discount",
+        "add_to_cart",
+        "get_cart",
+        "compute_total_tax"
+      ],
+      "first_failure_point": {
+        "idx": 0,
+        "kind": "tool_name_mismatch",
+        "gt": {
+          "tool_name": "get_taste",
+          "parameters": {
+            "product_name": "Bosco del Merlo"
+          }
+        },
+        "pred": {
+          "tool_name": "find_products_by_country_of_origin",
+          "parameters": {
+            "country": "Italy"
+          }
+        }
+      },
+      "dry_run_errors": 0,
+      "db_mutation_happened": true
+    },
+    {
+      "candidate_id": "B_v19_original_case_reuse",
+      "source": "V19",
+      "joint": false,
+      "result": false,
+      "tool": false,
+      "matches": 0,
+      "gt_calls": 4,
+      "micro": 0.0,
+      "interaction_calls": 17,
+      "tool_sequence": [
+        "find_products_by_country_of_origin",
+        "find_products_by_taste",
+        "get_discount",
+        "find_products_by_country_of_origin",
+        "find_products_by_nutritional_characteristic",
+        "get_tax_rate",
+        "get_nutrition",
+        "get_tax_rate",
+        "get_nutrition",
+        "get_tax_rate",
+        "get_nutrition",
+        "get_category",
+        "get_price",
+        "get_discount",
+        "add_to_cart",
+        "get_cart",
+        "compute_total_tax"
+      ],
+      "first_failure_point": {
+        "idx": 0,
+        "kind": "tool_name_mismatch",
+        "gt": {
+          "tool_name": "get_taste",
+          "parameters": {
+            "product_name": "Bosco del Merlo"
+          }
+        },
+        "pred": {
+          "tool_name": "find_products_by_country_of_origin",
+          "parameters": {
+            "country": "Italy"
+          }
+        }
+      },
+      "dry_run_errors": 0,
+      "db_mutation_happened": true
+    },
+    {
+      "candidate_id": "C_v20_retail_resolver",
+      "source": "V20",
+      "joint": false,
+      "result": false,
+      "tool": false,
+      "matches": 2,
+      "gt_calls": 4,
+      "micro": 0.5,
+      "interaction_calls": 4,
+      "tool_sequence": [
+        "get_taste",
+        "get_country_of_origin",
+        "get_discount",
+        "add_to_cart"
+      ],
+      "first_failure_point": {
+        "idx": 0,
+        "kind": "parameter_mismatch",
+        "param": "product_name",
+        "gt": "Bosco del Merlo",
+        "pred": "bosco del merlo",
+        "tool_name": "get_taste"
+      },
+      "dry_run_errors": 2,
+      "db_mutation_happened": true
+    },
+    {
+      "candidate_id": "D_v20_repair",
+      "source": "V20_repair",
+      "joint": true,
+      "result": true,
+      "tool": true,
+      "matches": 4,
+      "gt_calls": 4,
+      "micro": 1.0,
+      "interaction_calls": 5,
+      "tool_sequence": [
+        "get_taste",
+        "get_country_of_origin",
+        "get_discount",
+        "add_to_cart",
+        "compute_total_tax"
+      ],
+      "first_failure_point": {
+        "idx": 0,
+        "kind": "parameter_mismatch",
+        "param": "product_name",
+        "gt": "Bosco del Merlo",
+        "pred": "bosco del merlo",
+        "tool_name": "get_taste"
+      },
+      "dry_run_errors": 2,
+      "db_mutation_happened": true
+    }
+  ],
+  "improved_over_v19": true,
+  "should_expand_clean_retail_three": true,
+  "full_val41_run": false,
+  "final_run": false,
+  "v10_zip_overwritten": false
+}

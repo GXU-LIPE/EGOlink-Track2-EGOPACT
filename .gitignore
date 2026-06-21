@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs and generated outputs
+*.log
+logs/
+tmp/
+temp/
+results/
+eval_result/
+run_outputs/
+
+# Large data defaults
+baseline/EgoBench/videos/
+baseline/EgoBench/results/
+baseline/EgoBench/eval_result/
+
+# Keep only curated examples under data/examples.
+data/raw/
+data/full/
+
+# Secrets
+.env
+*.env
+state/.openai_env
+**/.openai_env
+*secret*
+*token*
+

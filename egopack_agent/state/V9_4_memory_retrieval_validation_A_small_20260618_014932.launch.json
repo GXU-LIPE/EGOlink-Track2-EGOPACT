@@ -1,0 +1,9 @@
+{
+  "run_id": "V9_4_memory_retrieval_validation_A_small_20260618_014932",
+  "stage": "validation_A_small",
+  "version": "V9_4_memory_retrieval",
+  "limit_per_scenario": "5",
+  "pid": 924901,
+  "log": "logs/V9_4_memory_retrieval_validation_A_small_20260618_014932.launcher.log",
+  "started_at": "2026-06-18T01:49:32+0800"
+}

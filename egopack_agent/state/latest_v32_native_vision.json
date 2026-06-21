@@ -1,0 +1,150 @@
+{
+  "run_id": "v32_native_full_20260621_153428",
+  "version": "V32_NATIVE_GPT55_VISION_OFFICIAL_LOOP_AGENT",
+  "preflight": {
+    "v10_zip_exists": true,
+    "v10_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+    "v10_expected_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+    "openai_env_exists": true,
+    "val41_tasks": 41,
+    "full_val41": true,
+    "v22_readable": true,
+    "final_run": false,
+    "uses_final_hidden_metadata": false,
+    "v10_zip_overwritten": false
+  },
+  "baseline": {
+    "V22": {
+      "valid": 41,
+      "joint": 0.21951219512195122,
+      "result": 0.2926829268292683,
+      "tool": 0.24390243902439024,
+      "micro": 0.42948717948717946,
+      "matched_tools": 67,
+      "gt_tools": 156,
+      "interaction_calls": 801
+    }
+  },
+  "raw": {
+    "official_compact_r0": {
+      "valid": 41,
+      "joint": 0.04878048780487805,
+      "result": 0.14634146341463414,
+      "tool": 0.04878048780487805,
+      "micro": 0.1282051282051282,
+      "matched_tools": 20,
+      "gt_tools": 156,
+      "interaction_calls": 437
+    },
+    "process_guarded_r0": {
+      "valid": 41,
+      "joint": 0.07317073170731707,
+      "result": 0.14634146341463414,
+      "tool": 0.07317073170731707,
+      "micro": 0.15384615384615385,
+      "matched_tools": 24,
+      "gt_tools": 156,
+      "interaction_calls": 551
+    },
+    "multimodal_grounded_r0": {
+      "valid": 41,
+      "joint": 0.07317073170731707,
+      "result": 0.14634146341463414,
+      "tool": 0.07317073170731707,
+      "micro": 0.14102564102564102,
+      "matched_tools": 22,
+      "gt_tools": 156,
+      "interaction_calls": 430
+    },
+    "self_repair_r0": {
+      "valid": 41,
+      "joint": 0.04878048780487805,
+      "result": 0.12195121951219512,
+      "tool": 0.04878048780487805,
+      "micro": 0.1346153846153846,
+      "matched_tools": 21,
+      "gt_tools": 156,
+      "interaction_calls": 393
+    }
+  },
+  "protected": {
+    "official_compact_r0": {
+      "valid": 41,
+      "joint": 0.24390243902439024,
+      "result": 0.3170731707317073,
+      "tool": 0.24390243902439024,
+      "micro": 0.28846153846153844,
+      "matched_tools": 45,
+      "gt_tools": 156,
+      "interaction_calls": 527
+    },
+    "process_guarded_r0": {
+      "valid": 41,
+      "joint": 0.24390243902439024,
+      "result": 0.3170731707317073,
+      "tool": 0.24390243902439024,
+      "micro": 0.2948717948717949,
+      "matched_tools": 46,
+      "gt_tools": 156,
+      "interaction_calls": 558
+    },
+    "multimodal_grounded_r0": {
+      "valid": 41,
+      "joint": 0.24390243902439024,
+      "result": 0.3170731707317073,
+      "tool": 0.24390243902439024,
+      "micro": 0.28846153846153844,
+      "matched_tools": 45,
+      "gt_tools": 156,
+      "interaction_calls": 485
+    },
+    "self_repair_r0": {
+      "valid": 41,
+      "joint": 0.21951219512195122,
+      "result": 0.2926829268292683,
+      "tool": 0.21951219512195122,
+      "micro": 0.28205128205128205,
+      "matched_tools": 44,
+      "gt_tools": 156,
+      "interaction_calls": 438
+    }
+  },
+  "best_protected_variant": "official_compact_r0",
+  "best_protected": {
+    "valid": 41,
+    "joint": 0.24390243902439024,
+    "result": 0.3170731707317073,
+    "tool": 0.24390243902439024,
+    "micro": 0.28846153846153844,
+    "matched_tools": 45,
+    "gt_tools": 156,
+    "interaction_calls": 527
+  },
+  "oracle_best": {
+    "valid": 41,
+    "joint": 0.0975609756097561,
+    "result": 0.17073170731707318,
+    "tool": 0.0975609756097561,
+    "micro": 0.16666666666666666,
+    "matched_tools": 26,
+    "gt_tools": 156,
+    "interaction_calls": 321
+  },
+  "result_dirs": {
+    "official_compact_raw": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V32_official_compact_raw-v32_native_full_20260621_153428",
+    "official_compact_protected": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V32_official_compact_protected_merge-v32_native_full_20260621_153428",
+    "process_guarded_raw": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V32_process_guarded_raw-v32_native_full_20260621_153428",
+    "process_guarded_protected": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V32_process_guarded_protected_merge-v32_native_full_20260621_153428",
+    "multimodal_grounded_raw": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V32_multimodal_grounded_raw-v32_native_full_20260621_153428",
+    "multimodal_grounded_protected": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V32_multimodal_grounded_protected_merge-v32_native_full_20260621_153428",
+    "self_repair_raw": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V32_self_repair_raw-v32_native_full_20260621_153428",
+    "self_repair_protected": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V32_self_repair_protected_merge-v32_native_full_20260621_153428",
+    "oracle_best": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V32_oracle_best_variants-v32_native_full_20260621_153428"
+  },
+  "repair_log": [],
+  "final_run": false,
+  "uses_final_hidden_metadata": false,
+  "uses_val41_gt_for_runtime": false,
+  "uses_val41_gt_for_post_eval": true,
+  "auto_submit": false
+}

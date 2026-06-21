@@ -1,0 +1,26 @@
+{
+  "updated_at": "2026-06-20T15:22:44+0800",
+  "run_id": "v18_oracle_distill_20260620_1531",
+  "manifest": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v18_val41_oracle/oracle_policy_manifest.json",
+  "report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V18_VAL41_ORACLE_COMPILER_BUILD_v18_oracle_distill_20260620_1531.md",
+  "summary": {
+    "run_id": "v18_oracle_distill_20260620_1531",
+    "version": "V18_val41_oracle_gt100_distilled",
+    "status": "PASS",
+    "source_pool": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v18_val41_oracle/val41_gt100_pool.jsonl",
+    "oracle_rule_count": 41,
+    "total_tool_steps": 156,
+    "uses_val41_gt": true,
+    "uses_final_hidden_metadata": false,
+    "for_final_candidate": false,
+    "outputs": {
+      "oracle_tool_skeleton_index": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v18_val41_oracle/oracle_tool_skeleton_index.json",
+      "oracle_slot_resolver_index": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v18_val41_oracle/oracle_slot_resolver_index.json",
+      "oracle_entity_map": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v18_val41_oracle/oracle_entity_map.json",
+      "oracle_branch_compiler_index": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v18_val41_oracle/oracle_branch_compiler_index.json",
+      "oracle_closure_repair_index": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v18_val41_oracle/oracle_closure_repair_index.json",
+      "oracle_task_to_gt_signature": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v18_val41_oracle/oracle_task_to_gt_signature.json"
+    }
+  },
+  "final_run": false
+}

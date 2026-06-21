@@ -1,0 +1,420 @@
+{
+  "run_id": "v26_full_v21_mm_nohup_20260621_0244",
+  "version": "V26_FULL_V21_MM_EVIDENCE_AGENT_21PLUS",
+  "preflight": {
+    "v10_zip_exists": true,
+    "v10_zip_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+    "v10_zip_mtime": 1781799140600302559,
+    "openai_env_exists": true,
+    "val41_tasks": 41,
+    "v22_readable": true
+  },
+  "selected_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V26_full_v21_mm_selected-v26_full_v21_mm_nohup_20260621_0244",
+  "oracle_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V26_full_v21_mm_oracle_bestof-v26_full_v21_mm_nohup_20260621_0244",
+  "no_protection_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V26_full_v21_mm_no_protection-v26_full_v21_mm_nohup_20260621_0244",
+  "V22_baseline": {
+    "valid": 41,
+    "joint": 0.21951219512195122,
+    "result": 0.2926829268292683,
+    "tool": 0.24390243902439024,
+    "micro": 0.42948717948717946,
+    "matched_tools": 67,
+    "gt_tools": 156,
+    "interaction_calls": 801
+  },
+  "V26_selected": {
+    "valid": 41,
+    "joint": 0.21951219512195122,
+    "result": 0.2682926829268293,
+    "tool": 0.21951219512195122,
+    "micro": 0.22435897435897437,
+    "matched_tools": 35,
+    "gt_tools": 156,
+    "interaction_calls": 409
+  },
+  "V26_oracle_best": {
+    "valid": 41,
+    "joint": 0.21951219512195122,
+    "result": 0.3902439024390244,
+    "tool": 0.24390243902439024,
+    "micro": 0.4358974358974359,
+    "matched_tools": 68,
+    "gt_tools": 156,
+    "interaction_calls": 610
+  },
+  "V26_no_protection": {
+    "valid": 41,
+    "joint": 0.0,
+    "result": 0.07317073170731707,
+    "tool": 0.0,
+    "micro": 0.019230769230769232,
+    "matched_tools": 3,
+    "gt_tools": 156,
+    "interaction_calls": 206
+  },
+  "same_scope": {
+    "selected": {
+      "valid": 41,
+      "joint": 0.21951219512195122,
+      "result": 0.2682926829268293,
+      "tool": 0.21951219512195122,
+      "micro": 0.22435897435897437,
+      "matched_tools": 35,
+      "gt_tools": 156,
+      "interaction_calls": 409
+    },
+    "oracle": {
+      "valid": 41,
+      "joint": 0.21951219512195122,
+      "result": 0.3902439024390244,
+      "tool": 0.24390243902439024,
+      "micro": 0.4358974358974359,
+      "matched_tools": 68,
+      "gt_tools": 156,
+      "interaction_calls": 610
+    },
+    "v22": {
+      "valid": 41,
+      "joint": 0.21951219512195122,
+      "result": 0.2926829268292683,
+      "tool": 0.24390243902439024,
+      "micro": 0.42948717948717946,
+      "matched_tools": 67,
+      "gt_tools": 156,
+      "interaction_calls": 801
+    },
+    "noprot": {
+      "valid": 41,
+      "joint": 0.0,
+      "result": 0.07317073170731707,
+      "tool": 0.0,
+      "micro": 0.019230769230769232,
+      "matched_tools": 3,
+      "gt_tools": 156,
+      "interaction_calls": 206
+    }
+  },
+  "per_scenario": {
+    "kitchen1": {
+      "selected": {
+        "valid": 3,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 9,
+        "interaction_calls": 13
+      },
+      "oracle": {
+        "valid": 3,
+        "joint": 0.0,
+        "result": 0.3333333333333333,
+        "tool": 0.0,
+        "micro": 0.3333333333333333,
+        "matched_tools": 3,
+        "gt_tools": 9,
+        "interaction_calls": 38
+      }
+    },
+    "kitchen2": {
+      "selected": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 5,
+        "gt_tools": 5,
+        "interaction_calls": 21
+      },
+      "oracle": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 5,
+        "gt_tools": 5,
+        "interaction_calls": 21
+      }
+    },
+    "kitchen3": {
+      "selected": {
+        "valid": 4,
+        "joint": 0.25,
+        "result": 0.25,
+        "tool": 0.25,
+        "micro": 0.2222222222222222,
+        "matched_tools": 4,
+        "gt_tools": 18,
+        "interaction_calls": 40
+      },
+      "oracle": {
+        "valid": 4,
+        "joint": 0.25,
+        "result": 0.25,
+        "tool": 0.25,
+        "micro": 0.5,
+        "matched_tools": 9,
+        "gt_tools": 18,
+        "interaction_calls": 132
+      }
+    },
+    "order1": {
+      "selected": {
+        "valid": 8,
+        "joint": 0.0,
+        "result": 0.25,
+        "tool": 0.0,
+        "micro": 0.041666666666666664,
+        "matched_tools": 1,
+        "gt_tools": 24,
+        "interaction_calls": 50
+      },
+      "oracle": {
+        "valid": 8,
+        "joint": 0.0,
+        "result": 0.25,
+        "tool": 0.0,
+        "micro": 0.125,
+        "matched_tools": 3,
+        "gt_tools": 24,
+        "interaction_calls": 62
+      }
+    },
+    "restaurant1": {
+      "selected": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 9,
+        "interaction_calls": 4
+      },
+      "oracle": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 1.0,
+        "tool": 0.0,
+        "micro": 0.7777777777777778,
+        "matched_tools": 7,
+        "gt_tools": 9,
+        "interaction_calls": 45
+      }
+    },
+    "restaurant2": {
+      "selected": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 5,
+        "interaction_calls": 4
+      },
+      "oracle": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.6,
+        "matched_tools": 3,
+        "gt_tools": 5,
+        "interaction_calls": 23
+      }
+    },
+    "restaurant3": {
+      "selected": {
+        "valid": 4,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 10,
+        "interaction_calls": 18
+      },
+      "oracle": {
+        "valid": 4,
+        "joint": 0.0,
+        "result": 0.25,
+        "tool": 0.0,
+        "micro": 0.4,
+        "matched_tools": 4,
+        "gt_tools": 10,
+        "interaction_calls": 44
+      }
+    },
+    "restaurant4": {
+      "selected": {
+        "valid": 3,
+        "joint": 0.3333333333333333,
+        "result": 0.3333333333333333,
+        "tool": 0.3333333333333333,
+        "micro": 0.2857142857142857,
+        "matched_tools": 2,
+        "gt_tools": 7,
+        "interaction_calls": 16
+      },
+      "oracle": {
+        "valid": 3,
+        "joint": 0.3333333333333333,
+        "result": 0.6666666666666666,
+        "tool": 0.3333333333333333,
+        "micro": 0.7142857142857143,
+        "matched_tools": 5,
+        "gt_tools": 7,
+        "interaction_calls": 27
+      }
+    },
+    "retail1": {
+      "selected": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 4,
+        "gt_tools": 4,
+        "interaction_calls": 4
+      },
+      "oracle": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 4,
+        "gt_tools": 4,
+        "interaction_calls": 4
+      }
+    },
+    "retail2": {
+      "selected": {
+        "valid": 2,
+        "joint": 0.5,
+        "result": 0.5,
+        "tool": 0.5,
+        "micro": 0.5,
+        "matched_tools": 2,
+        "gt_tools": 4,
+        "interaction_calls": 18
+      },
+      "oracle": {
+        "valid": 2,
+        "joint": 0.5,
+        "result": 0.5,
+        "tool": 0.5,
+        "micro": 0.5,
+        "matched_tools": 2,
+        "gt_tools": 4,
+        "interaction_calls": 6
+      }
+    },
+    "retail3": {
+      "selected": {
+        "valid": 4,
+        "joint": 0.5,
+        "result": 0.5,
+        "tool": 0.5,
+        "micro": 0.32142857142857145,
+        "matched_tools": 9,
+        "gt_tools": 28,
+        "interaction_calls": 74
+      },
+      "oracle": {
+        "valid": 4,
+        "joint": 0.5,
+        "result": 0.75,
+        "tool": 0.5,
+        "micro": 0.35714285714285715,
+        "matched_tools": 10,
+        "gt_tools": 28,
+        "interaction_calls": 62
+      }
+    },
+    "retail4": {
+      "selected": {
+        "valid": 5,
+        "joint": 0.4,
+        "result": 0.4,
+        "tool": 0.4,
+        "micro": 0.47058823529411764,
+        "matched_tools": 8,
+        "gt_tools": 17,
+        "interaction_calls": 92
+      },
+      "oracle": {
+        "valid": 5,
+        "joint": 0.4,
+        "result": 0.4,
+        "tool": 0.6,
+        "micro": 0.7647058823529411,
+        "matched_tools": 13,
+        "gt_tools": 17,
+        "interaction_calls": 128
+      }
+    },
+    "retail7": {
+      "selected": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 10,
+        "interaction_calls": 29
+      },
+      "oracle": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 10,
+        "interaction_calls": 8
+      }
+    },
+    "retail8": {
+      "selected": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 6,
+        "interaction_calls": 26
+      },
+      "oracle": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 6,
+        "interaction_calls": 10
+      }
+    }
+  },
+  "analysis_paths": {
+    "evidence": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v26_mm_evidence_val41.jsonl",
+    "bound": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v26_bound_slots_val41.jsonl",
+    "candidates": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v26_candidate_programs_val41.jsonl",
+    "dryrun": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v26_dryrun_repair_trace.jsonl",
+    "selection": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v26_selection_trace.jsonl",
+    "failure": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v26_failure_analysis.jsonl"
+  },
+  "final_run": false,
+  "uses_final_hidden_metadata": false,
+  "uses_val41_gt_for_runtime_selection": false,
+  "uses_gt_for_oracle_best_diagnostic": true,
+  "v10_zip_overwritten": false
+}

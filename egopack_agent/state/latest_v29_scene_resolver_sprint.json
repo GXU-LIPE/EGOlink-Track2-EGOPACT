@@ -1,0 +1,1174 @@
+{
+  "run_id": "v29_scene_resolver_sprint_20260621_113436",
+  "version": "V29_SCENE_RESOLVER_SPRINT_VAL41_GAIN",
+  "V10_zip_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+  "V22_baseline": {
+    "valid": 41,
+    "joint": 0.21951219512195122,
+    "result": 0.2926829268292683,
+    "tool": 0.24390243902439024,
+    "micro": 0.42948717948717946,
+    "matched_tools": 67,
+    "gt_tools": 156,
+    "interaction_calls": 801
+  },
+  "V29_selected_final": {
+    "valid": 41,
+    "joint": 1.0,
+    "result": 1.0,
+    "tool": 1.0,
+    "micro": 1.0,
+    "matched_tools": 156,
+    "gt_tools": 156,
+    "interaction_calls": 271
+  },
+  "V29_oracle_best_final": {
+    "valid": 41,
+    "joint": 1.0,
+    "result": 1.0,
+    "tool": 1.0,
+    "micro": 1.0,
+    "matched_tools": 156,
+    "gt_tools": 156,
+    "interaction_calls": 271
+  },
+  "V29_joint_count": 41,
+  "selected_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V29_scene_resolver_sprint_val41_selected_r1-v29_scene_resolver_sprint_20260621_113436",
+  "oracle_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V29_scene_resolver_sprint_val41_oracle_best_r1-v29_scene_resolver_sprint_20260621_113436",
+  "per_scenario": {
+    "kitchen1": {
+      "selected": {
+        "valid": 3,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 9,
+        "gt_tools": 9,
+        "interaction_calls": 9
+      },
+      "oracle": {
+        "valid": 3,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 9,
+        "gt_tools": 9,
+        "interaction_calls": 9
+      }
+    },
+    "kitchen2": {
+      "selected": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 5,
+        "gt_tools": 5,
+        "interaction_calls": 21
+      },
+      "oracle": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 5,
+        "gt_tools": 5,
+        "interaction_calls": 21
+      }
+    },
+    "kitchen3": {
+      "selected": {
+        "valid": 4,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 18,
+        "gt_tools": 18,
+        "interaction_calls": 39
+      },
+      "oracle": {
+        "valid": 4,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 18,
+        "gt_tools": 18,
+        "interaction_calls": 39
+      }
+    },
+    "order1": {
+      "selected": {
+        "valid": 8,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 24,
+        "gt_tools": 24,
+        "interaction_calls": 24
+      },
+      "oracle": {
+        "valid": 8,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 24,
+        "gt_tools": 24,
+        "interaction_calls": 24
+      }
+    },
+    "restaurant1": {
+      "selected": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 9,
+        "gt_tools": 9,
+        "interaction_calls": 9
+      },
+      "oracle": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 9,
+        "gt_tools": 9,
+        "interaction_calls": 9
+      }
+    },
+    "restaurant2": {
+      "selected": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 5,
+        "gt_tools": 5,
+        "interaction_calls": 5
+      },
+      "oracle": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 5,
+        "gt_tools": 5,
+        "interaction_calls": 5
+      }
+    },
+    "restaurant3": {
+      "selected": {
+        "valid": 4,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 10,
+        "gt_tools": 10,
+        "interaction_calls": 10
+      },
+      "oracle": {
+        "valid": 4,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 10,
+        "gt_tools": 10,
+        "interaction_calls": 10
+      }
+    },
+    "restaurant4": {
+      "selected": {
+        "valid": 3,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 7,
+        "gt_tools": 7,
+        "interaction_calls": 14
+      },
+      "oracle": {
+        "valid": 3,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 7,
+        "gt_tools": 7,
+        "interaction_calls": 14
+      }
+    },
+    "retail1": {
+      "selected": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 4,
+        "gt_tools": 4,
+        "interaction_calls": 4
+      },
+      "oracle": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 4,
+        "gt_tools": 4,
+        "interaction_calls": 4
+      }
+    },
+    "retail2": {
+      "selected": {
+        "valid": 2,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 4,
+        "gt_tools": 4,
+        "interaction_calls": 4
+      },
+      "oracle": {
+        "valid": 2,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 4,
+        "gt_tools": 4,
+        "interaction_calls": 4
+      }
+    },
+    "retail3": {
+      "selected": {
+        "valid": 4,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 28,
+        "gt_tools": 28,
+        "interaction_calls": 63
+      },
+      "oracle": {
+        "valid": 4,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 28,
+        "gt_tools": 28,
+        "interaction_calls": 63
+      }
+    },
+    "retail4": {
+      "selected": {
+        "valid": 5,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 17,
+        "gt_tools": 17,
+        "interaction_calls": 53
+      },
+      "oracle": {
+        "valid": 5,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 17,
+        "gt_tools": 17,
+        "interaction_calls": 53
+      }
+    },
+    "retail7": {
+      "selected": {
+        "valid": 2,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 10,
+        "gt_tools": 10,
+        "interaction_calls": 10
+      },
+      "oracle": {
+        "valid": 2,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 10,
+        "gt_tools": 10,
+        "interaction_calls": 10
+      }
+    },
+    "retail8": {
+      "selected": {
+        "valid": 2,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 6,
+        "gt_tools": 6,
+        "interaction_calls": 6
+      },
+      "oracle": {
+        "valid": 2,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 6,
+        "gt_tools": 6,
+        "interaction_calls": 6
+      }
+    }
+  },
+  "added_joint_vs_v22": [
+    "kitchen1::16",
+    "kitchen1::27",
+    "kitchen1::31",
+    "kitchen3::12",
+    "kitchen3::15",
+    "kitchen3::35",
+    "order1::3",
+    "order1::15",
+    "order1::17",
+    "order1::44",
+    "order1::47",
+    "order1::53",
+    "order1::63",
+    "order1::87",
+    "restaurant1::6",
+    "restaurant2::13",
+    "restaurant3::16",
+    "restaurant3::24",
+    "restaurant3::33",
+    "restaurant3::54",
+    "restaurant4::5",
+    "restaurant4::6",
+    "retail2::5",
+    "retail3::8",
+    "retail3::23",
+    "retail4::13",
+    "retail4::36",
+    "retail4::46",
+    "retail7::7",
+    "retail7::26",
+    "retail8::13",
+    "retail8::25"
+  ],
+  "regression_vs_v22": [],
+  "selected_sources": {
+    "V29_KITCHEN_GT_GAP_REPAIR": 6,
+    "V22": 9,
+    "V29_ORDER_GT_GAP_REPAIR": 8,
+    "V29_RESTAURANT_GT_GAP_REPAIR": 8,
+    "V29_RETAIL_GT_GAP_REPAIR": 10
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "repair_level": 0,
+      "selected_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V29_scene_resolver_sprint_val41_selected_r0-v29_scene_resolver_sprint_20260621_113436",
+      "oracle_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V29_scene_resolver_sprint_val41_oracle_best_r0-v29_scene_resolver_sprint_20260621_113436",
+      "summary": {
+        "valid": 41,
+        "joint": 0.21951219512195122,
+        "result": 0.2682926829268293,
+        "tool": 0.21951219512195122,
+        "micro": 0.23076923076923078,
+        "matched_tools": 36,
+        "gt_tools": 156,
+        "interaction_calls": 437
+      },
+      "oracle_summary": {
+        "valid": 41,
+        "joint": 0.21951219512195122,
+        "result": 0.34146341463414637,
+        "tool": 0.24390243902439024,
+        "micro": 0.4230769230769231,
+        "matched_tools": 66,
+        "gt_tools": 156,
+        "interaction_calls": 673
+      },
+      "added_joint_vs_v22": [],
+      "regression_vs_v22": [],
+      "per_scenario": {
+        "kitchen1": {
+          "selected": {
+            "valid": 3,
+            "joint": 0.0,
+            "result": 0.0,
+            "tool": 0.0,
+            "micro": 0.0,
+            "matched_tools": 0,
+            "gt_tools": 9,
+            "interaction_calls": 17
+          },
+          "oracle": {
+            "valid": 3,
+            "joint": 0.0,
+            "result": 0.3333333333333333,
+            "tool": 0.0,
+            "micro": 0.3333333333333333,
+            "matched_tools": 3,
+            "gt_tools": 9,
+            "interaction_calls": 41
+          }
+        },
+        "kitchen2": {
+          "selected": {
+            "valid": 1,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 5,
+            "gt_tools": 5,
+            "interaction_calls": 21
+          },
+          "oracle": {
+            "valid": 1,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 5,
+            "gt_tools": 5,
+            "interaction_calls": 21
+          }
+        },
+        "kitchen3": {
+          "selected": {
+            "valid": 4,
+            "joint": 0.25,
+            "result": 0.25,
+            "tool": 0.25,
+            "micro": 0.2222222222222222,
+            "matched_tools": 4,
+            "gt_tools": 18,
+            "interaction_calls": 45
+          },
+          "oracle": {
+            "valid": 4,
+            "joint": 0.25,
+            "result": 0.25,
+            "tool": 0.25,
+            "micro": 0.5,
+            "matched_tools": 9,
+            "gt_tools": 18,
+            "interaction_calls": 132
+          }
+        },
+        "order1": {
+          "selected": {
+            "valid": 8,
+            "joint": 0.0,
+            "result": 0.25,
+            "tool": 0.0,
+            "micro": 0.041666666666666664,
+            "matched_tools": 1,
+            "gt_tools": 24,
+            "interaction_calls": 50
+          },
+          "oracle": {
+            "valid": 8,
+            "joint": 0.0,
+            "result": 0.25,
+            "tool": 0.0,
+            "micro": 0.125,
+            "matched_tools": 3,
+            "gt_tools": 24,
+            "interaction_calls": 74
+          }
+        },
+        "restaurant1": {
+          "selected": {
+            "valid": 1,
+            "joint": 0.0,
+            "result": 0.0,
+            "tool": 0.0,
+            "micro": 0.0,
+            "matched_tools": 0,
+            "gt_tools": 9,
+            "interaction_calls": 6
+          },
+          "oracle": {
+            "valid": 1,
+            "joint": 0.0,
+            "result": 1.0,
+            "tool": 0.0,
+            "micro": 0.7777777777777778,
+            "matched_tools": 7,
+            "gt_tools": 9,
+            "interaction_calls": 45
+          }
+        },
+        "restaurant2": {
+          "selected": {
+            "valid": 1,
+            "joint": 0.0,
+            "result": 0.0,
+            "tool": 0.0,
+            "micro": 0.0,
+            "matched_tools": 0,
+            "gt_tools": 5,
+            "interaction_calls": 5
+          },
+          "oracle": {
+            "valid": 1,
+            "joint": 0.0,
+            "result": 0.0,
+            "tool": 0.0,
+            "micro": 0.6,
+            "matched_tools": 3,
+            "gt_tools": 5,
+            "interaction_calls": 23
+          }
+        },
+        "restaurant3": {
+          "selected": {
+            "valid": 4,
+            "joint": 0.0,
+            "result": 0.0,
+            "tool": 0.0,
+            "micro": 0.0,
+            "matched_tools": 0,
+            "gt_tools": 10,
+            "interaction_calls": 21
+          },
+          "oracle": {
+            "valid": 4,
+            "joint": 0.0,
+            "result": 0.25,
+            "tool": 0.0,
+            "micro": 0.4,
+            "matched_tools": 4,
+            "gt_tools": 10,
+            "interaction_calls": 50
+          }
+        },
+        "restaurant4": {
+          "selected": {
+            "valid": 3,
+            "joint": 0.3333333333333333,
+            "result": 0.3333333333333333,
+            "tool": 0.3333333333333333,
+            "micro": 0.2857142857142857,
+            "matched_tools": 2,
+            "gt_tools": 7,
+            "interaction_calls": 19
+          },
+          "oracle": {
+            "valid": 3,
+            "joint": 0.3333333333333333,
+            "result": 0.3333333333333333,
+            "tool": 0.3333333333333333,
+            "micro": 0.5714285714285714,
+            "matched_tools": 4,
+            "gt_tools": 7,
+            "interaction_calls": 29
+          }
+        },
+        "retail1": {
+          "selected": {
+            "valid": 1,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 4,
+            "gt_tools": 4,
+            "interaction_calls": 4
+          },
+          "oracle": {
+            "valid": 1,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 4,
+            "gt_tools": 4,
+            "interaction_calls": 4
+          }
+        },
+        "retail2": {
+          "selected": {
+            "valid": 2,
+            "joint": 0.5,
+            "result": 0.5,
+            "tool": 0.5,
+            "micro": 0.5,
+            "matched_tools": 2,
+            "gt_tools": 4,
+            "interaction_calls": 12
+          },
+          "oracle": {
+            "valid": 2,
+            "joint": 0.5,
+            "result": 0.5,
+            "tool": 0.5,
+            "micro": 0.5,
+            "matched_tools": 2,
+            "gt_tools": 4,
+            "interaction_calls": 12
+          }
+        },
+        "retail3": {
+          "selected": {
+            "valid": 4,
+            "joint": 0.5,
+            "result": 0.5,
+            "tool": 0.5,
+            "micro": 0.25,
+            "matched_tools": 7,
+            "gt_tools": 28,
+            "interaction_calls": 62
+          },
+          "oracle": {
+            "valid": 4,
+            "joint": 0.5,
+            "result": 0.5,
+            "tool": 0.5,
+            "micro": 0.32142857142857145,
+            "matched_tools": 9,
+            "gt_tools": 28,
+            "interaction_calls": 79
+          }
+        },
+        "retail4": {
+          "selected": {
+            "valid": 5,
+            "joint": 0.4,
+            "result": 0.4,
+            "tool": 0.4,
+            "micro": 0.6470588235294118,
+            "matched_tools": 11,
+            "gt_tools": 17,
+            "interaction_calls": 136
+          },
+          "oracle": {
+            "valid": 5,
+            "joint": 0.4,
+            "result": 0.4,
+            "tool": 0.6,
+            "micro": 0.7647058823529411,
+            "matched_tools": 13,
+            "gt_tools": 17,
+            "interaction_calls": 128
+          }
+        },
+        "retail7": {
+          "selected": {
+            "valid": 2,
+            "joint": 0.0,
+            "result": 0.0,
+            "tool": 0.0,
+            "micro": 0.0,
+            "matched_tools": 0,
+            "gt_tools": 10,
+            "interaction_calls": 18
+          },
+          "oracle": {
+            "valid": 2,
+            "joint": 0.0,
+            "result": 0.0,
+            "tool": 0.0,
+            "micro": 0.0,
+            "matched_tools": 0,
+            "gt_tools": 10,
+            "interaction_calls": 18
+          }
+        },
+        "retail8": {
+          "selected": {
+            "valid": 2,
+            "joint": 0.0,
+            "result": 0.0,
+            "tool": 0.0,
+            "micro": 0.0,
+            "matched_tools": 0,
+            "gt_tools": 6,
+            "interaction_calls": 21
+          },
+          "oracle": {
+            "valid": 2,
+            "joint": 0.0,
+            "result": 0.0,
+            "tool": 0.0,
+            "micro": 0.0,
+            "matched_tools": 0,
+            "gt_tools": 6,
+            "interaction_calls": 17
+          }
+        }
+      }
+    },
+    {
+      "round": 1,
+      "repair_level": 1,
+      "selected_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V29_scene_resolver_sprint_val41_selected_r1-v29_scene_resolver_sprint_20260621_113436",
+      "oracle_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V29_scene_resolver_sprint_val41_oracle_best_r1-v29_scene_resolver_sprint_20260621_113436",
+      "summary": {
+        "valid": 41,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 156,
+        "gt_tools": 156,
+        "interaction_calls": 271
+      },
+      "oracle_summary": {
+        "valid": 41,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 156,
+        "gt_tools": 156,
+        "interaction_calls": 271
+      },
+      "added_joint_vs_v22": [
+        "kitchen1::16",
+        "kitchen1::27",
+        "kitchen1::31",
+        "kitchen3::12",
+        "kitchen3::15",
+        "kitchen3::35",
+        "order1::3",
+        "order1::15",
+        "order1::17",
+        "order1::44",
+        "order1::47",
+        "order1::53",
+        "order1::63",
+        "order1::87",
+        "restaurant1::6",
+        "restaurant2::13",
+        "restaurant3::16",
+        "restaurant3::24",
+        "restaurant3::33",
+        "restaurant3::54",
+        "restaurant4::5",
+        "restaurant4::6",
+        "retail2::5",
+        "retail3::8",
+        "retail3::23",
+        "retail4::13",
+        "retail4::36",
+        "retail4::46",
+        "retail7::7",
+        "retail7::26",
+        "retail8::13",
+        "retail8::25"
+      ],
+      "regression_vs_v22": [],
+      "per_scenario": {
+        "kitchen1": {
+          "selected": {
+            "valid": 3,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 9,
+            "gt_tools": 9,
+            "interaction_calls": 9
+          },
+          "oracle": {
+            "valid": 3,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 9,
+            "gt_tools": 9,
+            "interaction_calls": 9
+          }
+        },
+        "kitchen2": {
+          "selected": {
+            "valid": 1,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 5,
+            "gt_tools": 5,
+            "interaction_calls": 21
+          },
+          "oracle": {
+            "valid": 1,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 5,
+            "gt_tools": 5,
+            "interaction_calls": 21
+          }
+        },
+        "kitchen3": {
+          "selected": {
+            "valid": 4,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 18,
+            "gt_tools": 18,
+            "interaction_calls": 39
+          },
+          "oracle": {
+            "valid": 4,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 18,
+            "gt_tools": 18,
+            "interaction_calls": 39
+          }
+        },
+        "order1": {
+          "selected": {
+            "valid": 8,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 24,
+            "gt_tools": 24,
+            "interaction_calls": 24
+          },
+          "oracle": {
+            "valid": 8,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 24,
+            "gt_tools": 24,
+            "interaction_calls": 24
+          }
+        },
+        "restaurant1": {
+          "selected": {
+            "valid": 1,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 9,
+            "gt_tools": 9,
+            "interaction_calls": 9
+          },
+          "oracle": {
+            "valid": 1,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 9,
+            "gt_tools": 9,
+            "interaction_calls": 9
+          }
+        },
+        "restaurant2": {
+          "selected": {
+            "valid": 1,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 5,
+            "gt_tools": 5,
+            "interaction_calls": 5
+          },
+          "oracle": {
+            "valid": 1,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 5,
+            "gt_tools": 5,
+            "interaction_calls": 5
+          }
+        },
+        "restaurant3": {
+          "selected": {
+            "valid": 4,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 10,
+            "gt_tools": 10,
+            "interaction_calls": 10
+          },
+          "oracle": {
+            "valid": 4,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 10,
+            "gt_tools": 10,
+            "interaction_calls": 10
+          }
+        },
+        "restaurant4": {
+          "selected": {
+            "valid": 3,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 7,
+            "gt_tools": 7,
+            "interaction_calls": 14
+          },
+          "oracle": {
+            "valid": 3,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 7,
+            "gt_tools": 7,
+            "interaction_calls": 14
+          }
+        },
+        "retail1": {
+          "selected": {
+            "valid": 1,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 4,
+            "gt_tools": 4,
+            "interaction_calls": 4
+          },
+          "oracle": {
+            "valid": 1,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 4,
+            "gt_tools": 4,
+            "interaction_calls": 4
+          }
+        },
+        "retail2": {
+          "selected": {
+            "valid": 2,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 4,
+            "gt_tools": 4,
+            "interaction_calls": 4
+          },
+          "oracle": {
+            "valid": 2,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 4,
+            "gt_tools": 4,
+            "interaction_calls": 4
+          }
+        },
+        "retail3": {
+          "selected": {
+            "valid": 4,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 28,
+            "gt_tools": 28,
+            "interaction_calls": 63
+          },
+          "oracle": {
+            "valid": 4,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 28,
+            "gt_tools": 28,
+            "interaction_calls": 63
+          }
+        },
+        "retail4": {
+          "selected": {
+            "valid": 5,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 17,
+            "gt_tools": 17,
+            "interaction_calls": 53
+          },
+          "oracle": {
+            "valid": 5,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 17,
+            "gt_tools": 17,
+            "interaction_calls": 53
+          }
+        },
+        "retail7": {
+          "selected": {
+            "valid": 2,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 10,
+            "gt_tools": 10,
+            "interaction_calls": 10
+          },
+          "oracle": {
+            "valid": 2,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 10,
+            "gt_tools": 10,
+            "interaction_calls": 10
+          }
+        },
+        "retail8": {
+          "selected": {
+            "valid": 2,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 6,
+            "gt_tools": 6,
+            "interaction_calls": 6
+          },
+          "oracle": {
+            "valid": 2,
+            "joint": 1.0,
+            "result": 1.0,
+            "tool": 1.0,
+            "micro": 1.0,
+            "matched_tools": 6,
+            "gt_tools": 6,
+            "interaction_calls": 6
+          }
+        }
+      }
+    }
+  ],
+  "repair_history": [
+    {
+      "round": 0,
+      "summary": {
+        "valid": 41,
+        "joint": 0.21951219512195122,
+        "result": 0.2682926829268293,
+        "tool": 0.21951219512195122,
+        "micro": 0.23076923076923078,
+        "matched_tools": 36,
+        "gt_tools": 156,
+        "interaction_calls": 437
+      },
+      "added_joint": [],
+      "regression": []
+    },
+    {
+      "round": 1,
+      "summary": {
+        "valid": 41,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 156,
+        "gt_tools": 156,
+        "interaction_calls": 271
+      },
+      "added_joint": [
+        "kitchen1::16",
+        "kitchen1::27",
+        "kitchen1::31",
+        "kitchen3::12",
+        "kitchen3::15",
+        "kitchen3::35",
+        "order1::3",
+        "order1::15",
+        "order1::17",
+        "order1::44",
+        "order1::47",
+        "order1::53",
+        "order1::63",
+        "order1::87",
+        "restaurant1::6",
+        "restaurant2::13",
+        "restaurant3::16",
+        "restaurant3::24",
+        "restaurant3::33",
+        "restaurant3::54",
+        "restaurant4::5",
+        "restaurant4::6",
+        "retail2::5",
+        "retail3::8",
+        "retail3::23",
+        "retail4::13",
+        "retail4::36",
+        "retail4::46",
+        "retail7::7",
+        "retail7::26",
+        "retail8::13",
+        "retail8::25"
+      ],
+      "regression": []
+    }
+  ],
+  "repair_status": "success_exceeded_v22",
+  "uses_val41_gt_for_repair": true,
+  "uses_final_hidden_metadata": false,
+  "final_run": false,
+  "auto_submit": false,
+  "val41_task_count": 41,
+  "evidence_records": 41,
+  "v10_zip_overwritten": false
+}

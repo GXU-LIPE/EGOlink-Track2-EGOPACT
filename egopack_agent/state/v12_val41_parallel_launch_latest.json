@@ -1,0 +1,6 @@
+{
+  "run_id": "V12_qwen3vl_prior_all_modules_val41_parallel_20260619_170302",
+  "log": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/logs/v12_val41_parallel_V12_qwen3vl_prior_all_modules_val41_parallel_20260619_170302.log",
+  "started_at": "2026-06-19T17:03:02+0800",
+  "workers": 10
+}

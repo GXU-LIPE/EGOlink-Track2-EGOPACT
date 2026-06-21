@@ -1,0 +1,369 @@
+{
+  "run_id": "v28_protected_delta_guarded_20260621_1115",
+  "version": "V28_PROTECTED_DELTA_AGENT_EVIDENCE_AS_VETO",
+  "V10_zip_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+  "V22_baseline": {
+    "valid": 41,
+    "joint": 0.21951219512195122,
+    "result": 0.2926829268292683,
+    "tool": 0.24390243902439024,
+    "micro": 0.42948717948717946,
+    "matched_tools": 67,
+    "gt_tools": 156,
+    "interaction_calls": 801
+  },
+  "V28_selected": {
+    "valid": 41,
+    "joint": 0.21951219512195122,
+    "result": 0.2682926829268293,
+    "tool": 0.21951219512195122,
+    "micro": 0.3525641025641026,
+    "matched_tools": 55,
+    "gt_tools": 156,
+    "interaction_calls": 629
+  },
+  "V28_oracle_best": {
+    "valid": 41,
+    "joint": 0.21951219512195122,
+    "result": 0.34146341463414637,
+    "tool": 0.24390243902439024,
+    "micro": 0.4230769230769231,
+    "matched_tools": 66,
+    "gt_tools": 156,
+    "interaction_calls": 663
+  },
+  "selected_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V28_protected_delta_evidence_veto_val41_selected-v28_protected_delta_guarded_20260621_1115",
+  "oracle_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V28_protected_delta_evidence_veto_val41_oracle_best-v28_protected_delta_guarded_20260621_1115",
+  "per_scenario": {
+    "kitchen1": {
+      "selected": {
+        "valid": 3,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 9,
+        "interaction_calls": 11
+      },
+      "oracle": {
+        "valid": 3,
+        "joint": 0.0,
+        "result": 0.3333333333333333,
+        "tool": 0.0,
+        "micro": 0.3333333333333333,
+        "matched_tools": 3,
+        "gt_tools": 9,
+        "interaction_calls": 39
+      }
+    },
+    "kitchen2": {
+      "selected": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 5,
+        "gt_tools": 5,
+        "interaction_calls": 21
+      },
+      "oracle": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 5,
+        "gt_tools": 5,
+        "interaction_calls": 21
+      }
+    },
+    "kitchen3": {
+      "selected": {
+        "valid": 4,
+        "joint": 0.25,
+        "result": 0.25,
+        "tool": 0.25,
+        "micro": 0.2222222222222222,
+        "matched_tools": 4,
+        "gt_tools": 18,
+        "interaction_calls": 39
+      },
+      "oracle": {
+        "valid": 4,
+        "joint": 0.25,
+        "result": 0.25,
+        "tool": 0.25,
+        "micro": 0.5,
+        "matched_tools": 9,
+        "gt_tools": 18,
+        "interaction_calls": 132
+      }
+    },
+    "order1": {
+      "selected": {
+        "valid": 8,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.16666666666666666,
+        "matched_tools": 4,
+        "gt_tools": 24,
+        "interaction_calls": 128
+      },
+      "oracle": {
+        "valid": 8,
+        "joint": 0.0,
+        "result": 0.25,
+        "tool": 0.0,
+        "micro": 0.125,
+        "matched_tools": 3,
+        "gt_tools": 24,
+        "interaction_calls": 70
+      }
+    },
+    "restaurant1": {
+      "selected": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 1.0,
+        "tool": 0.0,
+        "micro": 0.7777777777777778,
+        "matched_tools": 7,
+        "gt_tools": 9,
+        "interaction_calls": 45
+      },
+      "oracle": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 1.0,
+        "tool": 0.0,
+        "micro": 0.7777777777777778,
+        "matched_tools": 7,
+        "gt_tools": 9,
+        "interaction_calls": 45
+      }
+    },
+    "restaurant2": {
+      "selected": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.6,
+        "matched_tools": 3,
+        "gt_tools": 5,
+        "interaction_calls": 23
+      },
+      "oracle": {
+        "valid": 1,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.6,
+        "matched_tools": 3,
+        "gt_tools": 5,
+        "interaction_calls": 23
+      }
+    },
+    "restaurant3": {
+      "selected": {
+        "valid": 4,
+        "joint": 0.0,
+        "result": 0.25,
+        "tool": 0.0,
+        "micro": 0.4,
+        "matched_tools": 4,
+        "gt_tools": 10,
+        "interaction_calls": 48
+      },
+      "oracle": {
+        "valid": 4,
+        "joint": 0.0,
+        "result": 0.25,
+        "tool": 0.0,
+        "micro": 0.4,
+        "matched_tools": 4,
+        "gt_tools": 10,
+        "interaction_calls": 48
+      }
+    },
+    "restaurant4": {
+      "selected": {
+        "valid": 3,
+        "joint": 0.3333333333333333,
+        "result": 0.3333333333333333,
+        "tool": 0.3333333333333333,
+        "micro": 0.5714285714285714,
+        "matched_tools": 4,
+        "gt_tools": 7,
+        "interaction_calls": 27
+      },
+      "oracle": {
+        "valid": 3,
+        "joint": 0.3333333333333333,
+        "result": 0.3333333333333333,
+        "tool": 0.3333333333333333,
+        "micro": 0.5714285714285714,
+        "matched_tools": 4,
+        "gt_tools": 7,
+        "interaction_calls": 27
+      }
+    },
+    "retail1": {
+      "selected": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 4,
+        "gt_tools": 4,
+        "interaction_calls": 4
+      },
+      "oracle": {
+        "valid": 1,
+        "joint": 1.0,
+        "result": 1.0,
+        "tool": 1.0,
+        "micro": 1.0,
+        "matched_tools": 4,
+        "gt_tools": 4,
+        "interaction_calls": 4
+      }
+    },
+    "retail2": {
+      "selected": {
+        "valid": 2,
+        "joint": 0.5,
+        "result": 0.5,
+        "tool": 0.5,
+        "micro": 0.5,
+        "matched_tools": 2,
+        "gt_tools": 4,
+        "interaction_calls": 16
+      },
+      "oracle": {
+        "valid": 2,
+        "joint": 0.5,
+        "result": 0.5,
+        "tool": 0.5,
+        "micro": 0.5,
+        "matched_tools": 2,
+        "gt_tools": 4,
+        "interaction_calls": 12
+      }
+    },
+    "retail3": {
+      "selected": {
+        "valid": 4,
+        "joint": 0.5,
+        "result": 0.5,
+        "tool": 0.5,
+        "micro": 0.25,
+        "matched_tools": 7,
+        "gt_tools": 28,
+        "interaction_calls": 70
+      },
+      "oracle": {
+        "valid": 4,
+        "joint": 0.5,
+        "result": 0.5,
+        "tool": 0.5,
+        "micro": 0.32142857142857145,
+        "matched_tools": 9,
+        "gt_tools": 28,
+        "interaction_calls": 79
+      }
+    },
+    "retail4": {
+      "selected": {
+        "valid": 5,
+        "joint": 0.4,
+        "result": 0.4,
+        "tool": 0.4,
+        "micro": 0.6470588235294118,
+        "matched_tools": 11,
+        "gt_tools": 17,
+        "interaction_calls": 136
+      },
+      "oracle": {
+        "valid": 5,
+        "joint": 0.4,
+        "result": 0.4,
+        "tool": 0.6,
+        "micro": 0.7647058823529411,
+        "matched_tools": 13,
+        "gt_tools": 17,
+        "interaction_calls": 128
+      }
+    },
+    "retail7": {
+      "selected": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 10,
+        "interaction_calls": 25
+      },
+      "oracle": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 10,
+        "interaction_calls": 18
+      }
+    },
+    "retail8": {
+      "selected": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 6,
+        "interaction_calls": 36
+      },
+      "oracle": {
+        "valid": 2,
+        "joint": 0.0,
+        "result": 0.0,
+        "tool": 0.0,
+        "micro": 0.0,
+        "matched_tools": 0,
+        "gt_tools": 6,
+        "interaction_calls": 17
+      }
+    }
+  },
+  "added_joint_vs_v22": [],
+  "regression_vs_v22": [],
+  "protected_v22_success_count": 9,
+  "evidence_records": 41,
+  "evidence_guard_actions": {
+    "tiebreak": 38,
+    "query_hint": 8
+  },
+  "evidence_error_buckets": {
+    "no_evidence_error": 37,
+    "evidence_changed_or_conflicted_mutation_target_wrong": 9
+  },
+  "asr_unavailable": 41,
+  "ocr_exact_match_success": 41,
+  "ocr_false_positive": 9,
+  "real_v21_called": true,
+  "min_resolver_selected_count": 9,
+  "V27_evidence_joint": 0.0975609756097561,
+  "final_run": false,
+  "uses_final_hidden_metadata": false,
+  "uses_val41_gt_for_runtime": false,
+  "v10_zip_overwritten": false
+}

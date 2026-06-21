@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-06-18T00:17:32+08:00",
+  "gpt55": {
+    "provider": "gpt55",
+    "key_present": true,
+    "base_url": "https://ai-pixel.online/v1",
+    "model": "gpt-5.5",
+    "available": false,
+    "dns_tcp_tls": {
+      "host": "ai-pixel.online",
+      "port": 443,
+      "dns_ok": true,
+      "tcp_ok": true,
+      "tls_ok": true,
+      "error_class": "",
+      "elapsed": 0.729
+    },
+    "models_endpoint": {
+      "ok": false,
+      "elapsed": 8.013,
+      "status_code": null,
+      "error_class": "timeout",
+      "parseable_json": false,
+      "error": "HTTPSConnectionPool(host='ai-pixel.online', port=443): Read timed out. (read timeout=8.0)"
+    },
+    "chat": {
+      "ok": false,
+      "elapsed": 8.011,
+      "status_code": null,
+      "error_class": "timeout",
+      "parseable_response": false,
+      "content_preview": "",
+      "usage": {},
+      "error": "HTTPSConnectionPool(host='ai-pixel.online', port=443): Read timed out. (read timeout=8.0)"
+    },
+    "failure_class": "timeout"
+  },
+  "deepseek": {
+    "provider": "deepseek",
+    "key_present": false,
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-chat",
+    "available": false,
+    "dns_tcp_tls": {},
+    "models_endpoint": {},
+    "json_risk_review": {},
+    "failure_class": "missing_api_key",
+    "crosscheck_enabled": false
+  },
+  "main_experiment_allowed": false,
+  "deepseek_crosscheck_allowed": false,
+  "need_human_attention": [
+    "GPT-5.5 unavailable: timeout",
+    "DeepSeek unavailable, crosscheck disabled: missing_api_key"
+  ],
+  "report_path": "",
+  "state_path": "",
+  "need_human_attention_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/NEED_HUMAN_ATTENTION_V9_API_20260618_001732.md"
+}

@@ -1,0 +1,11 @@
+{
+  "updated_at": "2026-06-16T22:46:25+0800",
+  "version": "V6_gpt55_visual_agent",
+  "service_agent": "GPT-5.5",
+  "model": "gpt-5.5",
+  "openai_key_present": "no",
+  "official_source_modified": false,
+  "adapter_smoke_report": "reports/01_gpt55_adapter_smoke_20260616_224625.md",
+  "frame_manifest": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/visual_cache/retail9_1/frames_manifest.json",
+  "gate_script": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/scripts/run_gpt55_v6_gate.sh"
+}

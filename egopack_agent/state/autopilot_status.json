@@ -1,0 +1,13 @@
+{
+  "stage": "gate_complete",
+  "version": "V2_prompt_plan",
+  "run_id": "gate_restart_20260609_235626",
+  "completed_tasks": 89,
+  "final_handled": false,
+  "updated_at": "2026-06-10T01:15:10+0800",
+  "output_model_name": "deepseek-v4-pro-gate-gate_restart_20260609_235626",
+  "watchdog_restart_loop_fixed": true,
+  "latest_joint_success": 0.25,
+  "latest_result_success": 0.25,
+  "latest_tool_success": 0.5
+}

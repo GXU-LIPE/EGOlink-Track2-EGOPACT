@@ -1,0 +1,510 @@
+[
+  {
+    "Instruction": "You are a shopper keen on finding discounts (User ID: sarah_green_567). Please ask the AI Service Agent to check whether the wine in your hand, which has gold foil wrapping around the neck, is on discount. If it is on discount, ask the AI Service Agent to find other wines that are also on discount and have a lower tax rate than this wine, and add the wine with the lowest sugar content to your cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, you want all of them to be added. If it is not on discount, ask the AI Service Agent to find wines priced between 100 and 300 yuan with a \"low-fat\" feature, and add the wine with the largest discount (smallest discount factor) to your cart. If there are multiple wines tied for the largest discount among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for all items in the cart.",
+    "analysis": "1. Check whether the wine in your hand, which has gold foil wrapping around the bottle neck, is on discount.\n\n2. If it is on discount, search for wines that are also on discount and have a lower tax rate than this wine. Add the wine with the lowest sugar content to the cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, add all of them to the cart.\n\n3. If it is not on discount, search for wines priced between 100 and 300 yuan that have the \"low-fat\" characteristic. Add the wine with the largest discount (smallest discount factor) to the cart. If there are multiple wines tied for the largest discount among those that meet the conditions, add all of them to the cart.\n\n4. Calculate the total amount payable for all items in the shopping cart.",
+    "ground_truth": [
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Souda Red Wine",
+          "qty": 1,
+          "category": "wine",
+          "price": 239,
+          "tax_rate": 0.08,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Bourgogne Villages",
+          "qty": 1,
+          "category": "wine",
+          "price": 299,
+          "tax_rate": 0.08,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Duc de Guiche",
+          "qty": 1,
+          "category": "wine",
+          "price": 198,
+          "tax_rate": 0.12,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Von Carle",
+          "qty": 1,
+          "category": "wine",
+          "price": 225,
+          "tax_rate": 0.06,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Chateau Sainte Marie",
+          "qty": 1,
+          "category": "wine",
+          "price": 175,
+          "tax_rate": 0.08,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Pachy White Wine",
+          "qty": 1,
+          "category": "wine",
+          "price": 155,
+          "tax_rate": 0.08,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Napa Valley Cabernet",
+          "qty": 1,
+          "category": "wine",
+          "price": 320,
+          "tax_rate": 0.08,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Champagne Brut",
+          "qty": 1,
+          "category": "wine",
+          "price": 350,
+          "tax_rate": 0.09,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Malbec Reserva",
+          "qty": 1,
+          "category": "wine",
+          "price": 190,
+          "tax_rate": 0.08,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Pinot Noir Reserve",
+          "qty": 1,
+          "category": "wine",
+          "price": 260,
+          "tax_rate": 0.11,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Merlot Grande Reserve",
+          "qty": 1,
+          "category": "wine",
+          "price": 288,
+          "tax_rate": 0.05,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Cabernet Sauvignon Reserve",
+          "qty": 1,
+          "category": "wine",
+          "price": 310,
+          "tax_rate": 0.07,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Sauvignon Blanc",
+          "qty": 1,
+          "category": "wine",
+          "price": 140,
+          "tax_rate": 0.12,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Zinfandel Estate",
+          "qty": 1,
+          "category": "wine",
+          "price": 210,
+          "tax_rate": 0.06,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Shiraz Reserve",
+          "qty": 1,
+          "category": "wine",
+          "price": 250,
+          "tax_rate": 0.08,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Chardonnay Premier Cru",
+          "qty": 1,
+          "category": "wine",
+          "price": 270,
+          "tax_rate": 0.11,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Tempranillo Crianza",
+          "qty": 1,
+          "category": "wine",
+          "price": 230,
+          "tax_rate": 0.06,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "product_name": "Syrah Vieilles Vignes",
+          "qty": 1,
+          "category": "wine",
+          "price": 300,
+          "tax_rate": 0.07,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "compute_total_payment",
+        "parameters": {
+          "user_id": "sarah_green_567",
+          "products": [
+            {
+              "product_name": "VINO DI CANTINA Rosso",
+              "quantity": 2
+            },
+            {
+              "product_name": "Chardonnay Premier Cru",
+              "quantity": 2
+            },
+            {
+              "product_name": "Souda Red Wine",
+              "quantity": 1
+            },
+            {
+              "product_name": "Bourgogne Villages",
+              "quantity": 1
+            },
+            {
+              "product_name": "Duc de Guiche",
+              "quantity": 1
+            },
+            {
+              "product_name": "Von Carle",
+              "quantity": 1
+            },
+            {
+              "product_name": "Chateau Sainte Marie",
+              "quantity": 1
+            },
+            {
+              "product_name": "Pachy White Wine",
+              "quantity": 1
+            },
+            {
+              "product_name": "Napa Valley Cabernet",
+              "quantity": 1
+            },
+            {
+              "product_name": "Champagne Brut",
+              "quantity": 1
+            },
+            {
+              "product_name": "Malbec Reserva",
+              "quantity": 1
+            },
+            {
+              "product_name": "Pinot Noir Reserve",
+              "quantity": 1
+            },
+            {
+              "product_name": "Merlot Grande Reserve",
+              "quantity": 1
+            },
+            {
+              "product_name": "Cabernet Sauvignon Reserve",
+              "quantity": 1
+            },
+            {
+              "product_name": "Sauvignon Blanc",
+              "quantity": 1
+            },
+            {
+              "product_name": "Zinfandel Estate",
+              "quantity": 1
+            },
+            {
+              "product_name": "Shiraz Reserve",
+              "quantity": 1
+            },
+            {
+              "product_name": "Chardonnay Premier Cru",
+              "quantity": 1
+            },
+            {
+              "product_name": "Tempranillo Crianza",
+              "quantity": 1
+            },
+            {
+              "product_name": "Syrah Vieilles Vignes",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 8,
+    "image_name": "retail3",
+    "image_path": "retail3.mp4",
+    "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
+    "key": "product_name",
+    "value": [
+      "Mouton Cadet"
+    ],
+    "_v8_original_index": 8
+  },
+  {
+    "Instruction": "You are an educator focused on low calories (User ID: bill_sue_119). Ask the AI Service Agent to check whether the bottle of wine held in your friend's left hand is \"low calorie\". If it is, ask the AI Service Agent to look for wines that are from New Zealand and have a \"sour\" taste, and add the one with the lowest sugar content to your cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, you want all of them to be added. If it is not, ask the AI Service Agent to search the inventory for all \"low calorie\" wines with a discount factor greater than 0.9, and add the one with the highest price to your cart. If there are multiple wines tied for the highest price among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total calories of the items in your cart.",
+    "analysis": "First, check whether the bottle of wine held in the friend's left hand is \"low calorie\". If it is, search for wines originating from New Zealand with a \"sour\" taste, and add the wine with the lowest sugar content to the cart. If there are multiple wines tied for the lowest sugar content among those that meet the conditions, add all of them. If it is not, search the inventory for all \"low calorie\" wines with a discount factor greater than 0.9, and add the wine with the highest price to the cart. If there are multiple wines tied for the highest price among those that meet the conditions, add all of them. Finally, calculate the total calories of the items in the shopping cart.",
+    "ground_truth": [
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "bill_sue_119",
+          "product_name": "GLITZ Sauvignon Blanc",
+          "qty": 1,
+          "category": "wine",
+          "price": 79,
+          "tax_rate": 0.05,
+          "discount": 1
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "bill_sue_119",
+          "product_name": "SILVER BAY Sauvignon Blanc",
+          "qty": 1,
+          "category": "wine",
+          "price": 139,
+          "tax_rate": 0.05,
+          "discount": 1
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "bill_sue_119",
+          "product_name": "TASTING ROOM Sauvignon Blanc",
+          "qty": 1,
+          "category": "wine",
+          "price": 139,
+          "tax_rate": 0.1,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "bill_sue_119",
+          "product_name": "SILVER BAY Chardonnay",
+          "qty": 1,
+          "category": "wine",
+          "price": 139,
+          "tax_rate": 0.1,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "bill_sue_119",
+          "products": [
+            {
+              "product_name": "Kim Orawford Sauvignon Blanc",
+              "quantity": 2
+            },
+            {
+              "product_name": "GLITZ Sauvignon Blanc",
+              "quantity": 1
+            },
+            {
+              "product_name": "SILVER BAY Sauvignon Blanc",
+              "quantity": 1
+            },
+            {
+              "product_name": "TASTING ROOM Sauvignon Blanc",
+              "quantity": 1
+            },
+            {
+              "product_name": "SILVER BAY Chardonnay",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 16,
+    "image_name": "retail3",
+    "image_path": "retail3.mp4",
+    "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
+    "key": "product_name",
+    "value": [
+      "Merlot Oyster Bay"
+    ],
+    "_v8_original_index": 16
+  },
+  {
+    "Instruction": "Results:\nYou are a wine collector (User ID: mike_roberts_234). Ask the AI Service Agent to confirm whether the wine with a minimalist curve on its label is from France. If it is from France, ask the AI Service Agent to search the inventory for wines that are also from France, priced over 500 yuan, and have the \"low sugar\" feature, then add the wine with the lowest tax rate to your cart. If there are multiple wines tied for the lowest tax rate among those that meet the conditions, you want all of them to be added. If it is not from France, ask the AI Service Agent to find wines from Italy with a \"sweet\" taste and a discount factor above 0.9, then add the wine with the highest calories to your cart. If there are multiple wines tied for the highest calories among those that meet the conditions, you want all of them to be added. Finally, ask the AI Service Agent to calculate the total amount payable for the items in your cart.",
+    "analysis": "1. Verify whether the wine featuring a minimalist curve on its label originates from France.\n2. If it does, search the inventory for wines that are also from France, priced over 500 yuan, and feature \"Low Sugar\". Add the wine with the lowest tax rate to the cart. If multiple wines tie for the lowest tax rate, add all of them.\n3. If it does not, search for wines from Italy with a \"Sweet\" taste and a discount factor above 0.9. Add the wine with the highest calories to the cart. If multiple wines tie for the highest calories, add all of them.\n4. Calculate the total amount payable for the items in the cart.",
+    "ground_truth": [
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "mike_roberts_234",
+          "product_name": "LAND MARSALA",
+          "qty": 1,
+          "category": "wine",
+          "price": 125,
+          "tax_rate": 0.09,
+          "discount": 0.7
+        }
+      },
+      {
+        "tool_name": "compute_total_payment",
+        "parameters": {
+          "user_id": "mike_roberts_234",
+          "products": [
+            {
+              "product_name": "Napa Valley Cabernet",
+              "quantity": 2
+            },
+            {
+              "product_name": "LAND MARSALA",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 23,
+    "image_name": "retail3",
+    "image_path": "retail3.mp4",
+    "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
+    "key": "product_name",
+    "value": [
+      "River Terrace Chardonnay"
+    ],
+    "_v8_original_index": 23
+  },
+  {
+    "Instruction": "You are a customer who dislikes sour taste (User ID: david_jones_987). Ask the AI service agent to check whether that golden-colored wine is \"sour\". If it is, ask the AI service agent to avoid sour tastes and search for wines that are \"sweet\", have a tax rate below 0.13, and are from France, then add the one with the lowest unit price to your cart. If there are multiple wines tied for the lowest price among those that meet the conditions, you want all of them to be added. If it is not, ask the AI service agent to find wines that are \"savory\" and have a \"low-fat\" characteristic, then add the one with the highest protein content to your cart. If there are multiple wines tied for the highest protein content among those that meet the conditions, you want all of them to be added. Finally, ask the AI service agent to calculate the total sugar content of the items in your cart.",
+    "analysis": "1. Check whether that golden-colored wine has a \"sour\" taste.\n\n2. If so, avoid sour tastes. Search for wines that are \"sweet\", have a tax rate below 0.13, and originate from France. Add the wine with the lowest unit price to the cart. If there are multiple wines tied for the lowest price, add all of them.\n\n3. If not, search for wines that are \"savory\" and have a \"low-fat\" feature. Add the wine with the highest protein content to the cart. If there are multiple wines tied for the highest protein content, add all of them.\n\n4. Calculate the total sugar content of the items in the cart.",
+    "ground_truth": [
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "david_jones_987",
+          "product_name": "Rosé de Provence",
+          "qty": 1,
+          "category": "wine",
+          "price": 180,
+          "tax_rate": 0.06,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "david_jones_987",
+          "products": [
+            {
+              "product_name": "Von Carle",
+              "quantity": 1
+            },
+            {
+              "product_name": "Lerpin Merlot",
+              "quantity": 1
+            },
+            {
+              "product_name": "Framboise Rouge",
+              "quantity": 1
+            },
+            {
+              "product_name": "Casa del Rio",
+              "quantity": 2
+            },
+            {
+              "product_name": "Rosé de Provence",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 24,
+    "image_name": "retail3",
+    "image_path": "retail3.mp4",
+    "image_description": "You are in a liquor store, standing on a shelf displaying rows of wines. You pick up a bottle of wine with a golden liquid and a gold foil cap around the neck. Your friend is to your right; in her left hand, she holds a bottle of wine with a green liquid and a light blue seal. In her right hand, she also holds a bottle of green liquid with a copper seal.",
+    "key": "product_name",
+    "value": [
+      "Mouton Cadet"
+    ],
+    "_v8_original_index": 24
+  }
+]

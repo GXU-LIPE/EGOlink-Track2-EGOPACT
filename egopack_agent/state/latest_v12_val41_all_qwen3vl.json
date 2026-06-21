@@ -1,0 +1,8 @@
+{
+  "updated_at": "2026-06-19T14:33:23+0800",
+  "run_id": "V12_official_style_qwen3vl_memory_val41_all_qwen3vl_20260619_143308",
+  "version": "V12_official_style_qwen3vl_memory",
+  "stage": "validation_A_medium",
+  "qwen3vl_cards": "visual_cache_v12/qwen3vl_grounding",
+  "final_run": false
+}

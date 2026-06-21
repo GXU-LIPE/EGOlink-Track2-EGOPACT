@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-06-19T21:39:42+0800",
+  "run_id": "v14_candidate_selection_20260619_2134",
+  "version": "V14_candidate_selection_val41",
+  "report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V14_CANDIDATE_SELECTION_VAL41_v14_candidate_selection_20260619_2134.md",
+  "summary": {
+    "valid": 41,
+    "joint": 0.14634146341463414,
+    "result": 0.21951219512195122,
+    "tool": 0.17073170731707318,
+    "micro": 0.36538461538461536,
+    "avg_task_accuracy": 0.3544644130651833,
+    "correct_calls": 57,
+    "gt_calls": 156,
+    "interaction_calls": 795
+  },
+  "chosen_counts": {
+    "V14B": 8,
+    "V12": 15,
+    "V10": 18
+  },
+  "final_run": false
+}

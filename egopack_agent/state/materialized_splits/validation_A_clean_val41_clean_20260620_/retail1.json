@@ -1,0 +1,83 @@
+[
+  {
+    "Instruction": "You are a wine expert (User ID: lisa_taylor_321), currently examining three bottles of wine on the middle shelf. You pointed at the three bottles one after another with your finger. You want the AI Service Agent to check whether any of these wines have a \"sweet\" taste. If any do, ask the AI Service Agent to add one bottle of the sweetest wine (highest sugar content) to your cart. If there are multiple bottles tied for the highest sugar content, you want one bottle of each of those tied items to be added. If none of them are sweet, ask the AI Service Agent to add one bottle of each wine to your cart. Finally, ask the AI Service Agent to calculate the total nutritional value of all items in the cart.",
+    "analysis": "1. Check if any of these three bottles of wine have a \"sweet\" taste.\n2. If there are wines with a sweet taste, add one bottle of the wine with the highest sugar content to the cart. If multiple wines tie for the highest sugar content, add one bottle of each of those tied wines.\n3. If none of the wines have a sweet taste, add one bottle of each wine to the cart.\n4. Calculate the total nutritional value of all items in the cart.",
+    "ground_truth": [
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "lisa_taylor_321",
+          "product_name": "Merlot Oyster Bay",
+          "qty": 1,
+          "category": "wine",
+          "price": 139,
+          "tax_rate": 0.11,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "lisa_taylor_321",
+          "product_name": "RIVER TERRACE Chardonnay",
+          "qty": 1,
+          "category": "wine",
+          "price": 139,
+          "tax_rate": 0.07,
+          "discount": 1
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "lisa_taylor_321",
+          "product_name": "Kim Crawford Sauvignon Blanc",
+          "qty": 1,
+          "category": "wine",
+          "price": 139,
+          "tax_rate": 0.06,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "lisa_taylor_321",
+          "products": [
+            {
+              "product_name": "LA VIGNA Malbec",
+              "quantity": 2
+            },
+            {
+              "product_name": "Duc de Guiche",
+              "quantity": 2
+            },
+            {
+              "product_name": "Merlot Oyster Bay",
+              "quantity": 1
+            },
+            {
+              "product_name": "RIVER TERRACE Chardonnay",
+              "quantity": 1
+            },
+            {
+              "product_name": "Kim Crawford Sauvignon Blanc",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 24,
+    "image_name": "retail1",
+    "image_path": "retail1.mp4",
+    "image_description": "You are currently in front of a wine shelf and have pointed to three bottles of wine in succession.",
+    "key": "product_name",
+    "value": [
+      "Merlot Oyster Bay",
+      "River Terrace",
+      "Kim Crawford Sauvignon Blanc"
+    ],
+    "_v8_original_index": 24
+  }
+]

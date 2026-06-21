@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-06-08T16:21:19+0800",
+  "model": "deepseek-v4-pro",
+  "base_url": "https://api.deepseek.com/v1",
+  "ok": false,
+  "elapsed": 273.209,
+  "error_type": "",
+  "error": "",
+  "content_preview": "",
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 8
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-06-09T09:37:56+0800",
+  "best": {
+    "python": "/usr/bin/python3",
+    "score": 15,
+    "executable": "/usr/bin/python3",
+    "version": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+    "mods": {
+      "openai": true,
+      "requests": true,
+      "pandas": true,
+      "numpy": true,
+      "PIL": true,
+      "cv2": false,
+      "torch": false,
+      "zhipuai": false
+    }
+  },
+  "candidates": [
+    {
+      "python": "/usr/bin/python3",
+      "score": 15,
+      "executable": "/usr/bin/python3",
+      "version": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+      "mods": {
+        "openai": true,
+        "requests": true,
+        "pandas": true,
+        "numpy": true,
+        "PIL": true,
+        "cv2": false,
+        "torch": false,
+        "zhipuai": false
+      }
+    },
+    {
+      "python": "python3",
+      "score": 15,
+      "executable": "/usr/bin/python3",
+      "version": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+      "mods": {
+        "openai": true,
+        "requests": true,
+        "pandas": true,
+        "numpy": true,
+        "PIL": true,
+        "cv2": false,
+        "torch": false,
+        "zhipuai": false
+      }
+    },
+    {
+      "python": "python",
+      "score": -1,
+      "error": "failed"
+    }
+  ]
+}

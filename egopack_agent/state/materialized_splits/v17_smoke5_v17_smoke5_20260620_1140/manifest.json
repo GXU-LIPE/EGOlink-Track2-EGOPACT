@@ -1,0 +1,60 @@
+{
+  "run_id": "v17_smoke5_20260620_1140",
+  "version": "V17_GT100_EXECUTABLE_COMPILER_SMOKE5",
+  "source_split": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/state/materialized_splits/validation_A_limit30",
+  "uses_val41_gt_for_policy": false,
+  "uses_val41_gt_for_post_eval_only": true,
+  "uses_final_hidden_metadata": false,
+  "items": [
+    {
+      "scenario": "order",
+      "number": 1,
+      "spec": "order1",
+      "task_count": 1,
+      "source_original_index": 3,
+      "source_position_in_materialized_file": 0,
+      "reason": "largest order bottleneck",
+      "file": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/state/materialized_splits/v17_smoke5_v17_smoke5_20260620_1140/order1.json"
+    },
+    {
+      "scenario": "restaurant",
+      "number": 3,
+      "spec": "restaurant3",
+      "task_count": 1,
+      "source_original_index": 16,
+      "source_position_in_materialized_file": 0,
+      "reason": "restaurant visual dish slot",
+      "file": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/state/materialized_splits/v17_smoke5_v17_smoke5_20260620_1140/restaurant3.json"
+    },
+    {
+      "scenario": "retail",
+      "number": 7,
+      "spec": "retail7",
+      "task_count": 1,
+      "source_original_index": 7,
+      "source_position_in_materialized_file": 0,
+      "reason": "retail visual product plus condition",
+      "file": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/state/materialized_splits/v17_smoke5_v17_smoke5_20260620_1140/retail7.json"
+    },
+    {
+      "scenario": "retail",
+      "number": 8,
+      "spec": "retail8",
+      "task_count": 1,
+      "source_original_index": 13,
+      "source_position_in_materialized_file": 0,
+      "reason": "retail relative-location cart mutation",
+      "file": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/state/materialized_splits/v17_smoke5_v17_smoke5_20260620_1140/retail8.json"
+    },
+    {
+      "scenario": "retail",
+      "number": 2,
+      "spec": "retail2",
+      "task_count": 1,
+      "source_original_index": 2,
+      "source_position_in_materialized_file": 0,
+      "reason": "fallback near-miss slot",
+      "file": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/state/materialized_splits/v17_smoke5_v17_smoke5_20260620_1140/retail2.json"
+    }
+  ]
+}

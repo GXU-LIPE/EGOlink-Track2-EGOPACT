@@ -1,0 +1,113 @@
+[
+  {
+    "Instruction": "You are a parent ordering food for a child who cannot eat spicy food at all (User ID: customer_006). You just pointed at three dishes with your finger. Ask the AI Service Agent to check the flavor description of the dish you pointed at that is located furthest to the right and highest up. Ask the AI Service Agent to determine: if this dish includes \"rich/slightly salty\" flavors, then ask the AI Service Agent to find a dish in the top area of the middle fold that is gluten-free and has the lowest sodium content, and add it to the order. If there are multiple dishes tied for the lowest sodium content among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI Service Agent to look within the white rounded-corner card section where the leftmost dish is located, find a dish with \"smoked/fresh\" flavors and the lowest calorie count, and add it to the order. If there are multiple dishes tied for the lowest calorie count among those that meet the conditions, you want all of them to be added. After placing the order, ask the AI Service Agent to check: if any dish in the current order has the \"spicy\" feature, ask the AI Service Agent to remove it immediately. Finally, ask the AI Service Agent to summarize the total calcium content and the total amount payable for this order.",
+    "analysis": "1. Check the taste description of the dish located at the far right and topmost position.\n\n2. If this dish includes a \"rich/slightly salty\" flavor, navigate to the top area of the middle section and select the gluten-free dish with the lowest sodium content to add to the order. If there are multiple dishes tied for the lowest sodium content, add all of them.\n\n3. If this dish does not include a \"rich/slightly salty\" flavor, within the white rounded card section containing the leftmost dish, select the dish with a smoked/fresh flavor and the lowest calorie content to add to the order. If there are multiple dishes tied for the lowest calorie content, add all of them.\n\n4. Check the order list; if any dish with spicy characteristics is found, remove it immediately.\n\n5. Summarize the total calcium content and the total payable amount for the order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "user_id": "customer_006",
+          "dish_name": "Sweet potato fries",
+          "quantity": 1,
+          "category": "Antipasti & Snacks",
+          "price": 28,
+          "tax_rate": 0.14,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "get_dish_taste_profile",
+        "parameters": {
+          "dish_name": "Tuna panini"
+        }
+      },
+      {
+        "tool_name": "get_dish_taste_profile",
+        "parameters": {
+          "dish_name": "Sweet potato fries"
+        }
+      },
+      {
+        "tool_name": "get_dish_taste_profile",
+        "parameters": {
+          "dish_name": "Veggie salad"
+        }
+      },
+      {
+        "tool_name": "get_dish_taste_profile",
+        "parameters": {
+          "dish_name": "Annie's pizza"
+        }
+      },
+      {
+        "tool_name": "get_dish_taste_profile",
+        "parameters": {
+          "dish_name": "Annie's salad"
+        }
+      },
+      {
+        "tool_name": "get_dish_taste_profile",
+        "parameters": {
+          "dish_name": "Cheesecake"
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "user_id": "customer_006",
+          "dishes": [
+            {
+              "product_name": "Tuna panini",
+              "quantity": 2
+            },
+            {
+              "product_name": "Veggie salad",
+              "quantity": 1
+            },
+            {
+              "product_name": "Annie's Special Set",
+              "quantity": 1
+            },
+            {
+              "product_name": "Sweet potato fries",
+              "quantity": 1
+            }
+          ]
+        }
+      },
+      {
+        "tool_name": "compute_total_payment",
+        "parameters": {
+          "user_id": "customer_006",
+          "dishes": [
+            {
+              "product_name": "Tuna panini",
+              "quantity": 2
+            },
+            {
+              "product_name": "Veggie salad",
+              "quantity": 1
+            },
+            {
+              "product_name": "Annie's Special Set",
+              "quantity": 1
+            },
+            {
+              "product_name": "Sweet potato fries",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 6,
+    "image_name": "restaurant1",
+    "image_path": "restaurant1.mp4",
+    "image_description": "You and your friend are in a restaurant. You look at the menu and point to three dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Margherita"
+    ],
+    "_v8_original_index": 6
+  }
+]

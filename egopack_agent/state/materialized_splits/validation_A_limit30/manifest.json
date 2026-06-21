@@ -1,0 +1,313 @@
+{
+  "split_name": "validation_A",
+  "limit_per_scenario": 30,
+  "source": "prior_run:V9_4_5_visual_retrieval_fix_validation_A_medium_20260618_1014",
+  "specs": [
+    [
+      "kitchen",
+      1,
+      [
+        16,
+        27,
+        31
+      ]
+    ],
+    [
+      "kitchen",
+      2,
+      [
+        33
+      ]
+    ],
+    [
+      "kitchen",
+      3,
+      [
+        12,
+        15,
+        21,
+        35
+      ]
+    ],
+    [
+      "order",
+      1,
+      [
+        3,
+        15,
+        17,
+        44,
+        47,
+        53,
+        63,
+        87
+      ]
+    ],
+    [
+      "restaurant",
+      1,
+      [
+        6
+      ]
+    ],
+    [
+      "restaurant",
+      2,
+      [
+        13
+      ]
+    ],
+    [
+      "restaurant",
+      3,
+      [
+        16,
+        24,
+        33,
+        54
+      ]
+    ],
+    [
+      "restaurant",
+      4,
+      [
+        5,
+        6,
+        10
+      ]
+    ],
+    [
+      "retail",
+      1,
+      [
+        24
+      ]
+    ],
+    [
+      "retail",
+      2,
+      [
+        2,
+        5
+      ]
+    ],
+    [
+      "retail",
+      3,
+      [
+        8,
+        16,
+        23,
+        24
+      ]
+    ],
+    [
+      "retail",
+      4,
+      [
+        13,
+        14,
+        17,
+        36,
+        46
+      ]
+    ],
+    [
+      "retail",
+      7,
+      [
+        7,
+        26
+      ]
+    ],
+    [
+      "retail",
+      8,
+      [
+        13,
+        25
+      ]
+    ]
+  ],
+  "planned_task_count": 41,
+  "skipped_invalid_indices": [
+    {
+      "uid": "retail9::48",
+      "scenario": "retail",
+      "number": 9,
+      "idx": 48,
+      "available_count": 1,
+      "reason": "out_of_range"
+    }
+  ],
+  "files": [
+    {
+      "file": "kitchen1.json",
+      "scenario": "kitchen",
+      "number": 1,
+      "indices": [
+        16,
+        27,
+        31
+      ],
+      "task_count": 3,
+      "sha256": "0804d5970324ca2fb8aed528999f9207397b9a0782b3224c307d956ed3e28448"
+    },
+    {
+      "file": "kitchen2.json",
+      "scenario": "kitchen",
+      "number": 2,
+      "indices": [
+        33
+      ],
+      "task_count": 1,
+      "sha256": "76c9d12c138f37c505f909c94325a82968d9bd5671d197358ad28c81170511cf"
+    },
+    {
+      "file": "kitchen3.json",
+      "scenario": "kitchen",
+      "number": 3,
+      "indices": [
+        12,
+        15,
+        21,
+        35
+      ],
+      "task_count": 4,
+      "sha256": "12c5f11dbbf62d9854a0cf5309cef7358f3aef4ae6687dc0a03e689b8ca3828d"
+    },
+    {
+      "file": "order1.json",
+      "scenario": "order",
+      "number": 1,
+      "indices": [
+        3,
+        15,
+        17,
+        44,
+        47,
+        53,
+        63,
+        87
+      ],
+      "task_count": 8,
+      "sha256": "022a56afaab27ad6130a15a8e22c6595f469f919a017038ec695558b5bdce6ec"
+    },
+    {
+      "file": "restaurant1.json",
+      "scenario": "restaurant",
+      "number": 1,
+      "indices": [
+        6
+      ],
+      "task_count": 1,
+      "sha256": "4ff2569bdf3b2d55af806961cd4abbbcb059cf8ceccc213718275ad3cb8bba33"
+    },
+    {
+      "file": "restaurant2.json",
+      "scenario": "restaurant",
+      "number": 2,
+      "indices": [
+        13
+      ],
+      "task_count": 1,
+      "sha256": "32f1af34ee4b8a8f8b6361558e1ad22d36c24429046f422fbad1736f11db4d03"
+    },
+    {
+      "file": "restaurant3.json",
+      "scenario": "restaurant",
+      "number": 3,
+      "indices": [
+        16,
+        24,
+        33,
+        54
+      ],
+      "task_count": 4,
+      "sha256": "ce57fb40a22e640b6ae6cf72435cf284ec9b3f0c00df89bfc8f26cd32634b039"
+    },
+    {
+      "file": "restaurant4.json",
+      "scenario": "restaurant",
+      "number": 4,
+      "indices": [
+        5,
+        6,
+        10
+      ],
+      "task_count": 3,
+      "sha256": "9db42f3cfaa59329141bf47ab1c3c32131f1735e5e3d8a9c969015ce45f555d7"
+    },
+    {
+      "file": "retail1.json",
+      "scenario": "retail",
+      "number": 1,
+      "indices": [
+        24
+      ],
+      "task_count": 1,
+      "sha256": "41bf283cbd94cc1f8bdd324b982f0c8f0b7122d1378e5c940b1345ff4156367f"
+    },
+    {
+      "file": "retail2.json",
+      "scenario": "retail",
+      "number": 2,
+      "indices": [
+        2,
+        5
+      ],
+      "task_count": 2,
+      "sha256": "131067ba13b39a663351c3029a2b59e8420700f9f6efe294cb85312d0d914a3d"
+    },
+    {
+      "file": "retail3.json",
+      "scenario": "retail",
+      "number": 3,
+      "indices": [
+        8,
+        16,
+        23,
+        24
+      ],
+      "task_count": 4,
+      "sha256": "60d157e53dc421ace362e025a290942621bf4f58cd08b1bb4f266d34b517fc82"
+    },
+    {
+      "file": "retail4.json",
+      "scenario": "retail",
+      "number": 4,
+      "indices": [
+        13,
+        14,
+        17,
+        36,
+        46
+      ],
+      "task_count": 5,
+      "sha256": "3d42b88ede7bdfbada281155509dc234a3b262850e8a747e65193da8c55ac563"
+    },
+    {
+      "file": "retail7.json",
+      "scenario": "retail",
+      "number": 7,
+      "indices": [
+        7,
+        26
+      ],
+      "task_count": 2,
+      "sha256": "3e4edcde8c5d5a74e21ca1d35ab662ef6680bf9cf494b54d0cddce1dc7cd18e9"
+    },
+    {
+      "file": "retail8.json",
+      "scenario": "retail",
+      "number": 8,
+      "indices": [
+        13,
+        25
+      ],
+      "task_count": 2,
+      "sha256": "dc52b7989220a6fbd2914938eb8d7274c9e2bf5dcf488e388982145003bc113c"
+    }
+  ],
+  "generated_at": "2026-06-18T14:20:06+0800"
+}

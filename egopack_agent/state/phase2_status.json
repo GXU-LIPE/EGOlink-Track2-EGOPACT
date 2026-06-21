@@ -1,0 +1,16 @@
+{
+  "stage": "local_qwen_switch",
+  "updated_at": "2026-06-13T22:04:03+08:00",
+  "deepseek_role": "teacher_debug_only",
+  "final_service_agent": "Qwen2.5-VL-32B-Instruct",
+  "model_path": "/home/data-gxu/acm/egolink2026-main/code1/models/Qwen/Qwen2___5-VL-32B-Instruct",
+  "model_exists": true,
+  "train_samples": 663,
+  "val_samples": 73,
+  "guard_smoke": "passed",
+  "local_qwen_gate": "blocked_before_gate",
+  "lora_training": "blocked_before_train",
+  "external_api_used": false,
+  "runtime_blocker": "vLLM not installed; transformers fallback available in track1 .venv_qwen",
+  "gpu_blocker": "one or more GPUs have less than 20GB free; 32B local serve/train should wait"
+}

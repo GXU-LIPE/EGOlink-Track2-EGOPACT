@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-06-13T21:45:55+0800",
+  "recommended_backend": "local_qwen_vllm",
+  "recommended_path": "/home/data-gxu/acm/egolink2026-main/code1/models/Qwen/Qwen2___5-VL-32B-Instruct",
+  "candidates": [
+    {
+      "path": "/home/data-gxu/acm/egolink2026-main/code1/models/._____temp/Qwen/Qwen2.5-VL-32B-Instruct",
+      "size_bytes": 0,
+      "has_config_json": false,
+      "has_tokenizer": false,
+      "has_processor": false,
+      "safetensors_count": 0,
+      "recommended": false
+    },
+    {
+      "path": "/home/data-gxu/acm/egolink2026-main/code1/models/Qwen/Qwen2___5-VL-32B-Instruct",
+      "size_bytes": 68299246142,
+      "has_config_json": true,
+      "has_tokenizer": true,
+      "has_processor": true,
+      "safetensors_count": 18,
+      "recommended": true
+    }
+  ]
+}

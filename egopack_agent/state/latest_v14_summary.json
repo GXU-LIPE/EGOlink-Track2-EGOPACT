@@ -1,0 +1,17 @@
+{
+  "updated_at": "2026-06-19T21:40:58+0800",
+  "gt_run": "v14_gt_distill_20260619_211502",
+  "distilled_run": "v14_distilled_val41_20260619_211502",
+  "candidate_selection_run": "v14_candidate_selection_20260619_2134",
+  "reports": {
+    "final_summary": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V14_FINAL_SUMMARY_20260619_214058.md",
+    "order1": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V14_ORDER1_REPAIR_v14_distilled_val41_20260619_211502.md",
+    "audit": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V14_VAL41_GT_TRAJECTORY_AUDIT_v14_gt_distill_20260619_211502.md",
+    "oracle": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V14_ORACLE_TEACHER_VAL41_v14_gt_distill_20260619_211502.md",
+    "distilled": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V14_DISTILLED_PROCESS_VAL41_v14_distilled_val41_20260619_211502.md",
+    "candidate_selection": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V14_CANDIDATE_SELECTION_VAL41_v14_candidate_selection_20260619_2134.md"
+  },
+  "recommendation": "Do not run final. Continue with executable slot-filling repair for order1/restaurant3/retail7/retail8.",
+  "final_run": false,
+  "v10_zip_overwritten": false
+}

@@ -1,0 +1,96 @@
+{
+  "run_id": "v27_direct_v21_20260621_1050",
+  "version": "V27_DIRECT_V21_WIRING_AND_MM_EVIDENCE_BRIDGE",
+  "V10_zip_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+  "V10_zip_mtime_before": 1781799140600302559,
+  "V22_baseline_reference": {
+    "valid": 41,
+    "joint": 0.21951219512195122,
+    "result": 0.2926829268292683,
+    "tool": 0.24390243902439024,
+    "micro": 0.42948717948717946,
+    "matched_tools": 67,
+    "gt_tools": 156,
+    "interaction_calls": 801
+  },
+  "V27_direct_v21_retail_shadow": {
+    "valid": 41,
+    "joint": 0.14634146341463414,
+    "result": 0.21951219512195122,
+    "tool": 0.14634146341463414,
+    "micro": 0.34615384615384615,
+    "matched_tools": 54,
+    "gt_tools": 156,
+    "interaction_calls": 711
+  },
+  "V27_direct_v21_plus_v25evidence_retail_shadow": {
+    "valid": 41,
+    "joint": 0.0975609756097561,
+    "result": 0.17073170731707318,
+    "tool": 0.0975609756097561,
+    "micro": 0.3076923076923077,
+    "matched_tools": 48,
+    "gt_tools": 156,
+    "interaction_calls": 754
+  },
+  "retail_only": {
+    "V22": {
+      "valid": 16,
+      "joint": 0.375,
+      "result": 0.375,
+      "tool": 0.4375,
+      "micro": 0.4057971014492754,
+      "matched_tools": 28,
+      "gt_tools": 69,
+      "interaction_calls": 309
+    },
+    "direct": {
+      "valid": 16,
+      "joint": 0.1875,
+      "result": 0.1875,
+      "tool": 0.1875,
+      "micro": 0.21739130434782608,
+      "matched_tools": 15,
+      "gt_tools": 69,
+      "interaction_calls": 219
+    },
+    "evidence": {
+      "valid": 16,
+      "joint": 0.0625,
+      "result": 0.0625,
+      "tool": 0.0625,
+      "micro": 0.13043478260869565,
+      "matched_tools": 9,
+      "gt_tools": 69,
+      "interaction_calls": 262
+    }
+  },
+  "direct_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V27_direct_v21_retail_shadow-v27_direct_v21_20260621_1050",
+  "evidence_result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V27_direct_v21_plus_v25evidence_retail_shadow-v27_direct_v21_20260621_1050",
+  "trace_path": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v27_direct_v21_retail_trace.jsonl",
+  "selection_counts": {
+    "direct_selected": 15,
+    "evidence_selected": 15
+  },
+  "added_joint_direct_vs_v22": [],
+  "added_joint_evidence_vs_v22": [],
+  "regressions_direct_vs_v22": [
+    "retail3::16",
+    "retail3::24",
+    "retail4::17"
+  ],
+  "regressions_evidence_vs_v22": [
+    "retail1::24",
+    "retail2::2",
+    "retail3::16",
+    "retail3::24",
+    "retail4::17"
+  ],
+  "retail_task_count": 16,
+  "evidence_records_retail": 16,
+  "all_runtime_wiring_ok": true,
+  "final_run": false,
+  "uses_final_hidden_metadata": false,
+  "uses_val41_gt_for_runtime": false,
+  "v10_zip_overwritten": false
+}

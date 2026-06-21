@@ -1,0 +1,59 @@
+{
+  "updated_at": "2026-06-20T11:47:38+0800",
+  "run_id": "v17_smoke5_20260620_1140",
+  "version": "V17_GT100_EXECUTABLE_COMPILER_SMOKE5",
+  "report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V17_SMOKE5_VAL41_v17_smoke5_20260620_1140.md",
+  "decision_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V17_NEXT_DECISION_v17_smoke5_20260620_1140.md",
+  "summary": {
+    "V10_full_memory_smoke5": {
+      "valid": 5,
+      "joint": 0.0,
+      "result": 0.0,
+      "tool": 0.0,
+      "micro": 0.0,
+      "avg_task_accuracy": 0.0,
+      "correct_calls": 0,
+      "gt_calls": 18,
+      "interaction_calls": 114,
+      "task_joint_count": 0
+    },
+    "V16_gt100_distilled_policy_smoke5": {
+      "valid": 5,
+      "joint": 0.0,
+      "result": 0.0,
+      "tool": 0.0,
+      "micro": 0.0,
+      "avg_task_accuracy": 0.0,
+      "correct_calls": 0,
+      "gt_calls": 18,
+      "interaction_calls": 89,
+      "task_joint_count": 0
+    },
+    "V17_compiler_prompt_only_smoke5": {
+      "valid": 5,
+      "joint": 0.0,
+      "result": 0.0,
+      "tool": 0.0,
+      "micro": 0.0,
+      "avg_task_accuracy": 0.0,
+      "correct_calls": 0,
+      "gt_calls": 18,
+      "interaction_calls": 79,
+      "task_joint_count": 0
+    },
+    "V17_compiler_repaired_smoke5": {
+      "valid": 5,
+      "joint": 0.0,
+      "result": 0.0,
+      "tool": 0.0,
+      "micro": 0.0,
+      "avg_task_accuracy": 0.0,
+      "correct_calls": 0,
+      "gt_calls": 18,
+      "interaction_calls": 89,
+      "task_joint_count": 0
+    }
+  },
+  "final_run": false,
+  "protected_best_updated": false
+}

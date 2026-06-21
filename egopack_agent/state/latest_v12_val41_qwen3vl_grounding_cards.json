@@ -1,0 +1,8 @@
+{
+  "updated_at": "2026-06-19T16:06:52+0800",
+  "stage": "validation_A_medium_grounding_cards_only",
+  "card_dir": "visual_cache_v12/qwen3vl_grounding",
+  "task_count": 41,
+  "final_run": false,
+  "launcher_timestamp": "20260619_144226"
+}

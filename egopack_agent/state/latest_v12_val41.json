@@ -1,0 +1,10 @@
+{
+  "updated_at": "2026-06-19T14:33:23+0800",
+  "run_id": "V12_official_style_qwen3vl_memory_val41_all_qwen3vl_20260619_143308",
+  "version": "V12_official_style_qwen3vl_memory",
+  "model": "gpt-5.5",
+  "stage": "validation_A_medium",
+  "report": "reports/V12_VAL41_QWEN3VL_MEMORY_V12_official_style_qwen3vl_memory_val41_all_qwen3vl_20260619_143308.md",
+  "final_run": false,
+  "v10_zip_overwritten": false
+}

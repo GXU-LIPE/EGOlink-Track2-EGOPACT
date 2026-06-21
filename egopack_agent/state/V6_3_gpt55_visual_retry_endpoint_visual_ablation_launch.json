@@ -1,0 +1,12 @@
+{
+  "run_id": "gpt55_visual_ablation_V6_3_gpt55_visual_retry_endpoint_20260617_132502",
+  "version": "V6_3_gpt55_visual_retry_endpoint",
+  "gate_specs": "kitchen:2",
+  "backend": "openai_gpt55",
+  "use_adapter": "1",
+  "send_contact": "1",
+  "build_visual": "1",
+  "pid": 4156276,
+  "log": "logs/gpt55_visual_ablation_V6_3_gpt55_visual_retry_endpoint_20260617_132502.log",
+  "launched_at": "2026-06-17T13:25:02+0800"
+}

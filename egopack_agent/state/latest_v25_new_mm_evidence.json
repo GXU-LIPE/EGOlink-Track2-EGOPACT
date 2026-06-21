@@ -1,0 +1,46 @@
+{
+  "run_id": "v25_new_smoke_vision_20260621_0206",
+  "version": "V25_NEW_MULTIMODAL_EVIDENCE_V21_AGENT",
+  "stage": "smoke",
+  "target_count": 12,
+  "V22_same_scope": {
+    "valid": 12,
+    "joint": 0.0,
+    "result": 0.08333333333333333,
+    "tool": 0.0,
+    "micro": 0.21875,
+    "matched_tools": 7,
+    "gt_tools": 32,
+    "interaction_calls": 204
+  },
+  "V25_selected_same_scope": {
+    "valid": 12,
+    "joint": 0.0,
+    "result": 0.16666666666666666,
+    "tool": 0.0,
+    "micro": 0.0625,
+    "matched_tools": 2,
+    "gt_tools": 32,
+    "interaction_calls": 45
+  },
+  "V25_oracle_best_same_scope": {
+    "valid": 12,
+    "joint": 0.0,
+    "result": 0.25,
+    "tool": 0.0,
+    "micro": 0.3125,
+    "matched_tools": 10,
+    "gt_tools": 32,
+    "interaction_calls": 101
+  },
+  "evidence_jsonl": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v25_new_mm_evidence.jsonl",
+  "candidate_jsonl": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v25_new_evidence_resolver_candidates.jsonl",
+  "selection_jsonl": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/analysis/v25_new_selection_trace.jsonl",
+  "final_run": false,
+  "uses_final_hidden_metadata": false,
+  "uses_val41_gt_for_runtime_selection": false,
+  "uses_gt_for_oracle_best_diagnostic": true,
+  "v10_zip_overwritten": false,
+  "selected_joint_count_full": 0,
+  "oracle_joint_count_full": 0
+}

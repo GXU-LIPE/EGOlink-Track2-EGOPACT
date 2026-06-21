@@ -1,0 +1,89 @@
+{
+  "team": "V10_full_memory_final_candidate_draft",
+  "run_id": "V10_full_memory_final_candidate_draft_20260618_1940",
+  "final_full_sanity_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V10_FINAL_FULL_SANITY_20260619_001219.md",
+  "technical_report_md": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V10_TECHNICAL_REPORT_DRAFT_V10_full_memory_final_candidate_draft_20260618_1940.md",
+  "technical_report_pdf": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V10_full_memory_final_candidate_draft.pdf",
+  "package_report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V10_SUBMISSION_PACKAGE_DRAFT_20260619_001219.md",
+  "candidate_readme": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V10_FINAL_CANDIDATE_README_20260619_001219.md",
+  "zip_path": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/submissions/V10_full_memory_final_candidate_draft_track2.zip",
+  "zip_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+  "stats": {
+    "team": "V10_full_memory_final_candidate_draft",
+    "root": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V10_full_memory_final_candidate_draft",
+    "files": {
+      "retail6_easy.json": {
+        "exists": true,
+        "valid_json_list": true,
+        "tasks": 49,
+        "expected": 49,
+        "count_ok": true
+      },
+      "retail10_easy.json": {
+        "exists": true,
+        "valid_json_list": true,
+        "tasks": 63,
+        "expected": 63,
+        "count_ok": true
+      },
+      "kitchen4_easy.json": {
+        "exists": true,
+        "valid_json_list": true,
+        "tasks": 50,
+        "expected": 50,
+        "count_ok": true
+      },
+      "restaurant5_easy.json": {
+        "exists": true,
+        "valid_json_list": true,
+        "tasks": 50,
+        "expected": 50,
+        "count_ok": true
+      },
+      "order2_easy.json": {
+        "exists": true,
+        "valid_json_list": true,
+        "tasks": 97,
+        "expected": 97,
+        "count_ok": true
+      }
+    },
+    "missing_files": [],
+    "total_tasks": 309,
+    "empty_dialogue": 0,
+    "empty_tool_calls": 3,
+    "api_error_hits": 9,
+    "timeout_hits": 0,
+    "mixed_json_text_hits": 0,
+    "final_hidden_metadata_leaks": 0,
+    "total_turns": 1568,
+    "total_tool_calls": 11786,
+    "max_tool_calls": 148,
+    "result_file_sha256": {
+      "retail6_easy.json": "e4d57868873f69ee706d28549365acfd240c55a782725d689858d6d923942d51",
+      "retail10_easy.json": "50b47ec24b04070ca229d87f1fadb9aa296a143dfde44772cc0f80aac5b25a6f",
+      "kitchen4_easy.json": "95b67d68fcdab836833f7b70b3733eecb3dc8ee44adc5b82b4572f3bc5435af8",
+      "restaurant5_easy.json": "f84a5a3a19d720c34864f56783a7d582fb8b734619ff141545e6b63152f3bf29",
+      "order2_easy.json": "3903fd7c7860dc2cd09e9926bff2a8623ad32ae62f7c83259d134c1863d82daa"
+    },
+    "task_count_ok": true,
+    "all_files_ok": true,
+    "avg_turns": 5.074433656957929,
+    "avg_tool_calls": 38.14239482200647
+  },
+  "memory": {
+    "memory_hit_records": 369,
+    "selected_cards_total": 1517,
+    "no_final_metadata_false": 0,
+    "run_dirs": [
+      "V10_full_memory_final_candidate_draft_20260618_1840",
+      "V10_full_memory_final_candidate_draft_20260618_1940",
+      "V10_full_memory_final_candidate_draft_A_medium_sanity_20260618_1716",
+      "V10_full_memory_final_candidate_draft_kitchen4_20260618_2010",
+      "V10_full_memory_final_candidate_draft_order2_20260618_2032",
+      "V10_full_memory_final_candidate_draft_restaurant5_20260618_2032",
+      "V10_full_memory_final_candidate_draft_retail10_20260618_2010"
+    ]
+  },
+  "auto_submitted": false
+}

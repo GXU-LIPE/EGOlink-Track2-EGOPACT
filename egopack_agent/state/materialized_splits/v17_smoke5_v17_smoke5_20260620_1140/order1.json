@@ -1,0 +1,63 @@
+[
+  {
+    "Instruction": "Today is your friend's birthday, and you want to surprise them with a lavish dinner. You have opened two saved restaurant menus on your phone: Mediterranean Greek Restaurant and Annie Italian Restaurant. Since your friend loves potato dishes like fries, ask the AI Service Agent to recommend the more suitable restaurant. Once the restaurant is selected, inform the AI service agent that all subsequent tasks will be based on this chosen restaurant, and you won’t need to reiterate it. You are a white-collar worker preparing for a work lunch (User ID: customer_005). You have pointed at three dishes in sequence. Ask the AI Service Agent to determine if the third pointed dish belongs to the Italian Classic Set. If it does, ask the AI Service Agent to find a dish in the section with a small hand illustration on the left border of the right fold-out page that is [Low Sugar] and has the [Highest Discount], and add it to the order. If there are multiple dishes tied for the highest discount among those that meet the conditions, you want all of them to be added. Otherwise, ask the AI Service Agent to find a dish in the section with a dark background and white text located in the bottom right corner that is [Buttery Aroma] and has the [Highest Price], and add it to the order. If there are multiple dishes tied for the highest price among those that meet the conditions, you want all of them to be added. Next, ask the AI Service Agent to determine if the total cost of non-set meal items in the order is less than 50 yuan. If so, ask the AI Service Agent to add Annie's Special Set directly to the order. Finally, ask the AI Service Agent to calculate the total carbohydrate content of the entire order.",
+    "analysis": "All tool calls and database dish searches for this task are limited to Annie Italian Restaurant.\n\n1. Determine whether the third dish pointed out belongs to the Italian Classic Set.\n\n2. If it does, search within the section on the left border of the right fold-out page that features a small hand illustration. Find a dish that is [Low Sugar] and has the [Highest Discount], and add it to the order. If there are multiple dishes tied for the highest discount, add all of them to the order.\n\n3. Otherwise, search within the smaller section at the bottom right. Find a dish that is [Buttery Aroma] and has the [Highest Price], and add it to the order. If there are multiple dishes tied for the highest price, add all of them to the order.\n\n4. Check the current total cost. If it is less than 50 yuan, add Annie's Special Set to the order.\n\n5. Calculate the total carbohydrate content of the entire order.",
+    "ground_truth": [
+      {
+        "tool_name": "add_dish_to_order",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_005\n",
+          "dish_name": "Australian imported M9+ grain-fed Ribeye",
+          "quantity": 1,
+          "category": "Selected Steaks\n",
+          "price": 659,
+          "tax_rate": 0.07,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "compute_total_nutrition",
+        "parameters": {
+          "restaurant_name": "Annie Italian Restaurant",
+          "user_id": "customer_005",
+          "dishes": [
+            {
+              "dish_name": "Annie's pizza",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Annie's salad",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Cheesecake",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Steak Lovers Set",
+              "quantity": 2
+            },
+            {
+              "dish_name": "Seafood Delight Set",
+              "quantity": 1
+            },
+            {
+              "dish_name": "Australian imported M9+ grain-fed Ribeye",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 3,
+    "image_name": "order1",
+    "image_path": "order1.mp4",
+    "image_description": "You and your friend are in a order. You look at the menu and point to three dishes in succession.",
+    "key": "dish_name",
+    "value": [
+      "Margherita"
+    ],
+    "_v8_original_index": 3
+  }
+]

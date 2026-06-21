@@ -1,0 +1,11 @@
+{
+  "updated_at": "2026-06-17T15:51:20+0800",
+  "run_id": "human_prior_order1_diag_20260617_1548",
+  "model": "gpt-5.5",
+  "version": "V7_1_process_verifier",
+  "base_url": "https://ai-pixel.online/v1",
+  "key_present": true,
+  "key_logged": false,
+  "report": "reports/02_gpt55_gate_summary_human_prior_order1_diag_20260617_1548.md",
+  "final_auto_submitted": false
+}

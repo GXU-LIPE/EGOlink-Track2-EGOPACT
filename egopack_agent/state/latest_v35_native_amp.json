@@ -1,0 +1,442 @@
+{
+  "run_id": "v35_native_amp_20260621_1812",
+  "version": "V35_NATIVE_LOOP_DATA_AMPLIFICATION_GENERALIZATION",
+  "workers": 96,
+  "task_timeout": 180,
+  "preflight": {
+    "v10_zip_exists": true,
+    "v10_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+    "v10_expected_sha256": "5f2b8aacf986e4b3107b560e76fe8dfc52b5b3da6e407c9e0e6d0433db36849d",
+    "openai_env_exists": true,
+    "final_run": false,
+    "uses_final_hidden_metadata": false,
+    "v10_zip_overwritten": false
+  },
+  "data_usage": {
+    "nonfinal_gt100_pool": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/gt_distill_v16/gt100_pool.jsonl",
+    "trace_bank_cards": 1518,
+    "uses_val41_gt_for_runtime": false,
+    "uses_val41_gt_for_post_eval": true,
+    "uses_final_hidden_metadata": false
+  },
+  "baseline": {
+    "V22": {
+      "valid": 41,
+      "joint": 0.21951219512195122,
+      "result": 0.2926829268292683,
+      "tool": 0.24390243902439024,
+      "micro": 0.42948717948717946,
+      "matched_tools": 67,
+      "gt_tools": 156,
+      "interaction_calls": 801
+    },
+    "V32_best": {
+      "valid": 41,
+      "joint": 0.24390243902439024,
+      "result": 0.3170731707317073,
+      "tool": 0.24390243902439024,
+      "micro": 0.28846153846153844,
+      "matched_tools": 45,
+      "gt_tools": 156,
+      "interaction_calls": 527
+    },
+    "V34_selected": {
+      "valid": 41,
+      "joint": 0.2682926829268293,
+      "result": 0.3902439024390244,
+      "tool": 0.2926829268292683,
+      "micro": 0.4358974358974359,
+      "matched_tools": 68,
+      "gt_tools": 156,
+      "interaction_calls": 731
+    }
+  },
+  "protected_success_count": 11,
+  "target_task_count": 30,
+  "variants": [
+    {
+      "name": "compact_seed3",
+      "prompt_chars": 727
+    },
+    {
+      "name": "compact_seed4",
+      "prompt_chars": 728
+    },
+    {
+      "name": "compact_seed5",
+      "prompt_chars": 746
+    },
+    {
+      "name": "compact_result_tool_dual",
+      "prompt_chars": 729
+    },
+    {
+      "name": "compact_tracebank_hint",
+      "prompt_chars": 1026
+    },
+    {
+      "name": "compact_retrieval_first",
+      "prompt_chars": 755
+    },
+    {
+      "name": "compact_no_ask_visual",
+      "prompt_chars": 762
+    },
+    {
+      "name": "compact_no_broad_scan_v2",
+      "prompt_chars": 741
+    },
+    {
+      "name": "compact_closure_v2",
+      "prompt_chars": 768
+    },
+    {
+      "name": "order_pin_payment",
+      "prompt_chars": 772
+    },
+    {
+      "name": "order_setmeal_disambiguate",
+      "prompt_chars": 736
+    },
+    {
+      "name": "order_mutate_once",
+      "prompt_chars": 764
+    },
+    {
+      "name": "restaurant_menu_grounded",
+      "prompt_chars": 766
+    },
+    {
+      "name": "restaurant_dish_setmeal",
+      "prompt_chars": 751
+    },
+    {
+      "name": "restaurant_finish_closure",
+      "prompt_chars": 759
+    },
+    {
+      "name": "kitchen_multistage_compact",
+      "prompt_chars": 772
+    },
+    {
+      "name": "kitchen_branch_closure",
+      "prompt_chars": 1069
+    },
+    {
+      "name": "kitchen_shopping_closure",
+      "prompt_chars": 773
+    },
+    {
+      "name": "kitchen_long_trace_ok",
+      "prompt_chars": 775
+    },
+    {
+      "name": "retail_visual_candidate",
+      "prompt_chars": 759
+    },
+    {
+      "name": "retail_filter_then_mutate",
+      "prompt_chars": 770
+    },
+    {
+      "name": "retail_cart_closure",
+      "prompt_chars": 754
+    },
+    {
+      "name": "retail_ties_all",
+      "prompt_chars": 747
+    },
+    {
+      "name": "compact_finish_after_success",
+      "prompt_chars": 746
+    }
+  ],
+  "v35_raw": {
+    "compact_seed3_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.05982905982905983,
+      "matched_tools": 7,
+      "gt_tools": 117,
+      "interaction_calls": 220
+    },
+    "compact_seed4_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.05128205128205128,
+      "matched_tools": 6,
+      "gt_tools": 117,
+      "interaction_calls": 145
+    },
+    "compact_seed5_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.042735042735042736,
+      "matched_tools": 5,
+      "gt_tools": 117,
+      "interaction_calls": 133
+    },
+    "compact_result_tool_dual_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.042735042735042736,
+      "matched_tools": 5,
+      "gt_tools": 117,
+      "interaction_calls": 190
+    },
+    "compact_tracebank_hint_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.042735042735042736,
+      "matched_tools": 5,
+      "gt_tools": 117,
+      "interaction_calls": 130
+    },
+    "compact_retrieval_first_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.03418803418803419,
+      "matched_tools": 4,
+      "gt_tools": 117,
+      "interaction_calls": 237
+    },
+    "compact_no_ask_visual_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.042735042735042736,
+      "matched_tools": 5,
+      "gt_tools": 117,
+      "interaction_calls": 178
+    },
+    "compact_no_broad_scan_v2_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.026785714285714284,
+      "matched_tools": 3,
+      "gt_tools": 112,
+      "interaction_calls": 96
+    },
+    "compact_closure_v2_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.05982905982905983,
+      "matched_tools": 7,
+      "gt_tools": 117,
+      "interaction_calls": 89
+    },
+    "order_pin_payment_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.04807692307692308,
+      "matched_tools": 5,
+      "gt_tools": 104,
+      "interaction_calls": 100
+    },
+    "order_setmeal_disambiguate_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.034782608695652174,
+      "matched_tools": 4,
+      "gt_tools": 115,
+      "interaction_calls": 186
+    },
+    "order_mutate_once_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.01904761904761905,
+      "matched_tools": 2,
+      "gt_tools": 105,
+      "interaction_calls": 76
+    },
+    "restaurant_menu_grounded_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.043859649122807015,
+      "matched_tools": 5,
+      "gt_tools": 114,
+      "interaction_calls": 133
+    },
+    "restaurant_dish_setmeal_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.031914893617021274,
+      "matched_tools": 3,
+      "gt_tools": 94,
+      "interaction_calls": 59
+    },
+    "restaurant_finish_closure_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.06666666666666667,
+      "tool": 0.0,
+      "micro": 0.020202020202020204,
+      "matched_tools": 2,
+      "gt_tools": 99,
+      "interaction_calls": 32
+    },
+    "kitchen_multistage_compact_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.021052631578947368,
+      "matched_tools": 2,
+      "gt_tools": 95,
+      "interaction_calls": 32
+    },
+    "kitchen_branch_closure_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.06666666666666667,
+      "tool": 0.0,
+      "micro": 0.06153846153846154,
+      "matched_tools": 4,
+      "gt_tools": 65,
+      "interaction_calls": 74
+    },
+    "kitchen_shopping_closure_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.04819277108433735,
+      "matched_tools": 4,
+      "gt_tools": 83,
+      "interaction_calls": 47
+    },
+    "kitchen_long_trace_ok_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.06666666666666667,
+      "tool": 0.0,
+      "micro": 0.015625,
+      "matched_tools": 1,
+      "gt_tools": 64,
+      "interaction_calls": 76
+    },
+    "retail_visual_candidate_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.03333333333333333,
+      "tool": 0.0,
+      "micro": 0.02247191011235955,
+      "matched_tools": 2,
+      "gt_tools": 89,
+      "interaction_calls": 30
+    },
+    "retail_filter_then_mutate_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.06666666666666667,
+      "tool": 0.0,
+      "micro": 0.019230769230769232,
+      "matched_tools": 2,
+      "gt_tools": 104,
+      "interaction_calls": 46
+    },
+    "retail_cart_closure_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.06666666666666667,
+      "tool": 0.0,
+      "micro": 0.0,
+      "matched_tools": 0,
+      "gt_tools": 104,
+      "interaction_calls": 68
+    },
+    "retail_ties_all_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.042735042735042736,
+      "matched_tools": 5,
+      "gt_tools": 117,
+      "interaction_calls": 137
+    },
+    "compact_finish_after_success_r0": {
+      "valid": 30,
+      "joint": 0.0,
+      "result": 0.1,
+      "tool": 0.0,
+      "micro": 0.042735042735042736,
+      "matched_tools": 5,
+      "gt_tools": 117,
+      "interaction_calls": 156
+    }
+  },
+  "generalized_frozen": {
+    "result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V35_generalized_frozen_selected-v35_native_amp_20260621_1812",
+    "summary": {
+      "valid": 41,
+      "joint": 0.2682926829268293,
+      "result": 0.3902439024390244,
+      "tool": 0.2926829268292683,
+      "micro": 0.4358974358974359,
+      "matched_tools": 68,
+      "gt_tools": 156,
+      "interaction_calls": 713
+    },
+    "new_joint_vs_v34": []
+  },
+  "dev_amplification": {
+    "result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V35_dev_amplification_selected-v35_native_amp_20260621_1812",
+    "summary": {
+      "valid": 41,
+      "joint": 0.2682926829268293,
+      "result": 0.3902439024390244,
+      "tool": 0.2926829268292683,
+      "micro": 0.4358974358974359,
+      "matched_tools": 68,
+      "gt_tools": 156,
+      "interaction_calls": 713
+    },
+    "new_joint_vs_v34": [],
+    "dev_only": true
+  },
+  "oracle_best": {
+    "result_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V35_oracle_best_diagnostic-v35_native_amp_20260621_1812",
+    "summary": {
+      "valid": 41,
+      "joint": 0.2682926829268293,
+      "result": 0.3902439024390244,
+      "tool": 0.2926829268292683,
+      "micro": 0.44871794871794873,
+      "matched_tools": 70,
+      "gt_tools": 156,
+      "interaction_calls": 544
+    }
+  },
+  "final_run": false,
+  "uses_final_hidden_metadata": false,
+  "auto_submit": false,
+  "decision": "Candidate pool did not beat V34 enough; keep V34 as current non-GT best."
+}

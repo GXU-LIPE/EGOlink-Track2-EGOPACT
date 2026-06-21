@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-06-18T00:28:02+0800",
+  "base_url": "https://api.deepseek.com/v1",
+  "has_api_key": true,
+  "models_endpoint": {
+    "ok": false,
+    "elapsed": 20.124,
+    "error_type": "ReadTimeout",
+    "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=20.0)"
+  },
+  "chat": [
+    {
+      "model": "deepseek-chat",
+      "ok": false,
+      "elapsed": 20.128,
+      "error_type": "ReadTimeout",
+      "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=20.0)"
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "ok": false,
+      "elapsed": 20.121,
+      "error_type": "ReadTimeout",
+      "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=20.0)"
+    },
+    {
+      "model": "deepseek-v4-flash",
+      "ok": false,
+      "elapsed": 20.129,
+      "error_type": "ReadTimeout",
+      "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=20.0)"
+    }
+  ],
+  "usable_models": []
+}

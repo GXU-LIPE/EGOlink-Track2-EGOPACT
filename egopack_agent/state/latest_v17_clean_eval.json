@@ -1,0 +1,22 @@
+{
+  "updated_at": "2026-06-20T14:41:27+0800",
+  "run_id": "v17_clean_20260620_1515",
+  "version": "V17_clean_repaired_eval",
+  "run_version": "V17_compiler_repaired_clean",
+  "model": "gpt-5.5",
+  "clean_dir": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/state/materialized_splits/validation_A_clean_val41_clean_20260620_",
+  "report": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/reports/V17_CLEAN_EVAL_v17_clean_20260620_1515.md",
+  "summary": {
+    "valid": 5,
+    "joint": 0.0,
+    "result": 0.0,
+    "tool": 0.0,
+    "micro": 0.17647058823529413,
+    "avg_task_accuracy": 0.16666666666666666,
+    "correct_calls": 3,
+    "gt_calls": 17,
+    "interaction_calls": 106
+  },
+  "final_run": false,
+  "protected_best_updated": false
+}

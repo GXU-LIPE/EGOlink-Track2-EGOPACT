@@ -1,0 +1,137 @@
+[
+  {
+    "Instruction": "You are a food critic (User ID: user_404). Ask the AI Service Agent to check the sodium content of the first box of purple cookies to the right of the red holiday plaid cookies. If its sodium content exceeds 170mg and the price is between 15 and 40 yuan, have the AI Service Agent add it to your cart. If not, have the AI Service Agent check the orange cookies with a square wavy-edge cookie pattern. If their sodium content exceeds 150mg and they do not contain \"gluten\", add them to your cart. If neither meets the criteria, have the AI Service Agent search the current inventory for high-sodium cookies from France with a \"bitter\" flavor, and add the one with the highest sodium content to your cart. If there are multiple cookies tied for the highest sodium content among those that meet the conditions, you want all of them to be added. Afterwards, have the AI Service Agent check the shopping list and add any items not yet purchased to your cart. Finally, have the AI Service Agent calculate the total nutritional value of all items in the cart.",
+    "analysis": "1. Check the box of red plaid cookies directly below the cookie that was picked up and put down for the second time to determine if it is \"high fat\" and to check its tax rate.\n\n2. If it is high fat and the tax rate is between 0.05 and 0.13, add it to the cart.\n\n3. If not, check the second box of blue cookies to the right of the red holiday plaid cookies. If it is high fat and originates from Scotland, add it to the cart.\n\n4. If neither condition is satisfied, search the product database for items that share the same country of origin as the second box and bear a \"high sugar\" label. Add the item with the lowest price to the cart. If multiple items tie for the lowest price among those that meet the conditions, add all of them.\n\n5. Calculate the total tax amount for the items in the cart.",
+    "ground_truth": [
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "user_505",
+          "product_name": "Crispy Cups Choco Vanilla",
+          "qty": 1,
+          "category": "cookie",
+          "price": 29.8,
+          "tax_rate": 0.08,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "user_505",
+          "product_name": "Crispy Cups Classic",
+          "qty": 1,
+          "category": "cookie",
+          "price": 29.8,
+          "tax_rate": 0.09,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "user_505",
+          "product_name": "Crispy Cups Cookies & Cream",
+          "qty": 1,
+          "category": "cookie",
+          "price": 29.8,
+          "tax_rate": 0.12,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "user_505",
+          "product_name": "Crispy Cups Happy",
+          "qty": 1,
+          "category": "cookie",
+          "price": 29.8,
+          "tax_rate": 0.11,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "user_505",
+          "product_name": "Crispy Cups Mint",
+          "qty": 1,
+          "category": "cookie",
+          "price": 29.8,
+          "tax_rate": 0.14,
+          "discount": 0.8
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "user_505",
+          "product_name": "Crispy Cups Strawberry",
+          "qty": 1,
+          "category": "cookie",
+          "price": 29.8,
+          "tax_rate": 0.1,
+          "discount": 0.9
+        }
+      },
+      {
+        "tool_name": "add_to_cart",
+        "parameters": {
+          "user_id": "user_505",
+          "product_name": "Crispy Cups Vanilla",
+          "qty": 1,
+          "category": "cookie",
+          "price": 29.8,
+          "tax_rate": 0.13,
+          "discount": 1
+        }
+      },
+      {
+        "tool_name": "compute_total_tax",
+        "parameters": {
+          "user_id": "user_505",
+          "products": [
+            {
+              "product_name": "Crispy Cups Choco Vanilla",
+              "quantity": 2
+            },
+            {
+              "product_name": "Crispy Cups Mint",
+              "quantity": 3
+            },
+            {
+              "product_name": "Crispy Cups Classic",
+              "quantity": 1
+            },
+            {
+              "product_name": "Crispy Cups Cookies & Cream",
+              "quantity": 1
+            },
+            {
+              "product_name": "Crispy Cups Happy",
+              "quantity": 1
+            },
+            {
+              "product_name": "Crispy Cups Strawberry",
+              "quantity": 1
+            },
+            {
+              "product_name": "Crispy Cups Vanilla",
+              "quantity": 1
+            }
+          ]
+        }
+      }
+    ],
+    "task_id": 7,
+    "image_name": "retail7",
+    "image_path": "retail7.mp4",
+    "image_description": "You reach out and pick up a red box of cookies from the shelf. The box is rectangular, with a festive plaid pattern on its side and images of golden, buttery biscuits on the front. As you move your hand away, you scan the other products nearby. You then pick up an orange box of cookies. This box is also rectangular, featuring a classic design with images of the iconic square, scalloped-edge biscuits and the brand’s rooster logo. You hold it for a moment, examining the packaging before placing it back on the shelf.",
+    "key": "product_name",
+    "value": [
+      "Crispy Cups Happy"
+    ],
+    "_v8_original_index": 7
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "run_id": "V9_2_scoring_prompt_soft_guard_validation_A_small_20260618_010142",
+  "stage": "validation_A_small",
+  "version": "V9_2_scoring_prompt_soft_guard",
+  "limit_per_scenario": "5",
+  "pid": 833949,
+  "log": "logs/V9_2_scoring_prompt_soft_guard_validation_A_small_20260618_010142.launcher.log",
+  "started_at": "2026-06-18T01:01:42+0800"
+}
