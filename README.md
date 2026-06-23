@@ -1,4 +1,4 @@
-# EGOlink-Track2-EGOPACK
+# EGOlink-Track2-EGOPACT
 
 This repository packages the current EgoLink Challenge 2026 Track 2 / EgoBench baseline code and the GXU-LIPE Track 2 agent implementation snapshot.
 
@@ -11,7 +11,7 @@ This repository packages the current EgoLink Challenge 2026 Track 2 / EgoBench b
 ├── egopack_agent/             # Current effective Track 2 agent wrappers/runners/reports
 ├── data/
 │   └── examples/              # Small MP4 examples only
-└── docs/                      # Notes for structure, usage, and submission constraints
+└── docs/                      # Notes for structure, usage, submission constraints, and final provenance
 ```
 
 ## Baseline Code
@@ -85,15 +85,16 @@ Official final scenarios:
 
 The service agent must not directly read or use hidden/auxiliary information from `scenarios/final/*.json`. It should rely on video evidence, simulated user feedback, and tool results only.
 
-## Current Status
+## Current Final Decision
 
-Current protected best in the audited working state:
+The current audited final submission line is `V52_newofficial_V41S_final`, based on the V41 selected strategy after the latest official EgoBench sync.
 
-- version: `V6_1_3_gpt55_guarded_endpoint`
-- fixed 4-task gate joint: `0.500`
-- result: `0.750`
-- tool: `0.500`
-- micro: `0.7083333333333333`
+Key provenance:
 
-V7/V8/V9/V10 style modules are kept as candidate, diagnostic, or ablation components unless broader validation proves stable improvement.
+- final package: `V52_newofficial_V41S_final_track2.zip`
+- package SHA256: `1f17e3a25dfc1b68346ec1bf50e8a181ad033316f4a99246eb88cd03c09046b9`
+- active latest `kitchen_init.py` SHA256: `1cd199ca1655e595f5781dd2ec832db719062ca3e14fb9d7d0a5691fe30b4a91`
+- final rows: `309`
+- validation: `valid=True`, no blank lines, no duplicate or missing ids, no forbidden hidden/GT fields
 
+The local final package is intentionally not tracked as repository source. See `docs/final_submission/V52_NEWOFFICIAL_V41S_FINAL_PROVENANCE.md` and `docs/final_submission/V53_FINAL_COMPLIANCE_AUDIT_SUMMARY.md` for exact generation and audit details.

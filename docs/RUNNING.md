@@ -32,6 +32,31 @@ results/{model_name}/
 └── order2_easy.json
 ```
 
+## Current Final Packaging
+
+The audited final package was built from:
+
+```text
+/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V41_final_submission_20260622_161122
+```
+
+It was repacked as:
+
+```text
+V52_newofficial_V41S_final_track2.zip
+```
+
+The package must contain a root PDF and five JSON files under `results/{team}/`, not a root `predictions.jsonl`.
+
+```text
+V52_newofficial_V41S_final.pdf
+results/V52_newofficial_V41S_final/retail6_easy.json
+results/V52_newofficial_V41S_final/retail10_easy.json
+results/V52_newofficial_V41S_final/kitchen4_easy.json
+results/V52_newofficial_V41S_final/restaurant5_easy.json
+results/V52_newofficial_V41S_final/order2_easy.json
+```
+
 ## Compliance Boundary
 
 During final evaluation, the service agent must not directly read or use `scenarios/final/*.json` auxiliary fields. The agent should obtain task information from:
@@ -55,4 +80,3 @@ egopack_agent/README_STATUS.md
 egopack_agent/reports/
 egopack_agent/state/
 ```
-

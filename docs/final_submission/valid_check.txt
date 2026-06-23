@@ -1,0 +1,28 @@
+valid: True
+team: V52_newofficial_V41S_final
+zip_path: /home/data-gxu/acm/egolink2026-main/code/track2/codex/final_submissions/V52_newofficial_V41S_final/V52_newofficial_V41S_final_track2.zip
+zip_sha256: 1f17e3a25dfc1b68346ec1bf50e8a181ad033316f4a99246eb88cd03c09046b9
+total_rows: 309
+raw_line_count: 309
+nonempty_line_count: 309
+json_parse_count: 309
+blank_line_count: 0
+duplicate_case_id_count: 0
+missing_case_id_count: 0
+forbidden_field_hit_count: 0
+zip_paths_ok: True
+protected_ok: True
+auto_submitted: False
+active_kitchen_sha256: 1cd199ca1655e595f5781dd2ec832db719062ca3e14fb9d7d0a5691fe30b4a91
+zip_paths:
+  V52_newofficial_V41S_final.pdf
+  results/V52_newofficial_V41S_final/kitchen4_easy.json
+  results/V52_newofficial_V41S_final/order2_easy.json
+  results/V52_newofficial_V41S_final/restaurant5_easy.json
+  results/V52_newofficial_V41S_final/retail10_easy.json
+  results/V52_newofficial_V41S_final/retail6_easy.json
+retail6_easy.json: rows=49/49 count_ok=True dup=0 missing=0 empty_tools=0
+retail10_easy.json: rows=63/63 count_ok=True dup=0 missing=0 empty_tools=0
+kitchen4_easy.json: rows=50/50 count_ok=True dup=0 missing=0 empty_tools=0
+restaurant5_easy.json: rows=50/50 count_ok=True dup=0 missing=0 empty_tools=0
+order2_easy.json: rows=97/97 count_ok=True dup=0 missing=0 empty_tools=3

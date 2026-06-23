@@ -1,34 +1,34 @@
 # Experiment Status
 
-## Protected Best
+## Final Decision
 
-Current protected best from the audited state:
+The final selected line for Track 2 is:
 
 ```text
-version: V6_1_3_gpt55_guarded_endpoint
-run_id: gpt55_endpoint_gate_20260617_105936
-model: gpt-5.5
-endpoint: https://ai-pixel.online/v1
+FINAL_DECISION: V41_selected / V41-S
+final_package: V52_newofficial_V41S_final_track2.zip
+final_package_sha256: 1f17e3a25dfc1b68346ec1bf50e8a181ad033316f4a99246eb88cd03c09046b9
+active_kitchen_init_sha256: 1cd199ca1655e595f5781dd2ec832db719062ca3e14fb9d7d0a5691fe30b4a91
+valid_check: true
+auto_submit: false
 ```
 
-Metrics on the fixed 4-task gate:
+## VAL68 Generalization Check
 
-| Metric | Value |
-|---|---:|
-| joint_success | 0.500 |
-| result_success | 0.750 |
-| tool_success | 0.500 |
-| micro_tool_accuracy | 0.7083333333333333 |
-| avg_rounds | 4.5 |
-| avg_tool_calls | 30.0 |
+The final decision is anchored by the VAL68 generalization check:
+
+| Method | Joint | Result | Tool | Micro |
+|---|---:|---:|---:|---:|
+| V41 selected | 0.3088 | 0.4118 | 0.3088 | 0.4587 |
+| V43 aggressive reference | 0.2794 | 0.3676 | 0.2794 | 0.4396 |
 
 ## Important Interpretation
 
-V7/V8/V9/V10 variants are preserved in the repository because they contain useful diagnostic and candidate modules. They should not be described as final-ready without broader validation.
+Older V7-V40 variants are preserved because they contain useful diagnostic and candidate modules. They should not be described as final-ready unless a current validation report supports promotion.
 
-Observed pattern:
+Observed final-stage pattern:
 
-- V8_2 improved a 4-task smoke test, but did not generalize on `validation_A_small`.
-- V9/V9.5/V10 can improve some micro-level metrics, but joint success remained insufficient on wider validation.
-- No final submission is represented by this repository snapshot.
-
+- V41 selected is more stable on the deduplicated VAL68 asset.
+- V43 aggressive had stronger validation_A behavior but worse VAL68 generalization.
+- V55 emergency candidates did not improve over V41 on VAL68.
+- The final package was generated after the latest official EgoBench sync and passed V53 compliance audit.

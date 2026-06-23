@@ -48,3 +48,13 @@ Main directories:
 
 This directory is intended to preserve the current effective code before further cleanup.
 
+## `docs/final_submission`
+
+This directory records final-package provenance and compliance evidence:
+
+- current final decision and source result path
+- SHA256 checks for the package and latest official `kitchen_init.py`
+- official package layout and row-count validation
+- no-hidden-metadata / no-auto-submit audit notes
+
+The actual final submission zip is not tracked in git. Keep the release artifact outside source control and verify it against the documented SHA256 before submission.

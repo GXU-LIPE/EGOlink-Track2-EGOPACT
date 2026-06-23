@@ -1,0 +1,44 @@
+{
+  "repository": "GXU-LIPE/EGOlink-Track2-EGOPACT",
+  "final_decision": "V41_selected / V41-S",
+  "final_package_label": "V52_newofficial_V41S_final",
+  "final_zip_name": "V52_newofficial_V41S_final_track2.zip",
+  "final_zip_sha256": "1f17e3a25dfc1b68346ec1bf50e8a181ad033316f4a99246eb88cd03c09046b9",
+  "active_kitchen_init_sha256": "1cd199ca1655e595f5781dd2ec832db719062ca3e14fb9d7d0a5691fe30b4a91",
+  "total_rows": 309,
+  "valid": true,
+  "auto_submitted": false,
+  "remote_final_zip": "/home/data-gxu/acm/egolink2026-main/code/track2/codex/final_submissions/V52_newofficial_V41S_final/V52_newofficial_V41S_final_track2.zip",
+  "local_submission_zip": "C:\\Users\\Administrator\\Desktop\\看\\Track2_final_V52_newofficial_V41S_final_20260623\\GXU-LIPE_track2.zip",
+  "local_submission_pdf": "C:\\Users\\Administrator\\Desktop\\看\\Track2_final_V52_newofficial_V41S_final_20260623\\sub.pdf",
+  "local_submission_pdf_sha256": "78b6e42ba01ffe966e626e2e5f9aa0395b8ab31a8b6885be2593fc4825944a3c",
+  "remote_source_result": "/home/data-gxu/acm/egolink2026-main/code/track2/EgoBench/results/V41_final_submission_20260622_161122",
+  "expected_zip_paths": [
+    "V52_newofficial_V41S_final.pdf",
+    "results/V52_newofficial_V41S_final/retail6_easy.json",
+    "results/V52_newofficial_V41S_final/retail10_easy.json",
+    "results/V52_newofficial_V41S_final/kitchen4_easy.json",
+    "results/V52_newofficial_V41S_final/restaurant5_easy.json",
+    "results/V52_newofficial_V41S_final/order2_easy.json"
+  ],
+  "row_counts": {
+    "retail6_easy.json": 49,
+    "retail10_easy.json": 63,
+    "kitchen4_easy.json": 50,
+    "restaurant5_easy.json": 50,
+    "order2_easy.json": 97
+  },
+  "compliance": {
+    "official_structure_ok": true,
+    "json_parse_ok": true,
+    "zip_paths_ok": true,
+    "sha256_match": true,
+    "no_blank_line": true,
+    "no_duplicate_id": true,
+    "no_missing_id": true,
+    "no_forbidden_fields": true,
+    "no_hidden_metadata": true,
+    "no_gt_label_leak": true,
+    "pdf_present": true
+  }
+}
